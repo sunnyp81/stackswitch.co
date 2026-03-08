@@ -1,0 +1,29 @@
+{
+  "slug": "airtable",
+  "name": "Airtable",
+  "tagline": "Spreadsheet-database hybrid for building custom workflows",
+  "description": "Airtable is a flexible platform that blends the familiarity of a spreadsheet with the power of a relational database. Teams use it to build custom apps, manage projects, track inventory, and automate workflows without code.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://airtable.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 20,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited bases", "1,000 records/base", "1GB attachments", "Grid/Gallery/Kanban views"] },
+      { "name": "Team", "price": 20, "period": "user/mo", "features": ["Everything in Free", "50,000 records/base", "25GB attachments", "Automations (25K/mo)"] },
+      { "name": "Business", "price": 45, "period": "user/mo", "features": ["Everything in Team", "125,000 records/base", "100GB attachments", "Admin controls"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Business", "Unlimited records", "SAML SSO", "Audit logs"] }
+    ]
+  },
+  "features": ["Grid/Kanban/Gallery views", "Relational databases", "Automations", "Forms", "Interface designer", "Sync", "API"],
+  "pros": ["Extremely flexible", "Great for custom workflows", "Strong automation", "Visual and intuitive"],
+  "cons": ["Gets expensive at scale", "Record limits on free plan", "Performance with large datasets", "Learning curve for databases"],
+  "alternatives": ["notion", "clickup", "monday", "smartsheet", "coda"],
+  "g2_score": 4.6,
+  "capterra_score": 4.7
+}

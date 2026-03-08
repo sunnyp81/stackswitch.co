@@ -1,0 +1,27 @@
+{
+  "slug": "stripe",
+  "name": "Stripe",
+  "tagline": "Payment infrastructure for the internet",
+  "description": "Stripe is the leading payment processing platform for internet businesses. Beyond payments, it offers billing, subscriptions, invoicing, fraud prevention, and financial infrastructure used by startups and enterprises worldwide.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://stripe.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Integrated", "price": 0, "period": "2.9% + 30¢/transaction", "features": ["Payments", "Billing", "Invoicing", "Fraud protection"] },
+      { "name": "Customised", "price": 0, "period": "contact", "features": ["Custom rates", "Multi-product discounts", "Platform fee discounts", "Enterprise support"] }
+    ]
+  },
+  "features": ["Payment processing", "Subscriptions & billing", "Invoicing", "Fraud prevention (Radar)", "Revenue recognition", "Connect (marketplace payments)", "Tax calculation"],
+  "pros": ["Best developer experience", "Extensive API", "Scales from startup to enterprise", "Global reach (135+ currencies)"],
+  "cons": ["Higher per-transaction fees than some alternatives", "Complex disputes process", "Not ideal for high-risk merchants"],
+  "alternatives": ["paddle", "lemonsqueezy", "chargebee", "braintree", "adyen"],
+  "g2_score": 4.4,
+  "capterra_score": 4.7
+}

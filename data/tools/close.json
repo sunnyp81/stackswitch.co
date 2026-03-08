@@ -1,0 +1,28 @@
+{
+  "slug": "close",
+  "name": "Close",
+  "tagline": "CRM built for inside sales teams that call and email",
+  "description": "Close is a sales CRM designed specifically for inside sales teams who rely on phone and email outreach. It has built-in calling, SMS, email sequences, and power dialler — no integrations required.",
+  "category": "crm",
+  "categories": ["crm"],
+  "website": "https://close.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 49,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Startup", "price": 49, "period": "user/mo", "features": ["Built-in calling & SMS", "Email sequences", "Pipeline management", "Basic reporting"] },
+      { "name": "Professional", "price": 99, "period": "user/mo", "features": ["Everything in Startup", "Power Dialer", "Predictive Dialer", "Smart Views"] },
+      { "name": "Enterprise", "price": 139, "period": "user/mo", "features": ["Everything in Professional", "Custom roles", "Call coaching", "Priority support"] }
+    ]
+  },
+  "features": ["Built-in VoIP calling", "Power Dialler", "Email sequences", "SMS", "Smart Views", "Call recordings", "Pipeline management"],
+  "pros": ["Best built-in calling of any CRM", "No integrations needed for outreach", "Clean UI", "Fast onboarding"],
+  "cons": ["Expensive per seat", "No free plan", "Less suited for non-sales-heavy teams", "Limited marketing features"],
+  "alternatives": ["hubspot", "pipedrive", "salesforce", "zoho-crm", "apollo"],
+  "g2_score": 4.7,
+  "capterra_score": 4.7
+}

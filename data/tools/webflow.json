@@ -1,0 +1,29 @@
+{
+  "slug": "webflow",
+  "name": "Webflow",
+  "tagline": "No-code website builder with professional design power",
+  "description": "Webflow is a visual web design tool that generates clean HTML, CSS, and JavaScript. Loved by designers and agencies for its precise design control, CMS capabilities, and the ability to build production-ready sites without writing code.",
+  "category": "design",
+  "categories": ["design"],
+  "website": "https://webflow.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 14,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Starter)", "price": 0, "period": "forever", "features": ["2 projects", "webflow.io subdomain", "CMS (limited)", "Basic integrations"] },
+      { "name": "Basic", "price": 14, "period": "mo", "features": ["1 site", "Custom domain", "500 form submissions", "Webflow hosting"] },
+      { "name": "CMS", "price": 23, "period": "mo", "features": ["Everything in Basic", "2,000 CMS items", "3 editors", "RSS feed"] },
+      { "name": "Business", "price": 39, "period": "mo", "features": ["Everything in CMS", "10,000 CMS items", "10 editors", "White labelling"] }
+    ]
+  },
+  "features": ["Visual editor", "CMS", "Ecommerce", "Hosting", "Animations", "Interactions", "Logic (no-code logic)"],
+  "pros": ["Best design control of any no-code tool", "Clean code output", "Built-in hosting", "Powerful CMS"],
+  "cons": ["Steep learning curve", "Expensive for e-commerce", "Not beginner-friendly", "Performance can vary"],
+  "alternatives": ["framer", "squarespace", "wix", "wordpress", "bubble"],
+  "g2_score": 4.4,
+  "capterra_score": 4.6
+}

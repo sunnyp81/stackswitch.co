@@ -1,0 +1,29 @@
+{
+  "slug": "microsoft-teams",
+  "name": "Microsoft Teams",
+  "tagline": "Chat, calls, and collaboration in Microsoft 365",
+  "description": "Microsoft Teams is a unified communication and collaboration platform bundled with Microsoft 365. It combines persistent chat, video meetings, file sharing, and deep integration with Office apps — dominant in enterprise and education.",
+  "category": "communication",
+  "categories": ["communication"],
+  "website": "https://microsoft.com/en-us/microsoft-teams",
+  "affiliate_url": "",
+  "founded": 2017,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 4,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Chat & collaboration", "Video calls (60 min)", "5GB file storage", "100 participants"] },
+      { "name": "Essentials", "price": 4, "period": "user/mo", "features": ["Everything in Free", "30-hr meetings", "10GB cloud storage", "Meeting recordings"] },
+      { "name": "Microsoft 365 Business Basic", "price": 6, "period": "user/mo", "features": ["Everything in Essentials", "Web/mobile Office apps", "1TB OneDrive", "Exchange email"] },
+      { "name": "Microsoft 365 Business Standard", "price": 12.50, "period": "user/mo", "features": ["Everything in Basic", "Desktop Office apps", "Webinars", "Bookings"] }
+    ]
+  },
+  "features": ["Team chat", "Video meetings", "File sharing (SharePoint)", "Office integration", "Phone calls", "Webinars", "Approvals"],
+  "pros": ["Included in Microsoft 365", "Deep Office integration", "Strong enterprise features", "Large meeting capacity"],
+  "cons": ["Complex and bloated UI", "Notification management is poor", "Less pleasant than Slack for daily use", "Requires Microsoft ecosystem"],
+  "alternatives": ["slack", "zoom", "google-chat", "webex", "lark"],
+  "g2_score": 4.3,
+  "capterra_score": 4.4
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "beehiiv",
+  "name": "beehiiv",
+  "tagline": "Newsletter platform built for growth",
+  "description": "beehiiv is a newsletter platform built by the team behind Morning Brew. It's designed for newsletter creators who want powerful growth tools — referral programmes, paid subscriptions, boosts, and detailed analytics.",
+  "category": "email-marketing",
+  "categories": ["email-marketing"],
+  "website": "https://beehiiv.com",
+  "affiliate_url": "",
+  "founded": 2021,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 39,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Launch (Free)", "price": 0, "period": "forever", "features": ["Up to 2,500 subscribers", "Unlimited sends", "Basic analytics", "Custom domain"] },
+      { "name": "Scale", "price": 39, "period": "mo", "features": ["Everything in Launch", "Paid subscriptions", "Referral programme", "Boosts monetisation"] },
+      { "name": "Max", "price": 99, "period": "mo", "features": ["Everything in Scale", "Priority support", "Advanced segmentation", "3D analytics"] }
+    ]
+  },
+  "features": ["Newsletter editor", "Paid subscriptions", "Referral programme", "Boosts (ad network)", "Audience segmentation", "Advanced analytics", "Recommendations"],
+  "pros": ["Built for growth-focused newsletters", "Best referral & boost tools", "No transaction fees on paid subs", "Strong analytics"],
+  "cons": ["Less suited for e-commerce or lead nurture", "Newer platform", "Free plan limited to 2,500 subs"],
+  "alternatives": ["convertkit", "substack", "mailchimp", "ghost", "ghost-pro"],
+  "g2_score": 4.8,
+  "capterra_score": 4.8
+}

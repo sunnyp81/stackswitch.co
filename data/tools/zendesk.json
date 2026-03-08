@@ -1,0 +1,29 @@
+{
+  "slug": "zendesk",
+  "name": "Zendesk",
+  "tagline": "Enterprise customer service platform",
+  "description": "Zendesk is a leading customer service platform used by thousands of businesses worldwide. It provides a unified agent workspace, ticketing, help centre, live chat, and AI-powered automation for support teams.",
+  "category": "customer-support",
+  "categories": ["customer-support"],
+  "website": "https://zendesk.com",
+  "affiliate_url": "",
+  "founded": 2007,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 19,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Support Team", "price": 19, "period": "agent/mo", "features": ["Ticketing", "Email & social channels", "Basic reporting", "Pre-built integrations"] },
+      { "name": "Suite Team", "price": 55, "period": "agent/mo", "features": ["Everything in Support Team", "Live chat", "Help centre", "AI bots"] },
+      { "name": "Suite Growth", "price": 89, "period": "agent/mo", "features": ["Everything in Suite Team", "Self-service portal", "AI-powered answers", "SLAs"] },
+      { "name": "Suite Professional", "price": 115, "period": "agent/mo", "features": ["Everything in Growth", "Routing & intelligence", "Custom analytics", "HIPAA compliance"] }
+    ]
+  },
+  "features": ["Ticketing", "Live chat", "Help centre", "AI automation", "Voice support", "Workforce management", "Advanced analytics"],
+  "pros": ["Industry-leading ticketing", "Massive ecosystem", "Scales to enterprise", "Strong reporting"],
+  "cons": ["Very expensive", "Complex setup", "Feels bloated for small teams", "Price jumps at higher tiers"],
+  "alternatives": ["intercom", "freshdesk", "help-scout", "hubspot", "groove"],
+  "g2_score": 4.3,
+  "capterra_score": 4.4
+}

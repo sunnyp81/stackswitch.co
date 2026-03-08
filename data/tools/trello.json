@@ -1,0 +1,29 @@
+{
+  "slug": "trello",
+  "name": "Trello",
+  "tagline": "Visual project management with boards, lists, and cards",
+  "description": "Trello is a simple, visual Kanban-style project management tool by Atlassian. Its card-based interface makes it easy for teams of any size to organise tasks. Best for straightforward workflows that don't need heavy configuration.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://trello.com",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 5,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited cards", "10 boards per workspace", "Unlimited Power-Ups", "Unlimited storage (10MB/file)"] },
+      { "name": "Standard", "price": 5, "period": "user/mo", "features": ["Everything in Free", "Unlimited boards", "Custom fields", "Single board guests"] },
+      { "name": "Premium", "price": 10, "period": "user/mo", "features": ["Everything in Standard", "Timeline & Calendar views", "Dashboard view", "Workspace views"] },
+      { "name": "Enterprise", "price": 17.50, "period": "user/mo", "features": ["Everything in Premium", "SSO", "Power-Up admin", "Organisation-wide permissions"] }
+    ]
+  },
+  "features": ["Kanban boards", "Cards & checklists", "Labels & filters", "Calendar view", "Timeline view", "Power-Ups (integrations)", "Automation (Butler)"],
+  "pros": ["Easiest tool to learn", "Great free plan", "Intuitive drag-and-drop", "Good mobile apps"],
+  "cons": ["Limited for complex projects", "No Gantt or dependency tracking", "Scales poorly for large teams"],
+  "alternatives": ["asana", "clickup", "notion", "monday", "jira"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

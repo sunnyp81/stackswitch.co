@@ -1,0 +1,29 @@
+{
+  "slug": "jira",
+  "name": "Jira",
+  "tagline": "Issue and project tracking for software teams",
+  "description": "Jira by Atlassian is the most widely used project tracking tool for software development teams. It powers agile workflows with sprints, backlogs, custom issue types, and deep integrations with developer tools like GitHub and Bitbucket.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://atlassian.com/software/jira",
+  "affiliate_url": "",
+  "founded": 2002,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 8.15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Up to 10 users", "Scrum & Kanban boards", "Backlog", "Reporting"] },
+      { "name": "Standard", "price": 8.15, "period": "user/mo", "features": ["Everything in Free", "Up to 35,000 users", "Audit logs", "Project roles"] },
+      { "name": "Premium", "price": 16, "period": "user/mo", "features": ["Everything in Standard", "Advanced roadmaps", "Unlimited storage", "Sandbox"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Premium", "Multi-site", "SAML SSO", "24/7 support"] }
+    ]
+  },
+  "features": ["Scrum boards", "Kanban boards", "Backlog management", "Sprint planning", "Custom workflows", "Advanced roadmaps", "Integrations (3,000+)"],
+  "pros": ["Industry standard for dev teams", "Extremely powerful", "Huge integration ecosystem", "Scales to enterprise"],
+  "cons": ["Steep learning curve", "Can be slow and bloated", "Complex configuration", "Overkill for non-dev teams"],
+  "alternatives": ["linear", "clickup", "asana", "shortcut", "height"],
+  "g2_score": 4.3,
+  "capterra_score": 4.4
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "zoho-crm",
+  "name": "Zoho CRM",
+  "tagline": "Affordable CRM with deep customisation for growing businesses",
+  "description": "Zoho CRM is a feature-rich, budget-friendly CRM platform that rivals Salesforce at a fraction of the cost. Part of the broader Zoho suite, it offers deep customisation, AI-powered insights, and tight integration with 40+ Zoho apps.",
+  "category": "crm",
+  "categories": ["crm"],
+  "website": "https://zoho.com/crm",
+  "affiliate_url": "",
+  "founded": 2005,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 14,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Up to 3 users", "Leads & contacts", "Accounts & deals", "Standard reports"] },
+      { "name": "Standard", "price": 14, "period": "user/mo", "features": ["Scoring rules", "Workflows (5)", "Email insights", "Custom dashboards"] },
+      { "name": "Professional", "price": 23, "period": "user/mo", "features": ["Blueprint", "SalesSignals", "Web-to-lead forms", "Inventory management"] },
+      { "name": "Enterprise", "price": 40, "period": "user/mo", "features": ["Zia AI", "CommandCenter", "Multi-user portals", "Advanced customisation"] }
+    ]
+  },
+  "features": ["Lead management", "Deal tracking", "Workflow automation", "AI assistant (Zia)", "Blueprint process builder", "Territory management", "Advanced analytics"],
+  "pros": ["Excellent value for money", "Highly customisable", "Strong automation", "Good Zoho ecosystem integration"],
+  "cons": ["UI feels dated", "Customer support can be slow", "Learning curve for advanced features", "Some features buried in menus"],
+  "alternatives": ["hubspot", "salesforce", "pipedrive", "close", "freshsales"],
+  "g2_score": 4.1,
+  "capterra_score": 4.3
+}

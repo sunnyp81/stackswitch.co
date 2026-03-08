@@ -1,0 +1,29 @@
+{
+  "slug": "freshdesk",
+  "name": "Freshdesk",
+  "tagline": "Customer support software that's easy and affordable",
+  "description": "Freshdesk is a cloud-based customer support platform by Freshworks. It offers multi-channel support, automation, AI-powered bots, and a free plan that makes it popular with small and mid-size businesses.",
+  "category": "customer-support",
+  "categories": ["customer-support"],
+  "website": "https://freshdesk.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Sprout)", "price": 0, "period": "forever", "features": ["Unlimited agents", "Email & social tickets", "Knowledge base", "Basic reports"] },
+      { "name": "Growth", "price": 15, "period": "agent/mo", "features": ["Everything in Free", "Automations", "SLAs", "Business hours"] },
+      { "name": "Pro", "price": 49, "period": "agent/mo", "features": ["Everything in Growth", "Round-robin routing", "CSAT surveys", "Custom roles"] },
+      { "name": "Enterprise", "price": 79, "period": "agent/mo", "features": ["Everything in Pro", "Skill-based routing", "Sandbox", "Audit log"] }
+    ]
+  },
+  "features": ["Multi-channel ticketing", "AI chatbot (Freddy)", "Knowledge base", "SLA management", "Team collaboration", "Reporting"],
+  "pros": ["Generous free plan", "Easy to set up", "Good automation", "Affordable entry point"],
+  "cons": ["AI features limited on lower tiers", "Reporting less powerful than Zendesk", "Occasional UI bugs"],
+  "alternatives": ["zendesk", "intercom", "help-scout", "hubspot", "zoho-desk"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

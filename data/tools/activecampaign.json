@@ -1,0 +1,29 @@
+{
+  "slug": "activecampaign",
+  "name": "ActiveCampaign",
+  "tagline": "Email marketing and CRM automation platform",
+  "description": "ActiveCampaign combines email marketing, marketing automation, and CRM in one platform. Known for its powerful automation builder, it's popular with small to mid-size businesses that want to nurture leads through complex multi-step workflows.",
+  "category": "email-marketing",
+  "categories": ["email-marketing", "crm"],
+  "website": "https://activecampaign.com",
+  "affiliate_url": "",
+  "founded": 2003,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 15, "period": "mo", "features": ["1,000 contacts", "Email marketing", "Basic automation", "Reporting"] },
+      { "name": "Plus", "price": 49, "period": "mo", "features": ["Everything in Starter", "CRM with automation", "Landing pages", "SMS marketing"] },
+      { "name": "Professional", "price": 79, "period": "mo", "features": ["Everything in Plus", "Predictive sending", "Split automations", "Site messaging"] },
+      { "name": "Enterprise", "price": 145, "period": "mo", "features": ["Everything in Professional", "Custom reporting", "Dedicated IP", "Uptime SLA"] }
+    ]
+  },
+  "features": ["Email marketing", "Marketing automation", "CRM", "Landing pages", "SMS", "Site tracking", "Lead scoring"],
+  "pros": ["Best-in-class automation builder", "Powerful conditional logic", "Good deliverability", "Strong CRM integration"],
+  "cons": ["No free plan", "Learning curve for automations", "UI can feel complex", "Pricing scales up quickly"],
+  "alternatives": ["mailchimp", "klaviyo", "convertkit", "drip", "hubspot"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

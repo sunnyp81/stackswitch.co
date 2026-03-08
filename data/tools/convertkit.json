@@ -1,0 +1,28 @@
+{
+  "slug": "convertkit",
+  "name": "Kit (ConvertKit)",
+  "tagline": "Email platform built for creators and solopreneurs",
+  "description": "Kit (formerly ConvertKit) is an email marketing platform built specifically for content creators, bloggers, podcasters, and online course sellers. It prioritises simplicity, deliverability, and audience segmentation.",
+  "category": "email-marketing",
+  "categories": ["email-marketing"],
+  "website": "https://kit.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 25,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Newsletter)", "price": 0, "period": "forever", "features": ["Up to 10,000 subscribers", "Unlimited broadcasts", "1 automation", "Unlimited landing pages"] },
+      { "name": "Creator", "price": 25, "period": "mo", "features": ["Everything in Free", "Unlimited automations", "Integrations", "Third-party integrations"] },
+      { "name": "Creator Pro", "price": 50, "period": "mo", "features": ["Everything in Creator", "Facebook custom audiences", "Newsletter referral system", "Subscriber scoring"] }
+    ]
+  },
+  "features": ["Email broadcasts", "Automation sequences", "Landing pages", "Opt-in forms", "Commerce (sell digital products)", "Audience segmentation"],
+  "pros": ["Best for creators and solopreneurs", "Very generous free plan (10K subs)", "Clean, simple interface", "Built-in digital product sales"],
+  "cons": ["Limited design customisation", "Not ideal for e-commerce brands", "Fewer features than ActiveCampaign"],
+  "alternatives": ["mailchimp", "beehiiv", "activecampaign", "substack", "ghost"],
+  "g2_score": 4.4,
+  "capterra_score": 4.7
+}

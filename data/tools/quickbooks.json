@@ -1,0 +1,29 @@
+{
+  "slug": "quickbooks",
+  "name": "QuickBooks",
+  "tagline": "Accounting software for small and medium businesses",
+  "description": "QuickBooks by Intuit is the most widely used accounting software for small businesses. It handles invoicing, expenses, payroll, tax filing, bank reconciliation, and financial reporting — available in desktop and cloud versions.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://quickbooks.intuit.com",
+  "affiliate_url": "",
+  "founded": 1983,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 17.50,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Simple Start", "price": 17.50, "period": "mo", "features": ["Income & expense tracking", "Invoicing", "Tax deductions", "Basic reporting"] },
+      { "name": "Essentials", "price": 32.50, "period": "mo", "features": ["Everything in Simple Start", "3 users", "Bill management", "Time tracking"] },
+      { "name": "Plus", "price": 49.50, "period": "mo", "features": ["Everything in Essentials", "5 users", "Inventory tracking", "Project profitability"] },
+      { "name": "Advanced", "price": 117.50, "period": "mo", "features": ["Everything in Plus", "25 users", "Custom reporting", "Dedicated account manager"] }
+    ]
+  },
+  "features": ["Invoicing", "Expense tracking", "Bank reconciliation", "Payroll (add-on)", "Tax preparation", "Inventory", "Project tracking"],
+  "pros": ["Most widely used accounting software", "Strong accountant ecosystem", "Comprehensive features", "Good integrations"],
+  "cons": ["Can be expensive", "Prices increase after promo period", "Not ideal for non-US businesses", "Payroll costs extra"],
+  "alternatives": ["xero", "freshbooks", "wave", "sage", "zoho-books"],
+  "g2_score": 4.0,
+  "capterra_score": 4.3
+}

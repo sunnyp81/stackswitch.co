@@ -1,0 +1,28 @@
+{
+  "slug": "gusto",
+  "name": "Gusto",
+  "tagline": "Payroll, benefits, and HR for small businesses",
+  "description": "Gusto is the go-to payroll and HR platform for small US-based businesses. It handles payroll taxes automatically, offers health benefits, 401(k) management, and onboarding — all with a friendly, non-intimidating interface.",
+  "category": "hr",
+  "categories": ["hr"],
+  "website": "https://gusto.com",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 40,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Simple", "price": 40, "period": "mo + $6/person", "features": ["Full-service payroll", "Employee self-service", "Basic HR tools", "Health benefits"] },
+      { "name": "Plus", "price": 80, "period": "mo + $12/person", "features": ["Everything in Simple", "Next-day direct deposit", "Time tracking", "PTO management"] },
+      { "name": "Premium", "price": 0, "period": "contact", "features": ["Everything in Plus", "HR advisory services", "Compliance alerts", "Dedicated support"] }
+    ]
+  },
+  "features": ["Automated payroll", "Tax filing", "Health benefits", "401(k) plans", "Employee onboarding", "Time tracking", "HR compliance"],
+  "pros": ["Easiest payroll for small businesses", "Full-service tax filing", "Great employee experience", "Good benefits marketplace"],
+  "cons": ["US only", "More expensive than DIY options", "Limited international support"],
+  "alternatives": ["rippling", "deel", "quickbooks", "adp", "paychex"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

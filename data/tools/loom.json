@@ -1,0 +1,28 @@
+{
+  "slug": "loom",
+  "name": "Loom",
+  "tagline": "Async video messaging for teams",
+  "description": "Loom lets you record quick video messages of your screen and camera to share with teammates. Popular for async communication, code reviews, design feedback, and replacing long meetings with clear video walkthroughs.",
+  "category": "communication",
+  "categories": ["communication"],
+  "website": "https://loom.com",
+  "affiliate_url": "",
+  "founded": 2015,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 12.50,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter (Free)", "price": 0, "period": "forever", "features": ["25 videos", "5-min recording limit", "Basic editing", "Viewer reactions"] },
+      { "name": "Business", "price": 12.50, "period": "creator/mo", "features": ["Unlimited videos", "No time limit", "Custom branding", "Password protection"] },
+      { "name": "Business + AI", "price": 16, "period": "creator/mo", "features": ["Everything in Business", "AI summaries", "AI transcripts", "Filler word removal"] }
+    ]
+  },
+  "features": ["Screen + camera recording", "AI transcription", "Video editing", "Engagement insights", "CTA buttons", "Team workspace", "Slack integration"],
+  "pros": ["Fastest async video tool", "Clean shareable links", "Good free plan", "AI transcription"],
+  "cons": ["Free plan limited to 25 videos", "No native mobile recording", "Atlassian acquisition raised concerns"],
+  "alternatives": ["screen-studio", "cap", "claap", "zoom-clips", "tella"],
+  "g2_score": 4.7,
+  "capterra_score": 4.7
+}

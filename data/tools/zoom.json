@@ -1,0 +1,29 @@
+{
+  "slug": "zoom",
+  "name": "Zoom",
+  "tagline": "Video conferencing and collaboration platform",
+  "description": "Zoom is the world's leading video communications platform. Beyond video meetings, it offers webinars, phone system (Zoom Phone), asynchronous video, team chat, and an AI Companion — making it a full unified communications suite.",
+  "category": "communication",
+  "categories": ["communication"],
+  "website": "https://zoom.us",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 13.32,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Basic (Free)", "price": 0, "period": "forever", "features": ["40-min meetings (3+ people)", "100 participants", "Team chat", "Whiteboard"] },
+      { "name": "Pro", "price": 13.32, "period": "user/mo", "features": ["Everything in Basic", "30-hr meeting duration", "AI Companion", "Cloud recording (5GB)"] },
+      { "name": "Business", "price": 18.32, "period": "user/mo", "features": ["Everything in Pro", "Up to 300 participants", "SSO", "Managed domains"] },
+      { "name": "Business Plus", "price": 22.49, "period": "user/mo", "features": ["Everything in Business", "Unlimited cloud storage", "Translated captions", "Zoom Phone"] }
+    ]
+  },
+  "features": ["Video meetings", "Webinars", "Team chat", "Zoom Phone (VoIP)", "AI Companion", "Whiteboard", "Clips (async video)"],
+  "pros": ["Industry standard for video calls", "Reliable performance", "Easy to join (no account needed)", "Broad platform support"],
+  "cons": ["Security concerns historically", "Free plan limited to 40 mins", "Gets expensive with Zoom Phone add-ons"],
+  "alternatives": ["microsoft-teams", "google-meet", "webex", "whereby", "around"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

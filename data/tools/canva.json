@@ -1,0 +1,28 @@
+{
+  "slug": "canva",
+  "name": "Canva",
+  "tagline": "Easy-to-use graphic design tool for everyone",
+  "description": "Canva is a web-based graphic design platform that enables non-designers to create professional-looking visuals. With thousands of templates, it's widely used for social media graphics, presentations, marketing materials, and documents.",
+  "category": "design",
+  "categories": ["design"],
+  "website": "https://canva.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["250,000+ free templates", "5GB cloud storage", "AI image generation (limited)", "Basic editor"] },
+      { "name": "Pro", "price": 15, "period": "user/mo", "features": ["Everything in Free", "Brand kit", "Background remover", "Magic Resize", "100GB storage"] },
+      { "name": "Teams", "price": 10, "period": "user/mo (min 3)", "features": ["Everything in Pro", "Team brand controls", "Workflow approval", "Unlimited storage"] }
+    ]
+  },
+  "features": ["Template library (500K+)", "Brand kit", "AI image generator", "Background remover", "Magic Resize", "Presentation mode", "Video editing"],
+  "pros": ["Extremely easy to use", "Massive template library", "Great for non-designers", "Affordable"],
+  "cons": ["Not suited for complex design work", "Limited vector editing", "Less precise than Figma/Adobe"],
+  "alternatives": ["figma", "adobe-express", "piktochart", "visme", "snappa"],
+  "g2_score": 4.7,
+  "capterra_score": 4.7
+}

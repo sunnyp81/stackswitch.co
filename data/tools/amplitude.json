@@ -1,0 +1,29 @@
+{
+  "slug": "amplitude",
+  "name": "Amplitude",
+  "tagline": "Digital analytics platform for product teams",
+  "description": "Amplitude is a leading digital analytics platform that helps product teams understand user behaviour, improve retention, and make data-driven decisions. Widely used by growth and product teams at fast-growing SaaS companies.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://amplitude.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 49,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 0, "period": "forever", "features": ["Unlimited events", "Core analytics", "1 year data retention", "Unlimited seats"] },
+      { "name": "Plus", "price": 49, "period": "mo", "features": ["Everything in Starter", "Behavioral cohorts", "Custom dashboards", "CSV export"] },
+      { "name": "Growth", "price": 0, "period": "contact", "features": ["Everything in Plus", "Pathfinder", "Impact analysis", "Data management"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Growth", "Portfolio view", "Custom SLA", "SSO"] }
+    ]
+  },
+  "features": ["Event tracking", "Funnel analysis", "Retention analysis", "Cohort analysis", "Pathfinder", "A/B testing integration", "Data governance"],
+  "pros": ["Powerful behavioural analytics", "Strong cohort and funnel tools", "Generous free tier", "Good data governance"],
+  "cons": ["Complex setup", "Can be expensive at scale", "Steep learning curve", "Less suited for marketing analytics"],
+  "alternatives": ["mixpanel", "heap", "posthog", "pendo", "fullstory"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

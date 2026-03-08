@@ -1,0 +1,27 @@
+{
+  "slug": "posthog",
+  "name": "PostHog",
+  "tagline": "All-in-one product analytics, open source",
+  "description": "PostHog is an open-source product analytics platform that combines analytics, feature flags, session recording, A/B testing, and surveys in one tool. Loved by engineers for its self-hosted option and transparent data ownership.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://posthog.com",
+  "affiliate_url": "",
+  "founded": 2020,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["1M events/mo", "15K session recordings", "Feature flags", "A/B testing"] },
+      { "name": "Paid", "price": 0, "period": "usage-based", "features": ["Pay per event beyond free tier", "All features included", "No seat limits", "Priority support"] }
+    ]
+  },
+  "features": ["Event analytics", "Session recording", "Feature flags", "A/B testing", "Surveys", "Funnel analysis", "Self-hosted option"],
+  "pros": ["Open source with self-hosted option", "All-in-one platform", "Very generous free tier", "Developer-friendly"],
+  "cons": ["Less polished UI than Amplitude/Mixpanel", "Self-hosting requires technical expertise", "Usage-based pricing can surprise"],
+  "alternatives": ["mixpanel", "amplitude", "heap", "fullstory", "june"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

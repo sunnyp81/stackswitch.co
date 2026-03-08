@@ -1,0 +1,27 @@
+{
+  "slug": "rippling",
+  "name": "Rippling",
+  "tagline": "All-in-one HR, IT, and finance platform",
+  "description": "Rippling is a workforce management platform that unifies HR, IT, and finance operations. Unlike Deel or Gusto which focus on payroll, Rippling also manages employee devices, app provisioning, and benefits in one system.",
+  "category": "hr",
+  "categories": ["hr"],
+  "website": "https://rippling.com",
+  "affiliate_url": "",
+  "founded": 2016,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 8,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Core HR", "price": 8, "period": "user/mo", "features": ["Employee records", "Org chart", "Onboarding/offboarding", "Time & attendance"] },
+      { "name": "Full Platform", "price": 0, "period": "contact", "features": ["Payroll", "Benefits", "Device management", "App provisioning"] }
+    ]
+  },
+  "features": ["HR management", "Global payroll", "Benefits administration", "Device management", "App provisioning", "Time tracking", "Headcount planning"],
+  "pros": ["True all-in-one HR + IT platform", "Fast employee onboarding/offboarding", "Strong automation", "Modern UI"],
+  "cons": ["Pricing not transparent", "Complex initial setup", "Can be expensive for small teams"],
+  "alternatives": ["deel", "gusto", "bamboohr", "remote", "workday"],
+  "g2_score": 4.8,
+  "capterra_score": 4.9
+}

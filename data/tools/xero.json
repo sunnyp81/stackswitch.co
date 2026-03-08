@@ -1,0 +1,28 @@
+{
+  "slug": "xero",
+  "name": "Xero",
+  "tagline": "Beautiful accounting software for small business",
+  "description": "Xero is a cloud-based accounting platform popular with small businesses and accountants, particularly outside the US. Known for its clean UI, strong bank feed integrations, and large add-on marketplace.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://xero.com",
+  "affiliate_url": "",
+  "founded": 2006,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 15, "period": "mo", "features": ["5 invoices/mo", "5 bills/mo", "Bank reconciliation", "Basic reports"] },
+      { "name": "Standard", "price": 42, "period": "mo", "features": ["Everything in Starter", "Unlimited invoices & bills", "Bulk reconciliation", "Reports"] },
+      { "name": "Premium", "price": 78, "period": "mo", "features": ["Everything in Standard", "Multi-currency", "Expense claims", "Projects"] }
+    ]
+  },
+  "features": ["Invoicing", "Bank reconciliation", "Expense claims", "Inventory", "Multi-currency", "Payroll (select regions)", "150+ integrations"],
+  "pros": ["Clean, modern UI", "Excellent bank feeds", "Strong accountant ecosystem", "Good for non-US businesses"],
+  "cons": ["Starter plan very restrictive", "Can be pricey for full features", "Payroll limited to some countries"],
+  "alternatives": ["quickbooks", "freshbooks", "sage", "wave", "zoho-books"],
+  "g2_score": 4.3,
+  "capterra_score": 4.4
+}
