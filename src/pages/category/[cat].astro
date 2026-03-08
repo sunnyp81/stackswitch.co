@@ -1,0 +1,55 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllTools, formatPrice, CATEGORIES } from '../../utils/tools';
+
+export async function getStaticPaths() {
+  return Object.keys(CATEGORIES).map((cat) => ({ params: { cat } }));
+}
+
+const { cat } = Astro.params;
+const allTools = await getAllTools();
+const tools = allTools.filter((t) => t.categories.includes(cat));
+const categoryName = CATEGORIES[cat] ?? cat;
+---
+
+<Base
+  title={`Best ${categoryName} Software ${new Date().getFullYear()}: Pricing & Alternatives`}
+  description={`Compare the best ${categoryName} tools. See pricing, free plans, and the top alternatives for ${tools.length}+ options.`}
+>
+  <div class="max-w-5xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <span>{categoryName}</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-3">Best {categoryName} Software ({new Date().getFullYear()})</h1>
+    <p class="text-gray-600 mb-10">
+      Comparing {tools.length} {categoryName.toLowerCase()} tools — pricing, free plans, and who each one is best for.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-4">
+      {tools.map((tool) => (
+        <div class="border border-gray-200 rounded-xl p-5 hover:border-indigo-200 transition-colors">
+          <h2 class="font-bold text-lg mb-1">{tool.name}</h2>
+          <p class="text-gray-500 text-sm mb-3">{tool.tagline}</p>
+          <div class="flex items-center gap-3 mb-4 text-sm">
+            <span class="font-semibold">
+              {tool.pricing.has_free_plan ? 'Free' : formatPrice(tool.pricing.starting_price, tool.pricing.currency)}
+            </span>
+            {tool.pricing.has_free_plan && tool.pricing.starting_price > 0 && (
+              <span class="text-gray-400">· Paid from {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}</span>
+            )}
+            <span class="ml-auto text-yellow-500">★ {tool.g2_score}</span>
+          </div>
+          <div class="flex gap-3 text-sm">
+            <a href={`/alternatives/${tool.slug}`} class="text-indigo-600 hover:underline font-medium">Alternatives →</a>
+            <a href={`/pricing/${tool.slug}`} class="text-gray-500 hover:text-gray-900">Pricing →</a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</Base>

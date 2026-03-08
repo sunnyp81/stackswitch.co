@@ -1,0 +1,29 @@
+{
+  "slug": "notion",
+  "name": "Notion",
+  "tagline": "All-in-one workspace for notes, docs, and projects",
+  "description": "Notion is a flexible workspace that combines notes, wikis, databases, and project management in one tool. Popular with startups, solopreneurs, and teams who want a customisable, connected workspace.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://notion.so",
+  "affiliate_url": "",
+  "founded": 2016,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 10,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited pages", "10 guest collaborators", "Basic integrations", "7-day page history"] },
+      { "name": "Plus", "price": 10, "period": "user/mo", "features": ["Everything in Free", "Unlimited guests", "Unlimited file uploads", "30-day history"] },
+      { "name": "Business", "price": 15, "period": "user/mo", "features": ["Everything in Plus", "SAML SSO", "Private teamspaces", "90-day history"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Business", "Advanced security", "Customer success manager", "Unlimited history"] }
+    ]
+  },
+  "features": ["Pages & wikis", "Databases", "Kanban boards", "Calendar view", "AI assistant", "Templates", "API"],
+  "pros": ["Extremely flexible", "Generous free plan", "Excellent templates", "Great for documentation"],
+  "cons": ["Can be overwhelming for new users", "Performance issues with large databases", "AI features cost extra"],
+  "alternatives": ["clickup", "asana", "coda", "confluence", "linear"],
+  "g2_score": 4.7,
+  "capterra_score": 4.8
+}

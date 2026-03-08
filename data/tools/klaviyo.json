@@ -1,0 +1,28 @@
+{
+  "slug": "klaviyo",
+  "name": "Klaviyo",
+  "tagline": "Marketing automation platform built for e-commerce",
+  "description": "Klaviyo is a powerful email and SMS marketing platform purpose-built for e-commerce brands. Known for its deep Shopify integration, advanced segmentation, and revenue-focused analytics.",
+  "category": "email-marketing",
+  "categories": ["email-marketing"],
+  "website": "https://klaviyo.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 20,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["500 emails/mo", "150 SMS", "Email support", "Basic segmentation"] },
+      { "name": "Email", "price": 20, "period": "mo", "features": ["Scales with contacts", "Unlimited emails", "Email & chat support", "Advanced segmentation"] },
+      { "name": "Email + SMS", "price": 35, "period": "mo", "features": ["Everything in Email", "SMS & MMS", "Mobile push", "Dedicated support"] }
+    ]
+  },
+  "features": ["Email marketing", "SMS marketing", "Advanced segmentation", "Flows/automations", "Revenue attribution", "Predictive analytics"],
+  "pros": ["Best-in-class e-commerce features", "Deep Shopify integration", "Powerful segmentation", "Revenue attribution"],
+  "cons": ["Expensive at scale", "Overkill for non-e-commerce", "Learning curve for automations"],
+  "alternatives": ["mailchimp", "activecampaign", "omnisend", "drip", "brevo"],
+  "g2_score": 4.6,
+  "capterra_score": 4.6
+}

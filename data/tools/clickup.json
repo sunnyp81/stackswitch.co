@@ -1,0 +1,29 @@
+{
+  "slug": "clickup",
+  "name": "ClickUp",
+  "tagline": "One app to replace them all",
+  "description": "ClickUp is a highly customisable project management platform that aims to replace all other productivity tools. It offers tasks, docs, goals, whiteboards, time tracking, and more in a single workspace.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://clickup.com",
+  "affiliate_url": "",
+  "founded": 2017,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 7,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free Forever", "price": 0, "period": "forever", "features": ["Unlimited tasks", "100MB storage", "2-factor auth", "Collaborative docs"] },
+      { "name": "Unlimited", "price": 7, "period": "user/mo", "features": ["Everything in Free", "Unlimited storage", "Integrations", "Dashboards"] },
+      { "name": "Business", "price": 12, "period": "user/mo", "features": ["Everything in Unlimited", "Advanced automation", "Time tracking", "Workload management"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Business", "White labelling", "MSA", "Enterprise API"] }
+    ]
+  },
+  "features": ["Tasks & subtasks", "Docs", "Goals", "Whiteboards", "Time tracking", "Dashboards", "Automation", "Sprint management"],
+  "pros": ["Feature-rich free plan", "Extremely customisable", "Affordable paid plans", "Constant improvements"],
+  "cons": ["Feature overload can be overwhelming", "Occasional performance issues", "Mobile app lags behind desktop"],
+  "alternatives": ["notion", "asana", "monday", "linear", "basecamp"],
+  "g2_score": 4.7,
+  "capterra_score": 4.6
+}

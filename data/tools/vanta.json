@@ -1,0 +1,28 @@
+{
+  "slug": "vanta",
+  "name": "Vanta",
+  "tagline": "Automated security and compliance platform",
+  "description": "Vanta automates SOC 2, ISO 27001, HIPAA, GDPR, and other compliance frameworks, continuously monitoring your infrastructure and helping you pass audits faster. Popular with SaaS companies needing enterprise compliance.",
+  "category": "compliance",
+  "categories": ["compliance"],
+  "website": "https://vanta.com",
+  "affiliate_url": "",
+  "founded": 2018,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 7500,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 7500, "period": "yr", "features": ["SOC 2 Type I", "Continuous monitoring", "Security training", "Vendor management"] },
+      { "name": "Growth", "price": 0, "period": "contact", "features": ["Multiple frameworks", "Custom controls", "Advanced integrations", "Audit support"] },
+      { "name": "Scale", "price": 0, "period": "contact", "features": ["Unlimited frameworks", "Custom policies", "Dedicated CSM", "API access"] }
+    ]
+  },
+  "features": ["SOC 2 automation", "ISO 27001", "HIPAA compliance", "Continuous monitoring", "Vendor risk management", "Security training", "Audit prep"],
+  "pros": ["Fastest path to SOC 2", "Extensive integrations", "Continuous monitoring", "Strong enterprise adoption"],
+  "cons": ["Expensive", "Pricing lacks transparency", "Can have false positives in monitoring"],
+  "alternatives": ["drata", "secureframe", "sprinto", "anecdotes", "scytale"],
+  "g2_score": 4.6,
+  "capterra_score": 4.6
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "monday",
+  "name": "monday.com",
+  "tagline": "Work OS that powers teams to run processes and workflows",
+  "description": "monday.com is a flexible work operating system that lets teams build custom workflows, manage projects, and track everything in one place. Popular with operations, marketing, and cross-functional teams.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://monday.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 9,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Up to 2 seats", "3 boards", "Unlimited docs", "200+ templates"] },
+      { "name": "Basic", "price": 9, "period": "seat/mo", "features": ["Everything in Free", "Unlimited items", "5GB storage", "Prioritised support"] },
+      { "name": "Standard", "price": 12, "period": "seat/mo", "features": ["Everything in Basic", "Timeline & Gantt", "Automation (250/mo)", "Integrations (250/mo)"] },
+      { "name": "Pro", "price": 19, "period": "seat/mo", "features": ["Everything in Standard", "Private boards", "Time tracking", "Formula columns"] }
+    ]
+  },
+  "features": ["Custom workflows", "Automations", "Integrations", "Timeline view", "Dashboards", "Forms", "Time tracking"],
+  "pros": ["Very visual and intuitive", "Highly customisable", "Strong automation", "Great dashboards"],
+  "cons": ["Minimum 3 seats on paid plans", "Automations limited on lower tiers", "Can get expensive for large teams"],
+  "alternatives": ["clickup", "asana", "notion", "smartsheet", "wrike"],
+  "g2_score": 4.7,
+  "capterra_score": 4.6
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "pipedrive",
+  "name": "Pipedrive",
+  "tagline": "Sales CRM built by salespeople, for salespeople",
+  "description": "Pipedrive is a sales-focused CRM designed to give sales teams clear visibility over their pipeline. Known for its intuitive drag-and-drop interface, activity-based selling methodology, and strong automation features.",
+  "category": "crm",
+  "categories": ["crm"],
+  "website": "https://pipedrive.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 14,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Essential", "price": 14, "period": "user/mo", "features": ["Pipeline management", "Contact management", "Deal tracking", "Email sync"] },
+      { "name": "Advanced", "price": 29, "period": "user/mo", "features": ["Everything in Essential", "Email sequences", "Meeting scheduler", "Live chat"] },
+      { "name": "Professional", "price": 49, "period": "user/mo", "features": ["Everything in Advanced", "AI sales assistant", "Revenue forecasting", "Custom reporting"] },
+      { "name": "Power", "price": 64, "period": "user/mo", "features": ["Everything in Professional", "Project planning", "Phone support", "Unlimited automations"] }
+    ]
+  },
+  "features": ["Visual pipeline", "Email sync", "Activity reminders", "Sales automation", "Revenue forecasting", "AI sales assistant"],
+  "pros": ["Very intuitive UI", "Affordable entry price", "Strong mobile app", "Good automation at mid tiers"],
+  "cons": ["Limited marketing features", "No free plan", "Reporting less advanced than Salesforce"],
+  "alternatives": ["hubspot", "salesforce", "close", "zoho-crm", "copper"],
+  "g2_score": 4.3,
+  "capterra_score": 4.5
+}

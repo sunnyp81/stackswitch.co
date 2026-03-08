@@ -1,0 +1,29 @@
+{
+  "slug": "linear",
+  "name": "Linear",
+  "tagline": "Issue tracking built for modern software teams",
+  "description": "Linear is a fast, opinionated project management tool built specifically for software development teams. Known for its keyboard-first UX, speed, and tight GitHub integration.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://linear.app",
+  "affiliate_url": "",
+  "founded": 2019,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 8,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Up to 250 issues", "Unlimited members", "Cycles", "Projects"] },
+      { "name": "Standard", "price": 8, "period": "user/mo", "features": ["Unlimited issues", "Unlimited integrations", "Unlimited file uploads", "Priority support"] },
+      { "name": "Plus", "price": 14, "period": "user/mo", "features": ["Everything in Standard", "Admin roles", "SLA", "Customer entity"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["SSO/SAML", "Audit log", "Dedicated support", "Custom contracts"] }
+    ]
+  },
+  "features": ["Issue tracking", "Cycles (sprints)", "Projects", "Roadmaps", "GitHub/GitLab sync", "Triage", "API"],
+  "pros": ["Blazing fast", "Beautiful UI", "Keyboard shortcuts", "Excellent GitHub integration"],
+  "cons": ["Less flexible than ClickUp/Notion", "No built-in docs", "Free plan limited to 250 issues"],
+  "alternatives": ["asana", "jira", "clickup", "height", "shortcut"],
+  "g2_score": 4.7,
+  "capterra_score": 4.7
+}

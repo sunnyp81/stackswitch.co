@@ -1,0 +1,29 @@
+{
+  "slug": "asana",
+  "name": "Asana",
+  "tagline": "Work management platform for teams",
+  "description": "Asana is a work management tool that helps teams organise, track, and manage their work. Known for its clean interface, powerful workflow builder, and strong enterprise features.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://asana.com",
+  "affiliate_url": "",
+  "founded": 2008,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 10.99,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Personal", "price": 0, "period": "forever", "features": ["Up to 10 users", "Unlimited tasks", "Basic workflows", "Integrations"] },
+      { "name": "Starter", "price": 10.99, "period": "user/mo", "features": ["Everything in Personal", "Timeline view", "Workflow builder", "Unlimited dashboards"] },
+      { "name": "Advanced", "price": 24.99, "period": "user/mo", "features": ["Everything in Starter", "Portfolio management", "Goals", "Advanced reporting"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Advanced", "SAML SSO", "Custom branding", "Data export"] }
+    ]
+  },
+  "features": ["Task management", "Timeline/Gantt", "Workflow automation", "Portfolio views", "Goals tracking", "Reporting"],
+  "pros": ["Clean, intuitive interface", "Strong automation", "Good integrations", "Excellent enterprise features"],
+  "cons": ["Free plan limited to 10 users", "Expensive at scale", "No built-in time tracking", "No native chat"],
+  "alternatives": ["clickup", "monday", "notion", "linear", "trello"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

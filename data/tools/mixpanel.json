@@ -1,0 +1,28 @@
+{
+  "slug": "mixpanel",
+  "name": "Mixpanel",
+  "tagline": "Product analytics platform",
+  "description": "Mixpanel is a powerful product analytics platform that helps teams understand user behaviour through event-based tracking. Used by product managers and growth teams to measure retention, funnels, and feature adoption.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://mixpanel.com",
+  "affiliate_url": "",
+  "founded": 2009,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 28,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Starter)", "price": 0, "period": "forever", "features": ["1M tracked events/mo", "90-day data history", "Core reports", "Unlimited seats"] },
+      { "name": "Growth", "price": 28, "period": "mo", "features": ["5M+ tracked events", "Unlimited data history", "Group analytics", "Data views"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Custom data volume", "SSO", "Dedicated support", "Advanced access controls"] }
+    ]
+  },
+  "features": ["Event tracking", "Funnel analysis", "Retention reports", "Cohort analysis", "A/B testing", "User profiles", "Custom dashboards"],
+  "pros": ["Powerful event-based analytics", "Generous free plan", "Strong funnel and retention reports", "Easy SDK setup"],
+  "cons": ["Can be complex to set up correctly", "Expensive at scale", "Less suited for marketing analytics"],
+  "alternatives": ["amplitude", "heap", "posthog", "june", "google-analytics"],
+  "g2_score": 4.6,
+  "capterra_score": 4.5
+}

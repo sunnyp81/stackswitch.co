@@ -1,0 +1,119 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllTools, getToolBySlug, formatPrice, CATEGORIES, type Tool } from '../../utils/tools';
+
+export async function getStaticPaths() {
+  const tools = await getAllTools();
+  return tools.map((tool) => ({ params: { tool: tool.slug } }));
+}
+
+const { tool: slug } = Astro.params;
+const tool = await getToolBySlug(slug);
+if (!tool) return Astro.redirect('/404');
+
+const altTools: Tool[] = (
+  await Promise.all(tool.alternatives.slice(0, 3).map((s) => getToolBySlug(s)))
+).filter(Boolean) as Tool[];
+---
+
+<Base
+  title={`${tool.name} Review ${new Date().getFullYear()}: Pricing, Features & Alternatives`}
+  description={`${tool.name} review: ${tool.tagline}. Pricing starts at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo. ${tool.pricing.has_free_plan ? 'Free plan available.' : 'No free plan.'} See alternatives.`}
+>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <a href={`/category/${tool.category}`} class="hover:text-gray-900">{CATEGORIES[tool.category]}</a>
+      <span class="mx-2">/</span>
+      <span>{tool.name}</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-2">{tool.name}</h1>
+    <p class="text-xl text-gray-600 mb-6">{tool.tagline}</p>
+
+    <!-- Quick stats -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+      <div class="bg-gray-50 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-indigo-600">
+          {tool.pricing.has_free_plan ? 'Free' : formatPrice(tool.pricing.starting_price, tool.pricing.currency)}
+        </div>
+        <div class="text-xs text-gray-500 mt-1">Starting price</div>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-indigo-600">{tool.g2_score}/5</div>
+        <div class="text-xs text-gray-500 mt-1">G2 rating</div>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-indigo-600">{tool.pricing.tiers.length}</div>
+        <div class="text-xs text-gray-500 mt-1">Pricing plans</div>
+      </div>
+      <div class="bg-gray-50 rounded-xl p-4 text-center">
+        <div class="text-2xl font-bold text-indigo-600">{tool.founded}</div>
+        <div class="text-xs text-gray-500 mt-1">Founded</div>
+      </div>
+    </div>
+
+    <p class="text-gray-700 leading-relaxed mb-8">{tool.description}</p>
+
+    <!-- Key features -->
+    <h2 class="text-xl font-bold mb-3">Key features</h2>
+    <div class="flex flex-wrap gap-2 mb-8">
+      {tool.features.map((feature) => (
+        <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1.5 rounded-full">{feature}</span>
+      ))}
+    </div>
+
+    <!-- Pros/cons -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div>
+        <h3 class="font-semibold text-green-700 mb-3">Pros</h3>
+        <ul class="space-y-2">
+          {tool.pros.map((pro) => <li class="text-sm flex gap-2 text-gray-700"><span class="text-green-500">✓</span>{pro}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-red-700 mb-3">Cons</h3>
+        <ul class="space-y-2">
+          {tool.cons.map((con) => <li class="text-sm flex gap-2 text-gray-700"><span class="text-red-400">✗</span>{con}</li>)}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Action links -->
+    <div class="flex flex-wrap gap-4 mb-12">
+      <a href={`/pricing/${tool.slug}`} class="bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">
+        See {tool.name} pricing →
+      </a>
+      <a href={`/alternatives/${tool.slug}`} class="border border-gray-300 text-gray-700 px-5 py-2.5 rounded-lg text-sm font-medium hover:border-gray-500 transition-colors">
+        See alternatives →
+      </a>
+    </div>
+
+    <!-- Top alternatives preview -->
+    {altTools.length > 0 && (
+      <div>
+        <h2 class="text-xl font-bold mb-4">Top {tool.name} alternatives</h2>
+        <div class="space-y-3 mb-4">
+          {altTools.map((alt) => (
+            <div class="border border-gray-200 rounded-xl p-4 flex items-center justify-between gap-4">
+              <div>
+                <span class="font-semibold">{alt.name}</span>
+                <span class="text-gray-500 text-sm ml-2">{alt.tagline}</span>
+              </div>
+              <div class="flex items-center gap-4 flex-shrink-0 text-sm">
+                <span class="font-medium">{alt.pricing.has_free_plan ? 'Free' : formatPrice(alt.pricing.starting_price, alt.pricing.currency)}</span>
+                <a href={`/compare/${tool.slug}-vs-${alt.slug}`} class="text-indigo-600 hover:underline">Compare →</a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <a href={`/alternatives/${tool.slug}`} class="text-indigo-600 text-sm hover:underline">
+          See all {tool.name} alternatives →
+        </a>
+      </div>
+    )}
+
+  </div>
+</Base>

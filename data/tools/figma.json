@@ -1,0 +1,29 @@
+{
+  "slug": "figma",
+  "name": "Figma",
+  "tagline": "Collaborative interface design tool",
+  "description": "Figma is the leading collaborative design tool for building meaningful products. It allows teams to design, prototype, and hand off in one platform, with real-time collaboration built in from the start.",
+  "category": "design",
+  "categories": ["design"],
+  "website": "https://figma.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 12,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Starter)", "price": 0, "period": "forever", "features": ["3 Figma files", "3 FigJam files", "Unlimited collaborators", "Plugins & widgets"] },
+      { "name": "Professional", "price": 12, "period": "editor/mo", "features": ["Unlimited files", "Unlimited version history", "Advanced prototyping", "Team libraries"] },
+      { "name": "Organisation", "price": 45, "period": "editor/mo", "features": ["Everything in Professional", "Organisation-wide libraries", "SSO", "Advanced admin"] },
+      { "name": "Enterprise", "price": 75, "period": "editor/mo", "features": ["Everything in Organisation", "Advanced security controls", "Dedicated workspace", "Priority support"] }
+    ]
+  },
+  "features": ["Vector editing", "Prototyping", "Dev mode", "Design systems", "FigJam whiteboard", "Plugins", "Auto Layout", "Variables"],
+  "pros": ["Industry standard", "Real-time collaboration", "Massive plugin ecosystem", "Excellent dev handoff"],
+  "cons": ["Expensive for large teams", "Performance with large files", "Adobe acquisition uncertainty"],
+  "alternatives": ["sketch", "adobe-xd", "penpot", "framer", "canva"],
+  "g2_score": 4.7,
+  "capterra_score": 4.8
+}

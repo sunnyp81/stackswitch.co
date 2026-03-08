@@ -1,0 +1,28 @@
+{
+  "slug": "intercom",
+  "name": "Intercom",
+  "tagline": "Customer service platform powered by AI",
+  "description": "Intercom is an AI-first customer service platform combining live chat, help desk, and proactive support. Used by thousands of SaaS companies to handle support, onboarding, and customer engagement.",
+  "category": "customer-support",
+  "categories": ["customer-support", "communication"],
+  "website": "https://intercom.com",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 39,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Essential", "price": 39, "period": "seat/mo", "features": ["Shared inbox", "Basic automation", "Messenger", "Help centre"] },
+      { "name": "Advanced", "price": 99, "period": "seat/mo", "features": ["Everything in Essential", "AI Agent (Fin)", "Workflows", "Multiple inboxes"] },
+      { "name": "Expert", "price": 139, "period": "seat/mo", "features": ["Everything in Advanced", "Workload management", "CSAT", "SSO"] }
+    ]
+  },
+  "features": ["Live chat", "AI chatbot (Fin)", "Help centre", "Ticketing", "Proactive messages", "Product tours", "Surveys"],
+  "pros": ["Best-in-class live chat", "Powerful AI agent", "Great onboarding tools", "Strong integrations"],
+  "cons": ["Very expensive", "Pricing adds up with usage", "Overkill for small teams"],
+  "alternatives": ["zendesk", "freshdesk", "crisp", "help-scout", "drift"],
+  "g2_score": 4.5,
+  "capterra_score": 4.5
+}

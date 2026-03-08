@@ -1,0 +1,29 @@
+{
+  "slug": "slack",
+  "name": "Slack",
+  "tagline": "Business communication platform",
+  "description": "Slack is the leading team communication platform, organising conversations into channels. It integrates with hundreds of tools and is widely used by startups and enterprises for real-time collaboration.",
+  "category": "communication",
+  "categories": ["communication"],
+  "website": "https://slack.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 7.25,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["90-day message history", "10 integrations", "1:1 huddles", "1:1 messaging"] },
+      { "name": "Pro", "price": 7.25, "period": "user/mo", "features": ["Everything in Free", "Unlimited message history", "Unlimited integrations", "Group huddles"] },
+      { "name": "Business+", "price": 12.50, "period": "user/mo", "features": ["Everything in Pro", "SAML SSO", "99.99% uptime SLA", "Export for all messages"] },
+      { "name": "Enterprise Grid", "price": 0, "period": "contact", "features": ["Multiple connected workspaces", "Enterprise mobility management", "DLP", "Custom retention"] }
+    ]
+  },
+  "features": ["Channels", "Direct messaging", "Huddles (voice/video)", "Workflow builder", "Integrations", "Search", "File sharing"],
+  "pros": ["Industry standard for teams", "Huge integration library", "Great search", "Easy to set up"],
+  "cons": ["Free plan limits message history", "Can become noisy", "Video calls less featured than Teams/Zoom"],
+  "alternatives": ["microsoft-teams", "discord", "google-chat", "lark", "twist"],
+  "g2_score": 4.5,
+  "capterra_score": 4.7
+}

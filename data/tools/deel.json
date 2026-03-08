@@ -1,0 +1,28 @@
+{
+  "slug": "deel",
+  "name": "Deel",
+  "tagline": "Global payroll and compliance for remote teams",
+  "description": "Deel is a global HR platform that handles payroll, compliance, and contractor management across 150+ countries. It lets companies hire anyone, anywhere without setting up local entities.",
+  "category": "hr",
+  "categories": ["hr"],
+  "website": "https://deel.com",
+  "affiliate_url": "",
+  "founded": 2019,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 49,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Contractors", "price": 49, "period": "contractor/mo", "features": ["Global contractor management", "Compliant contracts", "Instant payments", "Tax forms"] },
+      { "name": "EOR", "price": 599, "period": "employee/mo", "features": ["Employer of Record", "Full employment benefits", "Local compliance", "Dedicated support"] },
+      { "name": "Payroll", "price": 0, "period": "contact", "features": ["Global payroll", "Integrations", "Reporting", "Dedicated manager"] }
+    ]
+  },
+  "features": ["Global payroll", "Employer of Record", "Contractor management", "Compliance", "Benefits administration", "Equipment provisioning"],
+  "pros": ["Covers 150+ countries", "Streamlined onboarding", "Strong compliance features", "Fast payments"],
+  "cons": ["EOR pricing is premium", "Can be complex for simple use cases", "Support quality varies by region"],
+  "alternatives": ["rippling", "remote", "papaya-global", "oyster", "gusto"],
+  "g2_score": 4.8,
+  "capterra_score": 4.7
+}

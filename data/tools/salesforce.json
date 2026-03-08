@@ -1,0 +1,29 @@
+{
+  "slug": "salesforce",
+  "name": "Salesforce",
+  "tagline": "The world's #1 CRM platform",
+  "description": "Salesforce is the leading enterprise CRM platform, offering a comprehensive suite of tools for sales, service, marketing, and analytics. Known for its deep customisation, extensive AppExchange marketplace, and powerful automation.",
+  "category": "crm",
+  "categories": ["crm", "customer-support", "analytics"],
+  "website": "https://salesforce.com",
+  "affiliate_url": "",
+  "founded": 1999,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 25,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter Suite", "price": 25, "period": "user/mo", "features": ["CRM", "Email integration", "Lead management", "Opportunity tracking"] },
+      { "name": "Pro Suite", "price": 100, "period": "user/mo", "features": ["Everything in Starter", "Pipeline management", "Forecasting", "Quoting"] },
+      { "name": "Enterprise", "price": 165, "period": "user/mo", "features": ["Everything in Pro", "Workflow automation", "Advanced reporting", "API access"] },
+      { "name": "Unlimited", "price": 330, "period": "user/mo", "features": ["Everything in Enterprise", "Unlimited customisation", "24/7 support", "AI insights"] }
+    ]
+  },
+  "features": ["Lead management", "Opportunity tracking", "Workflow automation", "AppExchange marketplace", "AI insights", "Custom objects", "Advanced reporting"],
+  "pros": ["Most powerful CRM available", "Massive ecosystem", "Highly customisable", "Scales to enterprise"],
+  "cons": ["Very expensive", "Steep learning curve", "Requires dedicated admin", "Implementation costs are high"],
+  "alternatives": ["hubspot", "pipedrive", "zoho-crm", "microsoft-dynamics", "close"],
+  "g2_score": 4.3,
+  "capterra_score": 4.4
+}

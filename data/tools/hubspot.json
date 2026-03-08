@@ -1,0 +1,29 @@
+{
+  "slug": "hubspot",
+  "name": "HubSpot",
+  "tagline": "All-in-one CRM, marketing, and sales platform",
+  "description": "HubSpot is a cloud-based CRM platform that helps businesses grow by aligning sales, marketing, and customer service teams. It offers a free CRM with optional paid hubs for Marketing, Sales, Service, and Operations.",
+  "category": "crm",
+  "categories": ["crm", "email-marketing", "customer-support"],
+  "website": "https://hubspot.com",
+  "affiliate_url": "",
+  "founded": 2006,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Contact management", "Deal pipeline", "Live chat", "Email marketing (2,000/mo)"] },
+      { "name": "Starter", "price": 15, "period": "user/mo", "features": ["Everything in Free", "Email sequences", "Meeting scheduling", "1,000 contacts"] },
+      { "name": "Professional", "price": 800, "period": "mo", "features": ["Everything in Starter", "Marketing automation", "A/B testing", "Custom reporting"] },
+      { "name": "Enterprise", "price": 3600, "period": "mo", "features": ["Everything in Professional", "Custom objects", "Predictive lead scoring", "Multi-touch revenue attribution"] }
+    ]
+  },
+  "features": ["CRM", "Email marketing", "Landing pages", "Live chat", "Sales automation", "Reporting dashboard", "Meeting scheduling"],
+  "pros": ["Generous free plan", "All-in-one platform", "Easy to use", "Strong integrations"],
+  "cons": ["Gets expensive fast", "Contact-based pricing adds up", "Some features gated behind expensive tiers"],
+  "alternatives": ["salesforce", "pipedrive", "zoho-crm", "close", "activecampaign"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

@@ -1,0 +1,29 @@
+{
+  "slug": "mailchimp",
+  "name": "Mailchimp",
+  "tagline": "Email marketing and automation platform",
+  "description": "Mailchimp is one of the most widely used email marketing platforms, offering email campaigns, automations, landing pages, and basic CRM functionality. Popular with small businesses and e-commerce brands.",
+  "category": "email-marketing",
+  "categories": ["email-marketing"],
+  "website": "https://mailchimp.com",
+  "affiliate_url": "",
+  "founded": 2001,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 13,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["500 contacts", "1,000 emails/mo", "Basic templates", "Marketing CRM"] },
+      { "name": "Essentials", "price": 13, "period": "mo", "features": ["Everything in Free", "5,000 emails/mo", "A/B testing", "Custom branding"] },
+      { "name": "Standard", "price": 20, "period": "mo", "features": ["Everything in Essentials", "Automation series", "Retargeting ads", "Send time optimisation"] },
+      { "name": "Premium", "price": 350, "period": "mo", "features": ["Everything in Standard", "Advanced segmentation", "Multivariate testing", "Phone support"] }
+    ]
+  },
+  "features": ["Email campaigns", "Automations", "Landing pages", "Audience segmentation", "A/B testing", "Analytics", "E-commerce integrations"],
+  "pros": ["Easy to use", "Generous free plan", "Good template library", "Strong e-commerce integrations"],
+  "cons": ["Pricing jumps steeply", "Automations less powerful than competitors", "Contact-based pricing gets expensive"],
+  "alternatives": ["klaviyo", "activecampaign", "convertkit", "beehiiv", "brevo"],
+  "g2_score": 4.3,
+  "capterra_score": 4.5
+}

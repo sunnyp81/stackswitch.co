@@ -1,0 +1,111 @@
+---
+import Base from '../layouts/Base.astro';
+import { getAllTools, formatPrice, CATEGORIES } from '../utils/tools';
+
+const tools = await getAllTools();
+
+// Group by category
+const byCategory: Record<string, typeof tools> = {};
+for (const tool of tools) {
+  if (!byCategory[tool.category]) byCategory[tool.category] = [];
+  byCategory[tool.category].push(tool);
+}
+
+// Featured tools
+const featured = tools
+  .filter((t) => ['hubspot', 'salesforce', 'deel', 'vanta', 'notion', 'figma'].includes(t.slug))
+  .slice(0, 6);
+---
+
+<Base
+  title="StackSwitch — SaaS Alternatives, Pricing & Comparisons"
+  description="Find the best alternative to any SaaS tool. Compare pricing, features, and user ratings for 100+ software tools."
+>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-b from-indigo-50 to-white border-b border-gray-100 py-16 px-4">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+        Find the right software.<br />
+        <span class="text-indigo-600">Switch with confidence.</span>
+      </h1>
+      <p class="text-lg text-gray-600 mb-8">
+        Compare alternatives, pricing, and features for 100+ SaaS tools. No fluff — just the data you need to make the call.
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        {Object.entries(CATEGORIES).slice(0, 6).map(([slug, name]) => (
+          <a href={`/category/${slug}`} class="bg-white border border-gray-200 px-4 py-2 rounded-full text-sm font-medium hover:border-indigo-300 hover:text-indigo-600 transition-colors shadow-sm">
+            {name}
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular tools -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold mb-2">Popular tools</h2>
+    <p class="text-gray-500 mb-8">Most-searched SaaS alternatives this month</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {featured.map((tool) => (
+        <div class="border border-gray-200 rounded-xl p-5 hover:border-indigo-200 transition-colors group">
+          <div class="flex justify-between items-start mb-2">
+            <h3 class="font-bold text-lg">{tool.name}</h3>
+            <span class="text-sm text-yellow-500 font-medium">★ {tool.g2_score}</span>
+          </div>
+          <p class="text-gray-500 text-sm mb-4">{tool.tagline}</p>
+          <div class="text-sm text-gray-600 mb-4">
+            From <span class="font-semibold text-gray-900">{tool.pricing.has_free_plan ? 'Free' : formatPrice(tool.pricing.starting_price, tool.pricing.currency)}</span>
+            {tool.pricing.has_free_plan && tool.pricing.starting_price > 0 && (
+              <span class="text-gray-400"> · paid from {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}</span>
+            )}
+          </div>
+          <div class="flex gap-4 text-sm">
+            <a href={`/alternatives/${tool.slug}`} class="text-indigo-600 font-medium hover:underline">
+              Alternatives →
+            </a>
+            <a href={`/pricing/${tool.slug}`} class="text-gray-500 hover:text-gray-900">Pricing</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- By category -->
+  <section class="bg-gray-50 border-t border-gray-100 py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl font-bold mb-8">Browse by category</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {Object.entries(byCategory).map(([cat, catTools]) => (
+          <div class="bg-white border border-gray-200 rounded-xl p-5">
+            <div class="flex justify-between items-center mb-3">
+              <h3 class="font-semibold">{CATEGORIES[cat]}</h3>
+              <span class="text-xs text-gray-400">{catTools.length} tools</span>
+            </div>
+            <ul class="space-y-2 mb-4">
+              {catTools.slice(0, 3).map((tool) => (
+                <li class="flex justify-between items-center text-sm">
+                  <a href={`/tools/${tool.slug}`} class="text-gray-700 hover:text-indigo-600">{tool.name}</a>
+                  <a href={`/alternatives/${tool.slug}`} class="text-xs text-indigo-500 hover:underline">alts →</a>
+                </li>
+              ))}
+            </ul>
+            <a href={`/category/${cat}`} class="text-sm text-indigo-600 font-medium hover:underline">
+              See all {CATEGORIES[cat]} tools →
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="max-w-4xl mx-auto px-4 py-14 text-center">
+    <h2 class="text-2xl font-bold mb-3">Independent. No vendor bias.</h2>
+    <p class="text-gray-600 max-w-xl mx-auto">
+      StackSwitch is built for buyers, not sellers. We compare SaaS tools based on real pricing and user ratings — not who pays us the most.
+    </p>
+  </section>
+
+</Base>
