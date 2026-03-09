@@ -1,0 +1,28 @@
+{
+  "slug": "bamboohr",
+  "name": "BambooHR",
+  "tagline": "HR software for small and medium businesses",
+  "description": "BambooHR is a cloud-based HR platform designed for small and mid-size businesses. It covers employee records, onboarding, performance management, time tracking, and payroll — with a clean interface that non-HR teams can actually use.",
+  "category": "hr",
+  "categories": ["hr"],
+  "website": "https://bamboohr.com",
+  "affiliate_url": "",
+  "founded": 2008,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Core", "price": 0, "period": "contact", "features": ["Employee records", "Onboarding", "Time-off management", "Basic reporting"] },
+      { "name": "Pro", "price": 0, "period": "contact", "features": ["Everything in Core", "Performance management", "eNPS surveys", "Advanced reporting"] },
+      { "name": "Payroll (add-on)", "price": 0, "period": "contact", "features": ["US payroll", "Tax filing", "Direct deposit", "Pay stubs"] }
+    ]
+  },
+  "features": ["Employee records", "Onboarding flows", "Performance reviews", "Time & attendance", "US payroll (add-on)", "Benefits tracking", "Reporting"],
+  "pros": ["Very easy to use", "Clean UI loved by employees", "Strong onboarding tools", "Good mobile app"],
+  "cons": ["Pricing not transparent", "Payroll costs extra", "US-focused", "Limited customisation vs Rippling"],
+  "alternatives": ["rippling", "deel", "gusto", "workday", "hibob"],
+  "g2_score": 4.4,
+  "capterra_score": 4.6
+}

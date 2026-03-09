@@ -1,0 +1,29 @@
+{
+  "slug": "freshbooks",
+  "name": "FreshBooks",
+  "tagline": "Invoicing and accounting for freelancers and small businesses",
+  "description": "FreshBooks is cloud accounting software built specifically for self-employed professionals and small service businesses. It makes invoicing, expense tracking, time tracking, and client management simple — without needing an accounting background.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://freshbooks.com",
+  "affiliate_url": "",
+  "founded": 2003,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 17,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Lite", "price": 17, "period": "mo", "features": ["5 billable clients", "Unlimited invoices", "Expense tracking", "Time tracking"] },
+      { "name": "Plus", "price": 30, "period": "mo", "features": ["50 billable clients", "Everything in Lite", "Proposals", "Double-entry accounting"] },
+      { "name": "Premium", "price": 55, "period": "mo", "features": ["Unlimited clients", "Everything in Plus", "Project profitability", "Business health reports"] },
+      { "name": "Select", "price": 0, "period": "contact", "features": ["Everything in Premium", "Dedicated account manager", "Custom onboarding", "Lower transaction fees"] }
+    ]
+  },
+  "features": ["Professional invoicing", "Expense tracking", "Time tracking", "Project management", "Proposals", "Payments", "Accounting reports"],
+  "pros": ["Best invoicing experience", "Great for freelancers", "Easy to use", "Strong mobile app"],
+  "cons": ["Client limits on lower plans", "Not ideal for product businesses", "Limited inventory features"],
+  "alternatives": ["quickbooks", "xero", "wave", "honeybook", "bonsai"],
+  "g2_score": 4.5,
+  "capterra_score": 4.5
+}

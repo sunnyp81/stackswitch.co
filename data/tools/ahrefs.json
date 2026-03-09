@@ -1,0 +1,29 @@
+{
+  "slug": "ahrefs",
+  "name": "Ahrefs",
+  "tagline": "SEO toolset for backlink analysis and keyword research",
+  "description": "Ahrefs is one of the most powerful SEO platforms available, offering backlink analysis, keyword research, site audits, content explorer, and rank tracking. Trusted by SEO professionals and agencies worldwide for its comprehensive data.",
+  "category": "seo-tools",
+  "categories": ["seo-tools"],
+  "website": "https://ahrefs.com",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 129,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Lite", "price": 129, "period": "mo", "features": ["5 projects", "6 months data", "1 user", "500 tracked keywords"] },
+      { "name": "Standard", "price": 249, "period": "mo", "features": ["20 projects", "2 years data", "1 user", "1,500 tracked keywords"] },
+      { "name": "Advanced", "price": 449, "period": "mo", "features": ["50 projects", "5 years data", "3 users", "5,000 tracked keywords"] },
+      { "name": "Enterprise", "price": 1499, "period": "mo", "features": ["Unlimited projects", "Unlimited data", "5+ users", "API access"] }
+    ]
+  },
+  "features": ["Backlink analysis", "Keyword Explorer", "Site Audit", "Rank Tracker", "Content Explorer", "Competitive analysis", "Web Explorer"],
+  "pros": ["Best backlink database", "Accurate keyword difficulty scores", "Excellent content gap analysis", "Regular data updates"],
+  "cons": ["Expensive — no trial", "Steep learning curve", "Some features need higher plans"],
+  "alternatives": ["semrush", "moz", "majestic", "serpstat", "ubersuggest"],
+  "g2_score": 4.6,
+  "capterra_score": 4.7
+}

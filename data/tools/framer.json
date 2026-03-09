@@ -1,0 +1,29 @@
+{
+  "slug": "framer",
+  "name": "Framer",
+  "tagline": "Design and publish websites without code",
+  "description": "Framer is a design and website publishing tool that blurs the line between design and production. You can design with component-level control and publish directly to the web — no developers needed. Popular for portfolio sites, landing pages, and startup websites.",
+  "category": "design",
+  "categories": ["design"],
+  "website": "https://framer.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["1 published site", "framer.site subdomain", "100 page views/mo", "Basic CMS"] },
+      { "name": "Mini", "price": 5, "period": "mo", "features": ["Custom domain", "1,000 page views/mo", "Basic analytics", "1 editor"] },
+      { "name": "Basic", "price": 15, "period": "mo", "features": ["Everything in Mini", "10,000 page views/mo", "Password protection", "3 editors"] },
+      { "name": "Pro", "price": 30, "period": "mo", "features": ["Everything in Basic", "200K page views/mo", "CMS collections", "Staging"] }
+    ]
+  },
+  "features": ["Visual site builder", "Component system", "CMS", "Animations & interactions", "SEO controls", "Built-in hosting", "Responsive design"],
+  "pros": ["Best design-to-web tool", "Stunning animations", "No code required", "Fast hosting"],
+  "cons": ["Page view limits on lower plans", "CMS less powerful than Webflow", "Learning curve for complex sites"],
+  "alternatives": ["webflow", "figma", "squarespace", "wix", "wordpress"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

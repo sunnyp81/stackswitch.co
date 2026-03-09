@@ -41,6 +41,12 @@ export const CATEGORIES: Record<string, string> = {
   communication: 'Communication',
   'customer-support': 'Customer Support',
   finance: 'Finance & Accounting',
+  scheduling: 'Scheduling',
+  forms: 'Forms & Surveys',
+  'e-signature': 'E-Signature',
+  'seo-tools': 'SEO Tools',
+  'social-media': 'Social Media',
+  'bi-analytics': 'Business Intelligence',
 };
 
 const toolFiles = import.meta.glob('/data/tools/*.json', { eager: true });

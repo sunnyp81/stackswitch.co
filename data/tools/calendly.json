@@ -1,0 +1,29 @@
+{
+  "slug": "calendly",
+  "name": "Calendly",
+  "tagline": "Scheduling automation for teams and individuals",
+  "description": "Calendly eliminates the back-and-forth of scheduling by letting people book time based on your availability. Used by sales teams, recruiters, and consultants to streamline meeting booking with automated reminders and integrations.",
+  "category": "scheduling",
+  "categories": ["scheduling"],
+  "website": "https://calendly.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 10,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["1 event type", "Unlimited meetings", "Zoom/Google Meet integration", "Basic reminders"] },
+      { "name": "Standard", "price": 10, "period": "user/mo", "features": ["Unlimited event types", "Group events", "Workflows", "Customisation"] },
+      { "name": "Teams", "price": 16, "period": "user/mo", "features": ["Everything in Standard", "Round robin routing", "Collective events", "Salesforce integration"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Teams", "SSO", "Admin controls", "Advanced security"] }
+    ]
+  },
+  "features": ["Booking pages", "Calendar sync", "Automated reminders", "Round-robin routing", "Group events", "Workflows", "CRM integrations"],
+  "pros": ["Industry standard for scheduling", "Very easy to use", "Good free plan", "Strong integrations"],
+  "cons": ["Advanced routing needs Teams plan", "Limited customisation on free", "Can feel impersonal for high-touch sales"],
+  "alternatives": ["cal-com", "acuity-scheduling", "savvycal", "chili-piper", "hubspot-meetings"],
+  "g2_score": 4.7,
+  "capterra_score": 4.7
+}

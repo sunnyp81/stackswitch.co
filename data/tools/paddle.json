@@ -1,0 +1,27 @@
+{
+  "slug": "paddle",
+  "name": "Paddle",
+  "tagline": "Payments infrastructure for SaaS — Merchant of Record",
+  "description": "Paddle acts as a Merchant of Record for SaaS companies, handling payments, global tax compliance, fraud protection, and subscriptions. This means Paddle — not you — takes responsibility for sales tax and VAT compliance worldwide.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://paddle.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 0, "period": "5% + 50¢ per transaction", "features": ["Payments", "Subscriptions", "Global tax compliance", "Checkout"] },
+      { "name": "Growth", "price": 0, "period": "contact (reduced rates)", "features": ["Everything in Starter", "Lower transaction fees", "Dedicated support", "Custom checkout"] }
+    ]
+  },
+  "features": ["Merchant of Record", "Global tax handling", "Subscriptions", "Checkout", "Dunning", "Fraud protection", "Revenue analytics"],
+  "pros": ["Handles all tax compliance globally", "No setup fees", "Great for international SaaS", "Reduces legal/accounting burden"],
+  "cons": ["Higher transaction fees than Stripe", "Less control than Stripe", "Not suited for non-SaaS businesses"],
+  "alternatives": ["stripe", "lemon-squeezy", "chargebee", "fastspring", "gumroad"],
+  "g2_score": 4.0,
+  "capterra_score": 4.3
+}

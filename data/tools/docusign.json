@@ -1,0 +1,29 @@
+{
+  "slug": "docusign",
+  "name": "DocuSign",
+  "tagline": "The world's leading e-signature platform",
+  "description": "DocuSign is the most widely used e-signature platform, trusted by hundreds of thousands of companies worldwide. Beyond e-signatures, it offers contract lifecycle management (CLM), identity verification, and notarisation.",
+  "category": "e-signature",
+  "categories": ["e-signature"],
+  "website": "https://docusign.com",
+  "affiliate_url": "",
+  "founded": 2003,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Personal", "price": 15, "period": "mo", "features": ["5 envelopes/mo", "Basic fields", "Mobile app", "Email support"] },
+      { "name": "Standard", "price": 45, "period": "user/mo", "features": ["Unlimited envelopes", "Shared templates", "Reminders & notifications", "Bulk send"] },
+      { "name": "Business Pro", "price": 65, "period": "user/mo", "features": ["Everything in Standard", "Signer attachments", "Advanced fields", "Payments"] },
+      { "name": "Enhanced Plans", "price": 0, "period": "contact", "features": ["Unlimited everything", "Custom branding", "API access", "SSO"] }
+    ]
+  },
+  "features": ["E-signatures", "Template library", "Bulk sending", "API & webhooks", "Identity verification", "Contract lifecycle management", "Audit trail"],
+  "pros": ["Most trusted e-signature brand", "Legally binding in 180+ countries", "Strong API", "Enterprise-grade security"],
+  "cons": ["Expensive compared to alternatives", "Personal plan limited to 5 docs/mo", "Can be complex to configure"],
+  "alternatives": ["pandadoc", "hellosign", "adobe-sign", "signwell", "signnow"],
+  "g2_score": 4.5,
+  "capterra_score": 4.7
+}

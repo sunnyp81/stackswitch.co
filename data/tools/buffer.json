@@ -1,0 +1,28 @@
+{
+  "slug": "buffer",
+  "name": "Buffer",
+  "tagline": "Simple social media scheduling for small teams",
+  "description": "Buffer is a straightforward social media scheduling tool focused on helping small businesses and creators publish consistently. Known for its clean interface, affordable pricing, and focus on doing scheduling well rather than trying to do everything.",
+  "category": "social-media",
+  "categories": ["social-media"],
+  "website": "https://buffer.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 6,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["3 social channels", "10 scheduled posts/channel", "Basic analytics", "1 user"] },
+      { "name": "Essentials", "price": 6, "period": "channel/mo", "features": ["1 user", "Unlimited posts", "Engagement inbox", "Analytics"] },
+      { "name": "Team", "price": 12, "period": "channel/mo", "features": ["Unlimited users", "Approval workflows", "Draft collaboration", "Custom access"] }
+    ]
+  },
+  "features": ["Post scheduling", "Analytics", "Engagement inbox", "Start page (link-in-bio)", "Collaboration", "AI assistant", "Calendar view"],
+  "pros": ["Very clean and easy to use", "Affordable per-channel pricing", "Good free plan", "Great for small teams"],
+  "cons": ["Less analytics depth than Sprout Social", "No social listening", "Limited reporting on free plan"],
+  "alternatives": ["hootsuite", "later", "sprout-social", "metricool", "publer"],
+  "g2_score": 4.3,
+  "capterra_score": 4.5
+}

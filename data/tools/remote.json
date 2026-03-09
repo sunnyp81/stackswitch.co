@@ -1,0 +1,28 @@
+{
+  "slug": "remote",
+  "name": "Remote",
+  "tagline": "Hire and pay remote employees globally",
+  "description": "Remote is a global HR platform that helps companies hire, manage, and pay employees and contractors worldwide. It offers Employer of Record services in 180+ countries, with transparent pricing and no hidden fees.",
+  "category": "hr",
+  "categories": ["hr"],
+  "website": "https://remote.com",
+  "affiliate_url": "",
+  "founded": 2019,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 29,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Contractor Management", "price": 29, "period": "contractor/mo", "features": ["Global contractor onboarding", "Compliant contracts", "Payment processing", "IP protection"] },
+      { "name": "Employer of Record", "price": 599, "period": "employee/mo", "features": ["Full employment in 180+ countries", "Benefits", "Payroll", "Compliance"] },
+      { "name": "HRIS", "price": 0, "period": "free for EOR customers", "features": ["Employee management", "Time off", "Expenses", "Integrations"] }
+    ]
+  },
+  "features": ["Employer of Record", "Contractor management", "Global payroll", "Benefits administration", "Equity management", "IP & invention rights"],
+  "pros": ["Transparent pricing", "180+ countries covered", "Free HRIS for EOR customers", "Strong IP protection"],
+  "cons": ["EOR pricing premium", "Slower to add new countries vs Deel", "Customer support response times vary"],
+  "alternatives": ["deel", "rippling", "oyster", "papaya-global", "velocity-global"],
+  "g2_score": 4.5,
+  "capterra_score": 4.7
+}

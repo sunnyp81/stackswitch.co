@@ -1,0 +1,29 @@
+{
+  "slug": "typeform",
+  "name": "Typeform",
+  "tagline": "Beautiful forms and surveys people love to fill in",
+  "description": "Typeform creates engaging, conversational forms and surveys with a one-question-at-a-time format. Widely used for lead generation, customer research, quizzes, and NPS surveys — with significantly higher completion rates than traditional forms.",
+  "category": "forms",
+  "categories": ["forms"],
+  "website": "https://typeform.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 25,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["3 typeforms", "10 responses/mo", "Basic logic jumps", "Templates"] },
+      { "name": "Basic", "price": 25, "period": "mo", "features": ["Unlimited typeforms", "100 responses/mo", "Custom domain", "Remove branding"] },
+      { "name": "Plus", "price": 50, "period": "mo", "features": ["Everything in Basic", "1,000 responses/mo", "3 users", "Advanced logic"] },
+      { "name": "Business", "price": 83, "period": "mo", "features": ["Everything in Plus", "10,000 responses/mo", "5 users", "Priority support"] }
+    ]
+  },
+  "features": ["Conversational forms", "Logic jumps", "File uploads", "Payment collection", "Quizzes", "NPS surveys", "Integrations (500+)"],
+  "pros": ["Highest form completion rates", "Beautiful design out of the box", "Strong logic capabilities", "Good integrations"],
+  "cons": ["Response limits on all paid plans", "Expensive for high-volume", "Overkill for simple forms"],
+  "alternatives": ["google-forms", "jotform", "tally", "paperform", "surveymonkey"],
+  "g2_score": 4.5,
+  "capterra_score": 4.7
+}

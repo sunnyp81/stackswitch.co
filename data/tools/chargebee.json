@@ -1,0 +1,28 @@
+{
+  "slug": "chargebee",
+  "name": "Chargebee",
+  "tagline": "Subscription billing and revenue management platform",
+  "description": "Chargebee is a subscription management and recurring billing platform used by SaaS companies. It handles complex billing scenarios — trials, upgrades, downgrades, proration, dunning — and integrates with multiple payment gateways.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://chargebee.com",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Launch)", "price": 0, "period": "up to $250K revenue", "features": ["Recurring billing", "Trials", "Coupons", "Customer portal"] },
+      { "name": "Rise", "price": 599, "period": "mo", "features": ["Everything in Launch", "Advanced billing", "Revenue recovery", "Priority support"] },
+      { "name": "Scale", "price": 1599, "period": "mo", "features": ["Everything in Rise", "Custom roles", "Advanced reporting", "Dedicated CSM"] }
+    ]
+  },
+  "features": ["Recurring billing", "Subscription management", "Revenue recognition", "Dunning management", "Customer portal", "Tax management", "Revenue analytics"],
+  "pros": ["Free until $250K ARR", "Handles complex billing logic", "Strong integrations", "Good revenue analytics"],
+  "cons": ["Expensive beyond free tier", "Complex initial setup", "Pricing scales with revenue"],
+  "alternatives": ["stripe", "paddle", "recurly", "zuora", "maxio"],
+  "g2_score": 4.4,
+  "capterra_score": 4.4
+}

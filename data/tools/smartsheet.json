@@ -1,0 +1,28 @@
+{
+  "slug": "smartsheet",
+  "name": "Smartsheet",
+  "tagline": "Enterprise work management platform built on a spreadsheet",
+  "description": "Smartsheet is a work management platform that combines the familiarity of spreadsheets with project management features like Gantt charts, automations, and dashboards. Popular with operations and PMO teams at mid-market and enterprise companies.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://smartsheet.com",
+  "affiliate_url": "",
+  "founded": 2005,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 9,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Pro", "price": 9, "period": "user/mo", "features": ["Unlimited sheets", "Gantt view", "Automations (250/mo)", "Forms"] },
+      { "name": "Business", "price": 19, "period": "user/mo", "features": ["Everything in Pro", "Unlimited automations", "Dashboards", "Resource management"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Business", "SSO", "Admin centre", "WorkApps"] }
+    ]
+  },
+  "features": ["Spreadsheet-style grid", "Gantt chart", "Automations", "Dashboards", "Resource management", "Forms", "Portfolio tracking"],
+  "pros": ["Familiar spreadsheet interface", "Powerful Gantt views", "Strong enterprise features", "Good for operations teams"],
+  "cons": ["Looks and feels dated", "No free plan", "Less intuitive than monday.com", "Expensive at scale"],
+  "alternatives": ["monday", "asana", "airtable", "clickup", "wrike"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

@@ -1,0 +1,28 @@
+{
+  "slug": "semrush",
+  "name": "Semrush",
+  "tagline": "All-in-one SEO, PPC, and content marketing platform",
+  "description": "Semrush is a comprehensive digital marketing platform covering SEO, PPC, social media, and content marketing. Known for its keyword research database, advertising intelligence, and competitive analysis tools — popular with agencies and in-house marketers.",
+  "category": "seo-tools",
+  "categories": ["seo-tools"],
+  "website": "https://semrush.com",
+  "affiliate_url": "",
+  "founded": 2008,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 139.95,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Pro", "price": 139.95, "period": "mo", "features": ["5 projects", "500 tracked keywords", "10,000 results/report", "SEO, PPC & social tools"] },
+      { "name": "Guru", "price": 249.95, "period": "mo", "features": ["15 projects", "1,500 tracked keywords", "Content Marketing toolkit", "Historical data"] },
+      { "name": "Business", "price": 499.95, "period": "mo", "features": ["40 projects", "5,000 tracked keywords", "API access", "PLA analytics"] }
+    ]
+  },
+  "features": ["Keyword research", "Site audit", "Backlink analysis", "Rank tracking", "Advertising research", "Social media toolkit", "Content marketing platform"],
+  "pros": ["Broadest feature set of any SEO tool", "Excellent PPC and ad intelligence", "Good content marketing tools", "Large keyword database"],
+  "cons": ["Expensive", "Can be overwhelming", "Some data less accurate than Ahrefs for backlinks"],
+  "alternatives": ["ahrefs", "moz", "sistrix", "serpstat", "mangools"],
+  "g2_score": 4.5,
+  "capterra_score": 4.7
+}

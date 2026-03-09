@@ -1,0 +1,27 @@
+{
+  "slug": "sketch",
+  "name": "Sketch",
+  "tagline": "Mac design tool for UI/UX designers",
+  "description": "Sketch is a macOS-only vector design tool that was the industry standard for UI/UX design before Figma. It pioneered symbols, shared libraries, and artboard-based workflows. Still popular with Mac-focused teams.",
+  "category": "design",
+  "categories": ["design"],
+  "website": "https://sketch.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 10,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Standard", "price": 10, "period": "editor/mo", "features": ["Unlimited documents", "Shared libraries", "Prototyping", "Developer handoff"] },
+      { "name": "Business", "price": 20, "period": "editor/mo", "features": ["Everything in Standard", "SSO", "Priority support", "Custom workspace"] }
+    ]
+  },
+  "features": ["Vector editing", "Symbols & libraries", "Prototyping", "Developer handoff", "Plugins", "Cloud collaboration"],
+  "pros": ["Native Mac performance", "Mature plugin ecosystem", "Affordable", "Clean, focused UI"],
+  "cons": ["Mac only — no Windows or Linux", "No real-time collaboration like Figma", "Losing market share to Figma"],
+  "alternatives": ["figma", "adobe-xd", "penpot", "framer", "lunacy"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

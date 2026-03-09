@@ -1,0 +1,29 @@
+{
+  "slug": "apollo",
+  "name": "Apollo.io",
+  "tagline": "Sales intelligence and engagement platform",
+  "description": "Apollo.io is a sales intelligence and engagement platform with a database of 275M+ contacts and 73M companies. Sales teams use it to find prospects, enrich CRM data, and run outbound sequences — all in one tool.",
+  "category": "crm",
+  "categories": ["crm"],
+  "website": "https://apollo.io",
+  "affiliate_url": "",
+  "founded": 2015,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 49,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["5 phone credits/mo", "Unlimited email credits", "Basic sequences", "Chrome extension"] },
+      { "name": "Basic", "price": 49, "period": "user/mo", "features": ["Unlimited email credits", "900 phone credits/yr", "Advanced filters", "Integrations"] },
+      { "name": "Professional", "price": 79, "period": "user/mo", "features": ["Everything in Basic", "Unlimited sequences", "A/B testing", "Call recording"] },
+      { "name": "Organisation", "price": 119, "period": "user/mo", "features": ["Everything in Professional", "Customised reports", "SSO", "Advanced API"] }
+    ]
+  },
+  "features": ["Contact database (275M+)", "Email sequences", "Dialer", "LinkedIn integration", "Lead scoring", "CRM enrichment", "Analytics"],
+  "pros": ["Huge contact database", "All-in-one prospecting + outreach", "Generous free plan", "Great value vs ZoomInfo"],
+  "cons": ["Data accuracy varies by region", "Can hit email deliverability issues if overused", "UI has many features to navigate"],
+  "alternatives": ["zoominfo", "lusha", "outreach", "salesloft", "instantly"],
+  "g2_score": 4.8,
+  "capterra_score": 4.6
+}

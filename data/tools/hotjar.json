@@ -1,0 +1,29 @@
+{
+  "slug": "hotjar",
+  "name": "Hotjar",
+  "tagline": "Heatmaps, session recordings, and feedback tools",
+  "description": "Hotjar is a behaviour analytics tool that helps teams understand how users interact with their website. Its heatmaps, session recordings, and on-site surveys are widely used by UX designers and conversion optimisers.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://hotjar.com",
+  "affiliate_url": "",
+  "founded": 2014,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 32,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Basic (Free)", "price": 0, "period": "forever", "features": ["35 daily sessions", "Heatmaps", "Recordings", "Basic surveys"] },
+      { "name": "Plus", "price": 32, "period": "mo", "features": ["100 daily sessions", "Events API", "Custom-built dashboards", "Filters"] },
+      { "name": "Business", "price": 80, "period": "mo", "features": ["500 daily sessions", "Identify API", "Segment filtering", "Integrations"] },
+      { "name": "Scale", "price": 171, "period": "mo", "features": ["500+ daily sessions", "Funnels", "Trends", "Console tracking"] }
+    ]
+  },
+  "features": ["Heatmaps", "Session recordings", "On-site surveys", "Feedback widgets", "Funnels", "Trends", "Integrations"],
+  "pros": ["Easy to install", "Great heatmap visualisations", "Good free plan", "User-friendly interface"],
+  "cons": ["Session limits on lower tiers", "Less powerful for event analytics", "Can slow down pages slightly"],
+  "alternatives": ["microsoft-clarity", "fullstory", "heap", "lucky-orange", "crazy-egg"],
+  "g2_score": 4.3,
+  "capterra_score": 4.7
+}

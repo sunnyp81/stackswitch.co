@@ -1,0 +1,29 @@
+{
+  "slug": "pandadoc",
+  "name": "PandaDoc",
+  "tagline": "Document automation and e-signature for sales teams",
+  "description": "PandaDoc combines e-signatures with document creation, proposals, quotes, and contract automation in one platform. Popular with sales teams for its drag-and-drop document builder, CRM integrations, and analytics on how prospects engage with documents.",
+  "category": "e-signature",
+  "categories": ["e-signature"],
+  "website": "https://pandadoc.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 19,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (eSign)", "price": 0, "period": "forever", "features": ["Unlimited documents", "Unlimited e-signatures", "Basic document editor", "Payment collection"] },
+      { "name": "Starter", "price": 19, "period": "user/mo", "features": ["Everything in Free", "Rich media documents", "Document analytics", "Custom branding"] },
+      { "name": "Business", "price": 49, "period": "user/mo", "features": ["Everything in Starter", "CRM integrations", "Approval workflows", "Bulk send"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Business", "Salesforce integration", "SSO", "Custom roles"] }
+    ]
+  },
+  "features": ["E-signatures", "Document builder", "Proposals & quotes", "CPQ", "CRM integrations", "Document analytics", "Approval workflows"],
+  "pros": ["Great document builder", "Strong sales team features", "Generous free e-sign plan", "Good CRM integrations"],
+  "cons": ["Advanced features need Business plan", "Template library could be larger", "Occasional editor bugs"],
+  "alternatives": ["docusign", "hellosign", "proposify", "better-proposals", "qwilr"],
+  "g2_score": 4.7,
+  "capterra_score": 4.5
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "basecamp",
+  "name": "Basecamp",
+  "tagline": "Simple project management and team communication",
+  "description": "Basecamp combines project management, team messaging, and file sharing in one opinionated tool. Unlike ClickUp or Asana, it focuses on simplicity with a flat per-company pricing model — popular with agencies and small teams.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://basecamp.com",
+  "affiliate_url": "",
+  "founded": 2004,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Basecamp", "price": 15, "period": "user/mo", "features": ["Unlimited projects", "Unlimited clients", "20 users included", "500GB storage"] },
+      { "name": "Basecamp Pro Unlimited", "price": 299, "period": "mo flat", "features": ["Unlimited users", "5TB storage", "Priority support", "Admin controls"] }
+    ]
+  },
+  "features": ["To-dos", "Message boards", "Group chat (Campfire)", "Schedules", "Docs & files", "Client access", "Automatic check-ins"],
+  "pros": ["Flat pricing at scale", "Opinionated but easy to use", "Great for agencies with clients", "Includes messaging + PM in one"],
+  "cons": ["No Gantt/timeline view", "Less customisable than ClickUp", "No time tracking built in", "Minimal reporting"],
+  "alternatives": ["clickup", "asana", "notion", "monday", "teamwork"],
+  "g2_score": 4.1,
+  "capterra_score": 4.3
+}

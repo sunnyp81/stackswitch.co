@@ -1,0 +1,29 @@
+{
+  "slug": "hootsuite",
+  "name": "Hootsuite",
+  "tagline": "Social media management platform for teams",
+  "description": "Hootsuite is one of the oldest and most widely used social media management platforms. It lets teams schedule posts, monitor conversations, manage multiple accounts, and measure performance across all major social networks from one dashboard.",
+  "category": "social-media",
+  "categories": ["social-media"],
+  "website": "https://hootsuite.com",
+  "affiliate_url": "",
+  "founded": 2008,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 99,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Professional", "price": 99, "period": "mo", "features": ["10 social accounts", "Unlimited scheduling", "Basic analytics", "1 user"] },
+      { "name": "Team", "price": 249, "period": "mo", "features": ["20 social accounts", "3 users", "Custom analytics", "Team assignments"] },
+      { "name": "Business", "price": 739, "period": "mo", "features": ["35 social accounts", "5 users", "Advanced analytics", "Social listening (add-on)"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Unlimited accounts", "Unlimited users", "Custom integrations", "Dedicated support"] }
+    ]
+  },
+  "features": ["Post scheduling", "Multi-network management", "Analytics & reporting", "Social listening", "Inbox management", "Team collaboration", "Ad management"],
+  "pros": ["Most established platform", "Supports all major networks", "Strong team features", "Extensive integrations"],
+  "cons": ["Very expensive", "UI feels dated", "Free plan removed", "Pricing increased significantly"],
+  "alternatives": ["buffer", "sprout-social", "later", "metricool", "sendible"],
+  "g2_score": 4.2,
+  "capterra_score": 4.4
+}

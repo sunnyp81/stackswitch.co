@@ -1,0 +1,28 @@
+{
+  "slug": "tableau",
+  "name": "Tableau",
+  "tagline": "Business intelligence and data visualisation platform",
+  "description": "Tableau is a leading BI and data visualisation platform by Salesforce. It enables business users and analysts to connect to data sources, build interactive dashboards, and share insights — without needing to write SQL.",
+  "category": "bi-analytics",
+  "categories": ["bi-analytics", "analytics"],
+  "website": "https://tableau.com",
+  "affiliate_url": "",
+  "founded": 2003,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Tableau Viewer", "price": 15, "period": "user/mo", "features": ["View & interact with dashboards", "Mobile access", "Data alerts", "Comment on views"] },
+      { "name": "Tableau Explorer", "price": 42, "period": "user/mo", "features": ["Everything in Viewer", "Build & edit views", "Web editing", "Data connections"] },
+      { "name": "Tableau Creator", "price": 75, "period": "user/mo", "features": ["Everything in Explorer", "Desktop app", "Prep Builder", "All data connectors"] }
+    ]
+  },
+  "features": ["Drag-and-drop dashboard builder", "100+ data connectors", "Interactive visualisations", "Maps", "Natural language queries", "Mobile dashboards", "Embedded analytics"],
+  "pros": ["Most powerful visualisations available", "Huge chart type library", "Active community", "Good Salesforce integration"],
+  "cons": ["Very expensive", "Desktop app required for full features", "Steep learning curve", "Slow performance with large datasets"],
+  "alternatives": ["power-bi", "looker", "metabase", "superset", "grafana"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}
