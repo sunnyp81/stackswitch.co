@@ -1,0 +1,28 @@
+{
+  "slug": "webex",
+  "name": "Webex",
+  "tagline": "Enterprise video conferencing and collaboration by Cisco",
+  "description": "Webex by Cisco is an enterprise-grade video conferencing and collaboration platform. Trusted by large organisations and governments for its security, reliability, and advanced meeting features including AI transcription and noise cancellation.",
+  "category": "communication",
+  "categories": ["communication"],
+  "website": "https://webex.com",
+  "affiliate_url": "",
+  "founded": 1995,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 14.50,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["40-min meetings", "100 participants", "Team messaging", "File sharing"] },
+      { "name": "Meet", "price": 14.50, "period": "user/mo", "features": ["24-hr meetings", "200 participants", "Cloud recording", "AI assistant"] },
+      { "name": "Suite", "price": 25, "period": "user/mo", "features": ["Everything in Meet", "Calling (PSTN)", "Events", "Advanced security"] }
+    ]
+  },
+  "features": ["Video meetings", "Team messaging", "Webinars", "Cloud calling", "AI transcription", "Noise removal", "End-to-end encryption"],
+  "pros": ["Enterprise-grade security", "Excellent noise cancellation", "Strong compliance features", "Good for regulated industries"],
+  "cons": ["Less intuitive than Zoom", "UI feels dated", "Overkill for small teams", "Higher cost"],
+  "alternatives": ["zoom", "microsoft-teams", "google-meet", "slack", "whereby"],
+  "g2_score": 4.2,
+  "capterra_score": 4.4
+}

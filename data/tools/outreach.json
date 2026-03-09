@@ -1,0 +1,28 @@
+{
+  "slug": "outreach",
+  "name": "Outreach",
+  "tagline": "Sales execution platform for enterprise teams",
+  "description": "Outreach is a leading sales execution platform used by enterprise sales teams. It combines sequences, dialler, deal intelligence, forecasting, and conversation intelligence — giving sales managers full visibility over their pipeline.",
+  "category": "sales-engagement",
+  "categories": ["sales-engagement", "crm"],
+  "website": "https://outreach.io",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Standard", "price": 0, "period": "contact", "features": ["Sequences", "Email & call tasks", "Basic reporting", "CRM sync"] },
+      { "name": "Professional", "price": 0, "period": "contact", "features": ["Everything in Standard", "Deal intelligence", "Forecasting", "Conversation intelligence"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Professional", "Custom workflows", "SSO", "Dedicated CSM"] }
+    ]
+  },
+  "features": ["Email & call sequences", "Dialler", "Deal management", "Sales forecasting", "Conversation intelligence", "Meeting intelligence", "Reporting"],
+  "pros": ["Best-in-class for enterprise sales", "Strong forecasting tools", "Excellent conversation intelligence", "Deep Salesforce integration"],
+  "cons": ["Very expensive", "Pricing not transparent", "Overkill for SMBs", "Long implementation time"],
+  "alternatives": ["salesloft", "apollo", "gong", "clari", "groove"],
+  "g2_score": 4.3,
+  "capterra_score": 4.4
+}

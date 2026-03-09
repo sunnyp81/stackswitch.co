@@ -1,0 +1,28 @@
+{
+  "slug": "looker",
+  "name": "Looker",
+  "tagline": "Business intelligence platform by Google Cloud",
+  "description": "Looker is a modern BI platform by Google Cloud that uses a proprietary modelling language (LookML) to create a semantic layer on top of your data warehouse. Popular with data teams who want governed, reusable metrics across the organisation.",
+  "category": "bi-analytics",
+  "categories": ["bi-analytics", "analytics"],
+  "website": "https://looker.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Standard", "price": 0, "period": "contact", "features": ["Core BI", "LookML modelling", "Dashboards", "Scheduled reports"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Standard", "Custom themes", "Embedding", "SSO"] },
+      { "name": "Elite", "price": 0, "period": "contact", "features": ["Everything in Enterprise", "Advanced actions", "Premier support", "SLA"] }
+    ]
+  },
+  "features": ["LookML semantic layer", "Data modelling", "Dashboards", "Scheduled reports", "Embedded analytics", "BigQuery integration", "API"],
+  "pros": ["Best semantic modelling layer", "Governed metrics", "Strong BigQuery/GCP integration", "Scales to enterprise"],
+  "cons": ["LookML has significant learning curve", "Expensive", "Requires dedicated data engineering", "Overkill for small teams"],
+  "alternatives": ["tableau", "power-bi", "metabase", "dbt-cloud", "thoughtspot"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

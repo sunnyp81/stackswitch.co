@@ -1,0 +1,29 @@
+{
+  "slug": "teachable",
+  "name": "Teachable",
+  "tagline": "Create and sell online courses and coaching",
+  "description": "Teachable is a platform for creators, coaches, and educators to build and sell online courses, coaching programmes, and digital downloads. It handles hosting, payments, student management, and certificates — no technical setup required.",
+  "category": "lms",
+  "categories": ["lms"],
+  "website": "https://teachable.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 39,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["1 published product", "Unlimited students", "Teachable payments", "Basic quizzes"] },
+      { "name": "Basic", "price": 39, "period": "mo", "features": ["5% transaction fee", "Unlimited courses", "Drip content", "Coupons & promotions"] },
+      { "name": "Pro", "price": 119, "period": "mo", "features": ["No transaction fees", "Advanced reports", "Custom domain", "Affiliates"] },
+      { "name": "Pro+", "price": 199, "period": "mo", "features": ["Everything in Pro", "5 admin seats", "Live chat support", "Bulk enrolments"] }
+    ]
+  },
+  "features": ["Course builder", "Video hosting", "Quizzes & certificates", "Drip content", "Affiliate management", "Coaching products", "Payment processing"],
+  "pros": ["Easy to build and sell courses", "Strong student experience", "Built-in marketing tools", "Good affiliate system"],
+  "cons": ["Transaction fees on lower plans", "Limited customisation vs Kajabi", "Basic plan relatively expensive for what you get"],
+  "alternatives": ["thinkific", "kajabi", "podia", "circle", "learnworlds"],
+  "g2_score": 4.0,
+  "capterra_score": 4.4
+}

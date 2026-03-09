@@ -1,0 +1,29 @@
+{
+  "slug": "shopify",
+  "name": "Shopify",
+  "tagline": "The e-commerce platform for all businesses",
+  "description": "Shopify is the world's leading e-commerce platform, powering over 4 million stores. It provides everything needed to sell online and in person — store builder, payments, inventory, shipping, and a vast app ecosystem.",
+  "category": "ecommerce",
+  "categories": ["ecommerce"],
+  "website": "https://shopify.com",
+  "affiliate_url": "",
+  "founded": 2006,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 29,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Basic", "price": 29, "period": "mo", "features": ["Online store", "Unlimited products", "2 staff accounts", "Shopify Payments"] },
+      { "name": "Shopify", "price": 79, "period": "mo", "features": ["Everything in Basic", "5 staff accounts", "Professional reports", "Lower transaction fees"] },
+      { "name": "Advanced", "price": 299, "period": "mo", "features": ["Everything in Shopify", "15 staff accounts", "Custom report builder", "Third-party calculated shipping"] },
+      { "name": "Plus", "price": 2300, "period": "mo", "features": ["Everything in Advanced", "Unlimited staff", "Custom checkout", "B2B selling"] }
+    ]
+  },
+  "features": ["Online store builder", "Shopify Payments", "POS system", "Inventory management", "Abandoned cart recovery", "App store (8,000+)", "Multichannel selling"],
+  "pros": ["Easiest e-commerce setup", "Massive app ecosystem", "Reliable hosting", "Great POS for in-person"],
+  "cons": ["Transaction fees if not using Shopify Payments", "Monthly fees add up", "Customisation limited without Liquid knowledge"],
+  "alternatives": ["bigcommerce", "woocommerce", "wix", "squarespace", "webflow"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

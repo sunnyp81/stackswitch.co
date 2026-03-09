@@ -1,0 +1,29 @@
+{
+  "slug": "hellosign",
+  "name": "Dropbox Sign",
+  "tagline": "Simple e-signatures by Dropbox (formerly HelloSign)",
+  "description": "Dropbox Sign (formerly HelloSign) is a straightforward e-signature platform known for its clean interface and easy embeddable API. Owned by Dropbox, it integrates natively with Dropbox storage and is popular with SMBs and developers.",
+  "category": "e-signature",
+  "categories": ["e-signature"],
+  "website": "https://sign.dropbox.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["3 documents/mo", "Basic e-signatures", "Audit trail", "Mobile app"] },
+      { "name": "Essentials", "price": 15, "period": "mo", "features": ["Unlimited documents", "Templates", "Custom branding", "Dropbox integration"] },
+      { "name": "Standard", "price": 25, "period": "user/mo", "features": ["Everything in Essentials", "Team management", "Advanced fields", "In-person signing"] },
+      { "name": "Premium", "price": 0, "period": "contact", "features": ["Everything in Standard", "API access", "SSO", "Custom workflows"] }
+    ]
+  },
+  "features": ["E-signatures", "Document templates", "Audit trail", "Dropbox integration", "Embedded signing API", "Bulk send", "Reminder notifications"],
+  "pros": ["Simple, clean interface", "Strong API for developers", "Good Dropbox integration", "Reasonable pricing"],
+  "cons": ["Free plan limited to 3 docs/mo", "Less powerful than DocuSign for enterprise", "Fewer native CRM integrations"],
+  "alternatives": ["docusign", "pandadoc", "adobe-sign", "signwell", "signnow"],
+  "g2_score": 4.7,
+  "capterra_score": 4.7
+}

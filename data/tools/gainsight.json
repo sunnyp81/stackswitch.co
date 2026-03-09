@@ -1,0 +1,27 @@
+{
+  "slug": "gainsight",
+  "name": "Gainsight",
+  "tagline": "Customer success platform to reduce churn and drive growth",
+  "description": "Gainsight is the leading customer success platform, used by SaaS companies to reduce churn, drive expansion, and manage customer relationships at scale. It aggregates product usage, support tickets, NPS, and CRM data into a single customer health score.",
+  "category": "customer-success",
+  "categories": ["customer-success", "customer-support"],
+  "website": "https://gainsight.com",
+  "affiliate_url": "",
+  "founded": 2011,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Essentials", "price": 0, "period": "contact", "features": ["Customer health scores", "Playbooks", "Timeline", "Basic reporting"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Essentials", "Advanced analytics", "Revenue management", "Custom integrations"] }
+    ]
+  },
+  "features": ["Customer health scoring", "Playbooks & automation", "Customer 360", "NPS surveys", "Revenue intelligence", "Product analytics integration", "QBR tools"],
+  "pros": ["Most comprehensive CS platform", "Strong automation", "Industry leader", "Excellent reporting"],
+  "cons": ["Very expensive", "Implementation takes months", "Overkill for small CS teams", "Complex to configure"],
+  "alternatives": ["totango", "churnzero", "vitally", "client-success", "planhat"],
+  "g2_score": 4.4,
+  "capterra_score": 4.4
+}

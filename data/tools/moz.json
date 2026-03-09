@@ -1,0 +1,29 @@
+{
+  "slug": "moz",
+  "name": "Moz Pro",
+  "tagline": "SEO software for keyword research and link building",
+  "description": "Moz Pro is an SEO platform offering keyword research, rank tracking, site audits, and link analysis. Known for inventing Domain Authority (DA), Moz is a trusted name in SEO — particularly popular with agencies and in-house SEO teams.",
+  "category": "seo-tools",
+  "categories": ["seo-tools"],
+  "website": "https://moz.com",
+  "affiliate_url": "",
+  "founded": 2004,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 99,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 99, "period": "mo", "features": ["1 user", "1 tracked site", "50 tracked keywords", "20K crawled pages"] },
+      { "name": "Standard", "price": 179, "period": "mo", "features": ["1 user", "3 campaigns", "300 keywords", "400K crawled pages"] },
+      { "name": "Medium", "price": 299, "period": "mo", "features": ["2 users", "10 campaigns", "1,500 keywords", "2M crawled pages"] },
+      { "name": "Large", "price": 599, "period": "mo", "features": ["3 users", "25 campaigns", "3,000 keywords", "5M crawled pages"] }
+    ]
+  },
+  "features": ["Keyword Explorer", "Rank Tracker", "Site Audit", "Link Explorer", "Domain Authority", "On-Page Grader", "MozBar extension"],
+  "pros": ["Invented Domain Authority metric", "Clean, beginner-friendly UI", "Good keyword research tools", "Free MozBar extension"],
+  "cons": ["Less data than Ahrefs or Semrush", "Expensive for what you get", "Link database smaller than competitors"],
+  "alternatives": ["ahrefs", "semrush", "mangools", "serpstat", "ubersuggest"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

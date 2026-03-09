@@ -1,0 +1,28 @@
+{
+  "slug": "sprinto",
+  "name": "Sprinto",
+  "tagline": "Compliance automation for cloud-native startups",
+  "description": "Sprinto is a compliance automation platform built specifically for cloud-native and SaaS startups. It offers SOC 2, ISO 27001, GDPR, and HIPAA automation with an entity-risk approach that adapts to how modern companies are actually built.",
+  "category": "compliance",
+  "categories": ["compliance"],
+  "website": "https://sprinto.com",
+  "affiliate_url": "",
+  "founded": 2020,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Startup", "price": 0, "period": "contact", "features": ["SOC 2 Type I/II", "Automated checks", "100+ integrations", "Audit support"] },
+      { "name": "Growth", "price": 0, "period": "contact", "features": ["Multiple frameworks", "Custom controls", "Risk management", "Training module"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Unlimited frameworks", "Dedicated CSM", "Custom integrations", "SLA"] }
+    ]
+  },
+  "features": ["SOC 2 automation", "ISO 27001", "HIPAA & GDPR", "Automated checks", "Entity-risk model", "Security training", "Audit-ready reports"],
+  "pros": ["Fast SOC 2 (4-6 weeks)", "Built for cloud-native stacks", "Strong support team", "Good pricing for startups"],
+  "cons": ["Less known than Vanta/Drata", "Fewer total integrations", "Newer platform"],
+  "alternatives": ["vanta", "drata", "secureframe", "strike-graph", "scytale"],
+  "g2_score": 4.7,
+  "capterra_score": 4.8
+}

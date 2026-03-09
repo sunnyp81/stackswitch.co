@@ -1,0 +1,28 @@
+{
+  "slug": "omnisend",
+  "name": "Omnisend",
+  "tagline": "Email and SMS marketing for e-commerce",
+  "description": "Omnisend is an email and SMS marketing platform built specifically for e-commerce stores. It integrates with Shopify, WooCommerce, and BigCommerce to power automated campaigns based on shopping behaviour.",
+  "category": "email-marketing",
+  "categories": ["email-marketing"],
+  "website": "https://omnisend.com",
+  "affiliate_url": "",
+  "founded": 2014,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 16,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["500 emails/mo", "60 SMS/mo", "Basic automations", "Signup forms"] },
+      { "name": "Standard", "price": 16, "period": "mo", "features": ["500 contacts", "6,000 emails/mo", "SMS included", "Audience segmentation"] },
+      { "name": "Pro", "price": 59, "period": "mo", "features": ["500+ contacts", "Unlimited emails", "Unlimited SMS", "Priority support"] }
+    ]
+  },
+  "features": ["Email campaigns", "SMS marketing", "Push notifications", "Automation workflows", "Segmentation", "A/B testing", "E-commerce integrations"],
+  "pros": ["Built for e-commerce", "Email + SMS in one platform", "Good Shopify integration", "Generous free plan"],
+  "cons": ["Less powerful for non-e-commerce", "Automation builder can be limiting", "Smaller template library than Mailchimp"],
+  "alternatives": ["klaviyo", "mailchimp", "drip", "activecampaign", "brevo"],
+  "g2_score": 4.6,
+  "capterra_score": 4.7
+}

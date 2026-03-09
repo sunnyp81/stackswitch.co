@@ -1,0 +1,29 @@
+{
+  "slug": "brevo",
+  "name": "Brevo",
+  "tagline": "Email, SMS, and CRM platform for growing businesses",
+  "description": "Brevo (formerly Sendinblue) is an all-in-one marketing platform offering email, SMS, WhatsApp, live chat, and CRM. Known for its email-volume-based pricing (rather than contact-based), making it cost-effective for large lists.",
+  "category": "email-marketing",
+  "categories": ["email-marketing", "crm"],
+  "website": "https://brevo.com",
+  "affiliate_url": "",
+  "founded": 2012,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 9,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited contacts", "300 emails/day", "Basic templates", "Email support"] },
+      { "name": "Starter", "price": 9, "period": "mo", "features": ["20,000 emails/mo", "No daily limit", "Basic reporting", "Remove Brevo logo"] },
+      { "name": "Business", "price": 18, "period": "mo", "features": ["20,000 emails/mo", "Marketing automation", "A/B testing", "Multi-user access"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Custom volume", "Dedicated IP", "Custom onboarding", "SLA"] }
+    ]
+  },
+  "features": ["Email marketing", "SMS & WhatsApp", "Marketing automation", "CRM", "Landing pages", "Live chat", "Transactional email"],
+  "pros": ["Pricing based on emails sent, not contacts", "All-in-one platform", "Good free tier", "Transactional email included"],
+  "cons": ["Automation less powerful than ActiveCampaign", "Template editor can be clunky", "Deliverability varies"],
+  "alternatives": ["mailchimp", "activecampaign", "klaviyo", "omnisend", "convertkit"],
+  "g2_score": 4.5,
+  "capterra_score": 4.5
+}

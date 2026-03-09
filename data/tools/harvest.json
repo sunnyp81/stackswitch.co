@@ -1,0 +1,27 @@
+{
+  "slug": "harvest",
+  "name": "Harvest",
+  "tagline": "Time tracking and invoicing for project-based businesses",
+  "description": "Harvest combines time tracking with invoicing and expense tracking, making it popular with agencies, consultancies, and freelancers who bill by the hour. It integrates with project management tools to give a complete picture of project profitability.",
+  "category": "time-tracking",
+  "categories": ["time-tracking"],
+  "website": "https://getharvest.com",
+  "affiliate_url": "",
+  "founded": 2006,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 11,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["1 user", "2 projects", "Basic time tracking", "Invoicing"] },
+      { "name": "Pro", "price": 11, "period": "user/mo", "features": ["Unlimited users", "Unlimited projects", "Invoicing", "Expense tracking"] }
+    ]
+  },
+  "features": ["Time tracking", "Invoicing", "Expense tracking", "Budget tracking", "Team capacity", "Integrations (50+)", "Reports"],
+  "pros": ["Best invoicing of any time tracker", "Simple two-plan pricing", "Great integrations with PM tools", "Project budget alerts"],
+  "cons": ["Free plan very limited (1 user)", "UI hasn't changed much in years", "Limited reporting vs Toggl"],
+  "alternatives": ["toggl", "clockify", "freshbooks", "hubstaff", "timely"],
+  "g2_score": 4.3,
+  "capterra_score": 4.6
+}

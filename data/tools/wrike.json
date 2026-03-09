@@ -1,0 +1,29 @@
+{
+  "slug": "wrike",
+  "name": "Wrike",
+  "tagline": "Versatile project management for enterprise teams",
+  "description": "Wrike is an enterprise-grade project management platform with powerful customisation, cross-tagging, request forms, and dashboards. Popular with marketing, creative, and PMO teams that need structured workflows at scale.",
+  "category": "project-management",
+  "categories": ["project-management"],
+  "website": "https://wrike.com",
+  "affiliate_url": "",
+  "founded": 2006,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 9.80,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited users", "Task management", "Board view", "Web, desktop & mobile apps"] },
+      { "name": "Team", "price": 9.80, "period": "user/mo", "features": ["2-25 users", "Gantt chart", "Automations (50/mo)", "Custom fields"] },
+      { "name": "Business", "price": 24.80, "period": "user/mo", "features": ["Unlimited users", "Unlimited automations", "Request forms", "Dashboards"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["SSO", "Advanced security", "Custom workflows", "Admin permissions"] }
+    ]
+  },
+  "features": ["Gantt charts", "Cross-tagging", "Request forms", "Automation", "Custom workflows", "Resource management", "Dashboards"],
+  "pros": ["Powerful for complex projects", "Strong enterprise features", "Good request management", "Flexible views"],
+  "cons": ["Steep learning curve", "Can feel heavy for small teams", "UI not as modern as monday.com"],
+  "alternatives": ["monday", "asana", "clickup", "smartsheet", "teamwork"],
+  "g2_score": 4.2,
+  "capterra_score": 4.3
+}

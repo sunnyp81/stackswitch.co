@@ -47,6 +47,12 @@ export const CATEGORIES: Record<string, string> = {
   'seo-tools': 'SEO Tools',
   'social-media': 'Social Media',
   'bi-analytics': 'Business Intelligence',
+  'time-tracking': 'Time Tracking',
+  security: 'Security',
+  'sales-engagement': 'Sales Engagement',
+  ecommerce: 'E-Commerce',
+  'customer-success': 'Customer Success',
+  lms: 'Online Courses & LMS',
 };
 
 const toolFiles = import.meta.glob('/data/tools/*.json', { eager: true });

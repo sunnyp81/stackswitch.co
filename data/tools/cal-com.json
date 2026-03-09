@@ -1,0 +1,28 @@
+{
+  "slug": "cal-com",
+  "name": "Cal.com",
+  "tagline": "Open-source scheduling infrastructure",
+  "description": "Cal.com is an open-source scheduling platform and the leading alternative to Calendly. It offers full data ownership, self-hosting options, a generous free cloud tier, and advanced routing forms — making it popular with developers and privacy-conscious teams.",
+  "category": "scheduling",
+  "categories": ["scheduling"],
+  "website": "https://cal.com",
+  "affiliate_url": "",
+  "founded": 2021,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 15,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited event types", "Unlimited bookings", "Cal.com link", "Basic integrations"] },
+      { "name": "Teams", "price": 15, "period": "user/mo", "features": ["Everything in Free", "Team scheduling", "Round robin routing", "Collective events"] },
+      { "name": "Platform", "price": 0, "period": "contact", "features": ["API access", "White label", "Custom domain", "SLA"] }
+    ]
+  },
+  "features": ["Unlimited bookings", "Routing forms", "Round-robin routing", "Webhooks & API", "Self-hosting option", "Workflow automations", "Payment collection"],
+  "pros": ["Open source with full data ownership", "More generous free plan than Calendly", "Strong developer API", "Self-hosting option"],
+  "cons": ["Less polished than Calendly", "Fewer native integrations", "Self-hosting requires technical skill"],
+  "alternatives": ["calendly", "acuity-scheduling", "savvycal", "tidycal", "chili-piper"],
+  "g2_score": 4.3,
+  "capterra_score": 4.5
+}

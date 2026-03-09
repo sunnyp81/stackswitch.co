@@ -1,0 +1,29 @@
+{
+  "slug": "power-bi",
+  "name": "Microsoft Power BI",
+  "tagline": "Business analytics tool by Microsoft",
+  "description": "Power BI is Microsoft's business intelligence platform for creating interactive reports and dashboards. It connects to hundreds of data sources, integrates deeply with Excel and Microsoft 365, and is included in many Microsoft 365 subscriptions.",
+  "category": "bi-analytics",
+  "categories": ["bi-analytics", "analytics"],
+  "website": "https://powerbi.microsoft.com",
+  "affiliate_url": "",
+  "founded": 2015,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 10,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (Desktop)", "price": 0, "period": "forever", "features": ["Power BI Desktop", "Local report creation", "Publish to web (public)", "All data connectors"] },
+      { "name": "Pro", "price": 10, "period": "user/mo", "features": ["Share with colleagues", "Collaboration", "Dashboards", "API access"] },
+      { "name": "Premium Per User", "price": 20, "period": "user/mo", "features": ["Everything in Pro", "AI visuals", "Paginated reports", "Large dataset storage"] },
+      { "name": "Premium Capacity", "price": 4995, "period": "mo", "features": ["Unlimited sharing", "Dedicated cloud resources", "Advanced AI", "Autoscale"] }
+    ]
+  },
+  "features": ["Interactive dashboards", "300+ data connectors", "DAX formula language", "AI visuals", "Excel integration", "Mobile app", "Embedded analytics"],
+  "pros": ["Included in Microsoft 365", "Very affordable Pro tier", "Massive connector library", "Strong Excel users will adapt quickly"],
+  "cons": ["Steep learning curve (DAX)", "Desktop app required for authoring", "Sharing requires Pro licence for recipients", "UI less polished than Tableau"],
+  "alternatives": ["tableau", "looker", "metabase", "qlik", "sisense"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

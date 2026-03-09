@@ -1,0 +1,28 @@
+{
+  "slug": "wave",
+  "name": "Wave",
+  "tagline": "Free accounting and invoicing for small businesses",
+  "description": "Wave is a free accounting, invoicing, and payments platform for freelancers and small businesses. It offers unlimited invoicing, expense tracking, and double-entry accounting at no cost — making it a popular alternative to QuickBooks for budget-conscious business owners.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://waveapps.com",
+  "affiliate_url": "",
+  "founded": 2009,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited invoicing", "Accounting", "Receipt scanning", "Bank connections"] },
+      { "name": "Pro", "price": 16, "period": "mo", "features": ["Everything in Free", "Auto-import bank transactions", "Priority support", "Lower payment fees"] },
+      { "name": "Payroll (add-on)", "price": 20, "period": "mo + $6/employee", "features": ["Full-service payroll", "Tax filing", "Direct deposit", "T4/T4A forms (Canada)"] }
+    ]
+  },
+  "features": ["Invoicing", "Accounting", "Expense tracking", "Bank reconciliation", "Payment processing", "Payroll (add-on)", "Receipt scanning"],
+  "pros": ["Core features are free", "No limits on invoices or clients", "Easy to use", "Good for freelancers"],
+  "cons": ["Payment processing fees", "Less powerful than QuickBooks", "US & Canada focused", "Limited integrations"],
+  "alternatives": ["quickbooks", "freshbooks", "xero", "zoho-books", "bonsai"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

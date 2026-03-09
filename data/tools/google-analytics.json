@@ -1,0 +1,27 @@
+{
+  "slug": "google-analytics",
+  "name": "Google Analytics 4",
+  "tagline": "Free web and app analytics by Google",
+  "description": "Google Analytics 4 (GA4) is Google's free analytics platform for websites and apps. It uses an event-based data model, integrates with Google Ads and Search Console, and is used by millions of sites worldwide for traffic and conversion tracking.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://analytics.google.com",
+  "affiliate_url": "",
+  "founded": 2005,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free (GA4)", "price": 0, "period": "forever", "features": ["Unlimited websites", "Event tracking", "Audience builder", "Google Ads integration"] },
+      { "name": "Google Analytics 360", "price": 50000, "period": "yr", "features": ["Unsampled reports", "Higher data limits", "SLA", "Dedicated support"] }
+    ]
+  },
+  "features": ["Event tracking", "Audience builder", "Conversion tracking", "Funnel exploration", "Real-time reports", "Google Ads integration", "BigQuery export"],
+  "pros": ["Free for most use cases", "Integrates with Google ecosystem", "Industry standard", "BigQuery export on free tier"],
+  "cons": ["GA4 migration was painful", "Privacy concerns (GDPR)", "Sampled data on free tier at scale", "Less user-friendly than Mixpanel"],
+  "alternatives": ["mixpanel", "amplitude", "posthog", "plausible", "fathom"],
+  "g2_score": 4.5,
+  "capterra_score": 4.7
+}

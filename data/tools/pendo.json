@@ -1,0 +1,29 @@
+{
+  "slug": "pendo",
+  "name": "Pendo",
+  "tagline": "Product experience platform with analytics and in-app guides",
+  "description": "Pendo combines product analytics with in-app guides, surveys, and feedback tools. It's designed to help product teams understand user behaviour AND act on it — showing tooltips, walkthroughs, and announcements without engineering resources.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://pendo.io",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 0,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["1,000 MAUs", "Core analytics", "In-app guides", "NPS surveys"] },
+      { "name": "Starter", "price": 0, "period": "contact", "features": ["Up to 2,000 MAUs", "Everything in Free", "Roadmaps", "Basic integrations"] },
+      { "name": "Growth", "price": 0, "period": "contact", "features": ["Custom MAUs", "Advanced analytics", "A/B testing", "Slack/CRM integrations"] },
+      { "name": "Portfolio", "price": 0, "period": "contact", "features": ["Multiple apps", "Cross-app analytics", "Enterprise security", "Custom SLA"] }
+    ]
+  },
+  "features": ["Product analytics", "In-app guides & tooltips", "NPS surveys", "Feature flags", "Roadmaps", "Session replay", "Feedback collection"],
+  "pros": ["Unique combo of analytics + in-app guidance", "No-code guide creation", "Good NPS tooling", "Strong enterprise adoption"],
+  "cons": ["Pricing not transparent", "Can be expensive", "Complex initial setup", "Free plan limited to 1K MAUs"],
+  "alternatives": ["amplitude", "mixpanel", "appcues", "userflow", "chameleon"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

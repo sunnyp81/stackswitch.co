@@ -1,0 +1,29 @@
+{
+  "slug": "sprout-social",
+  "name": "Sprout Social",
+  "tagline": "Enterprise social media management and analytics",
+  "description": "Sprout Social is a premium social media management platform with best-in-class analytics, social listening, and CRM features. Popular with mid-market and enterprise teams who need deep insights and team collaboration tools.",
+  "category": "social-media",
+  "categories": ["social-media"],
+  "website": "https://sproutsocial.com",
+  "affiliate_url": "",
+  "founded": 2010,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 249,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Standard", "price": 249, "period": "seat/mo", "features": ["5 social profiles", "Publishing & scheduling", "Basic analytics", "2 users included"] },
+      { "name": "Professional", "price": 399, "period": "seat/mo", "features": ["Everything in Standard", "Competitive reports", "Message tagging", "Custom workflows"] },
+      { "name": "Advanced", "price": 499, "period": "seat/mo", "features": ["Everything in Professional", "Social listening add-on", "Chatbots", "CSAT tools"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Advanced", "Tailored onboarding", "Premium support", "API access"] }
+    ]
+  },
+  "features": ["Publishing & scheduling", "Unified inbox", "Advanced analytics", "Social listening", "Competitor benchmarking", "CRM integration", "Team workflows"],
+  "pros": ["Best analytics of any social tool", "Excellent reporting", "Strong team features", "Good social CRM"],
+  "cons": ["Very expensive", "Per-seat pricing adds up fast", "Overkill for small teams"],
+  "alternatives": ["hootsuite", "buffer", "later", "metricool", "agorapulse"],
+  "g2_score": 4.4,
+  "capterra_score": 4.4
+}

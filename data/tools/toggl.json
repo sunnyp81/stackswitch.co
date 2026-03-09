@@ -1,0 +1,29 @@
+{
+  "slug": "toggl",
+  "name": "Toggl Track",
+  "tagline": "Simple time tracking for freelancers and teams",
+  "description": "Toggl Track is a simple, fast time tracking tool used by freelancers, consultants, and teams. Its one-click tracking, browser extension, and automatic idle detection make it the easiest way to stay on top of billable hours.",
+  "category": "time-tracking",
+  "categories": ["time-tracking"],
+  "website": "https://toggl.com/track",
+  "affiliate_url": "",
+  "founded": 2006,
+  "pricing": {
+    "model": "freemium",
+    "has_free_plan": true,
+    "starting_price": 9,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "forever", "features": ["Unlimited time entries", "5 users max", "Basic reports", "Idle detection"] },
+      { "name": "Starter", "price": 9, "period": "user/mo", "features": ["Unlimited users", "Billable rates", "Project templates", "Time rounding"] },
+      { "name": "Premium", "price": 18, "period": "user/mo", "features": ["Everything in Starter", "Fixed-fee projects", "Scheduled reports", "Priority support"] },
+      { "name": "Enterprise", "price": 0, "period": "contact", "features": ["Everything in Premium", "SSO", "Custom agreements", "Dedicated support"] }
+    ]
+  },
+  "features": ["One-click time tracking", "Browser extension", "Calendar integration", "Idle detection", "Billable rates", "Project tracking", "Reports"],
+  "pros": ["Easiest time tracker to use", "Great browser and desktop apps", "Good free plan", "Strong reporting"],
+  "cons": ["Free plan limited to 5 users", "Invoicing needs integrations", "Less project management than Harvest"],
+  "alternatives": ["harvest", "clockify", "timely", "hubstaff", "rize"],
+  "g2_score": 4.6,
+  "capterra_score": 4.7
+}
