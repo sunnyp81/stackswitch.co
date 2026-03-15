@@ -24,6 +24,8 @@ const [toolA, toolB] = await Promise.all([
 
 if (!toolA || !toolB) return Astro.redirect('/404');
 
+const year = new Date().getFullYear();
+
 function winner(a: number, b: number): 'a' | 'b' | 'tie' {
   if (a > b) return 'a';
   if (b > a) return 'b';
@@ -32,11 +34,65 @@ function winner(a: number, b: number): 'a' | 'b' | 'tie' {
 
 const priceWinner = winner(toolB.pricing.starting_price, toolA.pricing.starting_price); // lower is better
 const g2Winner = winner(toolA.g2_score, toolB.g2_score);
+
+const cheaperTool = priceWinner === 'a' ? toolA : priceWinner === 'b' ? toolB : null;
+const higherRatedTool = g2Winner === 'a' ? toolA : g2Winner === 'b' ? toolB : null;
+
+const chooseAText = `${toolA.name} is the better choice if you need ${toolA.features.slice(0, 2).join(' or ').toLowerCase()}${toolA.pricing.has_free_plan ? ', or want to start for free' : ''}. It scores ${toolA.g2_score}/5 on G2.`;
+const chooseBText = `${toolB.name} is the better choice if you prioritise ${toolB.features.slice(0, 2).join(' or ').toLowerCase()}${toolB.pricing.has_free_plan ? ', or need a free plan' : ''}. It scores ${toolB.g2_score}/5 on G2.`;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": `Is ${toolA.name} better than ${toolB.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": g2Winner === 'a'
+          ? `${toolA.name} has a higher G2 score (${toolA.g2_score}/5 vs ${toolB.g2_score}/5), suggesting stronger user satisfaction. However, the best choice depends on your specific use case and budget.`
+          : g2Winner === 'b'
+          ? `${toolB.name} has a higher G2 score (${toolB.g2_score}/5 vs ${toolA.g2_score}/5). That said, the right tool depends on your team's needs.`
+          : `${toolA.name} and ${toolB.name} have similar G2 ratings. The best option depends on your budget and feature priorities.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": `Which is cheaper, ${toolA.name} or ${toolB.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": cheaperTool
+          ? `${cheaperTool.name} is cheaper, starting at ${formatPrice(cheaperTool.pricing.starting_price, cheaperTool.pricing.currency)}/mo compared to ${formatPrice((cheaperTool === toolA ? toolB : toolA).pricing.starting_price, (cheaperTool === toolA ? toolB : toolA).pricing.currency)}/mo.`
+          : `${toolA.name} and ${toolB.name} start at the same price: ${formatPrice(toolA.pricing.starting_price, toolA.pricing.currency)}/mo.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": `What is the difference between ${toolA.name} and ${toolB.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `${toolA.name} focuses on ${toolA.features.slice(0, 3).join(', ').toLowerCase()}. ${toolB.name} focuses on ${toolB.features.slice(0, 3).join(', ').toLowerCase()}. Both serve similar use cases but differ in pricing model, feature depth, and target audience.`
+      }
+    }
+  ]
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 3, "name": `${toolA.name} vs ${toolB.name}`, "item": `https://stackswitch.co/compare/${slug}` }
+  ]
+};
 ---
 
 <Base
-  title={`${toolA.name} vs ${toolB.name} (${new Date().getFullYear()}): Which is better?`}
+  title={`${toolA.name} vs ${toolB.name} (${year}): Which is better?`}
   description={`${toolA.name} vs ${toolB.name}: pricing, features, pros and cons compared side by side. Find out which tool is right for your team.`}
+  schema={[faqSchema, breadcrumbSchema]}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">
 
@@ -49,7 +105,7 @@ const g2Winner = winner(toolA.g2_score, toolB.g2_score);
       <span>{toolA.name} vs {toolB.name}</span>
     </nav>
 
-    <h1 class="text-3xl font-bold mb-3">{toolA.name} vs {toolB.name}: Which is better in {new Date().getFullYear()}?</h1>
+    <h1 class="text-3xl font-bold mb-3">{toolA.name} vs {toolB.name}: Which is better in {year}?</h1>
     <p class="text-lg text-gray-600 mb-10">
       A side-by-side comparison of pricing, features, and use cases to help you decide between {toolA.name} and {toolB.name}.
     </p>
@@ -147,6 +203,66 @@ const g2Winner = winner(toolA.g2_score, toolB.g2_score);
           </div>
         </div>
       ))}
+    </div>
+
+    <!-- Who should choose which -->
+    <div class="grid md:grid-cols-2 gap-4 mb-12">
+      <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-5">
+        <h3 class="font-bold mb-2">Choose {toolA.name} if...</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">{chooseAText}</p>
+        <a href={`/tools/${toolA.slug}`} class="text-sm text-indigo-600 hover:underline mt-3 inline-block">Read {toolA.name} review →</a>
+      </div>
+      <div class="bg-gray-50 border border-gray-100 rounded-xl p-5">
+        <h3 class="font-bold mb-2">Choose {toolB.name} if...</h3>
+        <p class="text-sm text-gray-700 leading-relaxed">{chooseBText}</p>
+        <a href={`/tools/${toolB.slug}`} class="text-sm text-indigo-600 hover:underline mt-3 inline-block">Read {toolB.name} review →</a>
+      </div>
+    </div>
+
+    <!-- Verdict -->
+    <div class="border-l-4 border-indigo-400 pl-5 py-1 mb-12">
+      <h2 class="font-bold mb-1">Our verdict</h2>
+      <p class="text-gray-700 text-sm leading-relaxed">
+        {higherRatedTool
+          ? `${higherRatedTool.name} edges ahead on user ratings (${higherRatedTool.g2_score}/5 on G2).`
+          : `${toolA.name} and ${toolB.name} are closely matched on ratings.`}
+        {cheaperTool ? ` ${cheaperTool.name} is the cheaper option.` : ' Both are similarly priced.'}
+        {' '}The right choice depends on which features matter most to your team — use the comparison table above to decide.
+      </p>
+    </div>
+
+    <!-- FAQ -->
+    <div class="mb-12">
+      <h2 class="text-xl font-bold mb-5">{toolA.name} vs {toolB.name}: frequently asked questions</h2>
+      <div class="space-y-4">
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">Is {toolA.name} better than {toolB.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            {g2Winner === 'a'
+              ? `${toolA.name} has a higher G2 score (${toolA.g2_score}/5 vs ${toolB.g2_score}/5).`
+              : g2Winner === 'b'
+              ? `${toolB.name} has a higher G2 score (${toolB.g2_score}/5 vs ${toolA.g2_score}/5).`
+              : `Both tools have similar G2 ratings.`}
+            {' '}The best tool depends on your specific use case and budget.
+          </p>
+        </details>
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">Which is cheaper, {toolA.name} or {toolB.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            {cheaperTool
+              ? `${cheaperTool.name} is cheaper, starting at ${formatPrice(cheaperTool.pricing.starting_price, cheaperTool.pricing.currency)}/mo.`
+              : `Both start at ${formatPrice(toolA.pricing.starting_price, toolA.pricing.currency)}/mo.`}
+          </p>
+        </details>
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">What is the main difference between {toolA.name} and {toolB.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            {toolA.name} focuses on {toolA.features.slice(0, 3).join(', ').toLowerCase()}.
+            {toolB.name} focuses on {toolB.features.slice(0, 3).join(', ').toLowerCase()}.
+            Both serve similar use cases but differ in approach and pricing model.
+          </p>
+        </details>
+      </div>
     </div>
 
     <!-- CTAs -->

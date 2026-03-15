@@ -14,11 +14,81 @@ if (!tool) return Astro.redirect('/404');
 const altTools: Tool[] = (
   await Promise.all(tool.alternatives.map((s) => getToolBySlug(s)))
 ).filter(Boolean) as Tool[];
+
+const year = new Date().getFullYear();
+const topAlt = altTools[0];
+const freeAlts = altTools.filter((a) => a.pricing.has_free_plan);
+const cheapestAlt = [...altTools].sort((a, b) => a.pricing.starting_price - b.pricing.starting_price)[0];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": `Best ${tool.name} Alternatives ${year}`,
+  "description": `The top alternatives to ${tool.name}, compared by price, features, and ratings.`,
+  "numberOfItems": altTools.length,
+  "itemListElement": altTools.map((alt, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": alt.name,
+    "description": alt.tagline,
+    "url": `https://stackswitch.co/tools/${alt.slug}`
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": tool.name, "item": `https://stackswitch.co/tools/${tool.slug}` },
+    { "@type": "ListItem", "position": 3, "name": "Alternatives", "item": `https://stackswitch.co/alternatives/${tool.slug}` }
+  ]
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": `What is the best alternative to ${tool.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": topAlt
+          ? `${topAlt.name} is widely considered the top alternative to ${tool.name}. It starts at ${formatPrice(topAlt.pricing.starting_price, topAlt.pricing.currency)}/mo${topAlt.pricing.has_free_plan ? ' with a free plan available' : ''} and has a G2 score of ${topAlt.g2_score}/5.`
+          : `There are several strong alternatives to ${tool.name}. See the full comparison at stackswitch.co/alternatives/${tool.slug}.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": `Is there a free alternative to ${tool.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": freeAlts.length > 0
+          ? `Yes — ${freeAlts.slice(0, 3).map((a) => a.name).join(', ')} all offer free plans as alternatives to ${tool.name}.`
+          : `Most alternatives to ${tool.name} are paid tools. Compare pricing at stackswitch.co/alternatives/${tool.slug}.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": `What is the cheapest alternative to ${tool.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": cheapestAlt
+          ? cheapestAlt.pricing.has_free_plan
+            ? `${cheapestAlt.name} is the cheapest option, with a free plan available. Paid plans start at ${formatPrice(cheapestAlt.pricing.starting_price, cheapestAlt.pricing.currency)}/mo.`
+            : `${cheapestAlt.name} is among the most affordable alternatives at ${formatPrice(cheapestAlt.pricing.starting_price, cheapestAlt.pricing.currency)}/mo.`
+          : `Pricing varies across alternatives. See the comparison table at stackswitch.co/alternatives/${tool.slug}.`
+      }
+    }
+  ]
+};
 ---
 
 <Base
-  title={`Best ${tool.name} Alternatives in ${new Date().getFullYear()} (Free & Paid)`}
+  title={`Best ${tool.name} Alternatives in ${year} (Free & Paid)`}
   description={`Looking for ${tool.name} alternatives? We compare the ${altTools.length}+ best options — including free plans, pricing, and who each tool is best for.`}
+  schema={[itemListSchema, breadcrumbSchema, faqSchema]}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">
 
@@ -32,11 +102,20 @@ const altTools: Tool[] = (
     </nav>
 
     <!-- Hero -->
-    <h1 class="text-3xl font-bold mb-3">Best {tool.name} Alternatives ({new Date().getFullYear()})</h1>
+    <h1 class="text-3xl font-bold mb-3">Best {tool.name} Alternatives ({year})</h1>
     <p class="text-lg text-gray-600 mb-8">
       {tool.name} is {tool.tagline.toLowerCase()}, starting at {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo.
       Here are the best alternatives — whether you need something cheaper, simpler, or with different features.
     </p>
+
+    <!-- Quick facts bar -->
+    <div class="flex flex-wrap gap-4 mb-8 text-sm">
+      <span class="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">{altTools.length} alternatives compared</span>
+      {freeAlts.length > 0 && <span class="bg-green-50 text-green-700 px-3 py-1.5 rounded-full">✓ {freeAlts.length} with free plans</span>}
+      {cheapestAlt && cheapestAlt.pricing.starting_price < tool.pricing.starting_price && (
+        <span class="bg-blue-50 text-blue-700 px-3 py-1.5 rounded-full">Cheapest from {formatPrice(cheapestAlt.pricing.starting_price, cheapestAlt.pricing.currency)}/mo</span>
+      )}
+    </div>
 
     <!-- Why switch callout -->
     <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-10">
@@ -47,6 +126,23 @@ const altTools: Tool[] = (
         ))}
       </ul>
     </div>
+
+    <!-- Top pick callout -->
+    {topAlt && (
+      <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-5 mb-8">
+        <div class="text-xs font-semibold text-indigo-600 mb-1">Our top pick</div>
+        <div class="flex items-center justify-between gap-4 flex-wrap">
+          <div>
+            <div class="font-bold text-lg">{topAlt.name}</div>
+            <p class="text-gray-600 text-sm">{topAlt.tagline}</p>
+          </div>
+          <div class="flex gap-3">
+            <a href={`/tools/${topAlt.slug}`} class="text-sm font-medium text-indigo-600 hover:underline">See review →</a>
+            <a href={`/compare/${tool.slug}-vs-${topAlt.slug}`} class="text-sm text-gray-500 hover:text-gray-900">Compare →</a>
+          </div>
+        </div>
+      </div>
+    )}
 
     <!-- Alternatives list -->
     <div class="space-y-6">
@@ -123,6 +219,51 @@ const altTools: Tool[] = (
         </div>
       </div>
     )}
+
+    <!-- Verdict -->
+    {topAlt && (
+      <div class="mt-10 border-l-4 border-indigo-400 pl-5 py-1">
+        <h2 class="font-bold mb-1">Our verdict</h2>
+        <p class="text-gray-700 text-sm leading-relaxed">
+          If you are switching from {tool.name}, {topAlt.name} is our top pick — {topAlt.tagline.toLowerCase()}, with a G2 score of {topAlt.g2_score}/5.
+          {freeAlts.length > 0 ? ` For a free option, ${freeAlts[0].name} is worth considering.` : ''}
+          Use the comparison links above to do a side-by-side before committing.
+        </p>
+      </div>
+    )}
+
+    <!-- FAQ -->
+    <div class="mt-12">
+      <h2 class="text-xl font-bold mb-5">{tool.name} alternatives: frequently asked questions</h2>
+      <div class="space-y-4">
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">What is the best alternative to {tool.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            {topAlt
+              ? `${topAlt.name} is our top-ranked alternative. It starts at ${formatPrice(topAlt.pricing.starting_price, topAlt.pricing.currency)}/mo${topAlt.pricing.has_free_plan ? ' with a free plan' : ''} and scores ${topAlt.g2_score}/5 on G2.`
+              : `See the ranked list above for the best-rated alternatives to ${tool.name}.`}
+          </p>
+        </details>
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">Is there a free alternative to {tool.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            {freeAlts.length > 0
+              ? `Yes — ${freeAlts.slice(0, 3).map((a) => a.name).join(', ')} all offer free plans.`
+              : `Most alternatives to ${tool.name} are paid. See pricing details in the comparison table above.`}
+          </p>
+        </details>
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">What is the cheapest alternative to {tool.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            {cheapestAlt
+              ? cheapestAlt.pricing.has_free_plan
+                ? `${cheapestAlt.name} offers the lowest entry point with a free plan. Paid plans start at ${formatPrice(cheapestAlt.pricing.starting_price, cheapestAlt.pricing.currency)}/mo.`
+                : `${cheapestAlt.name} is among the most affordable at ${formatPrice(cheapestAlt.pricing.starting_price, cheapestAlt.pricing.currency)}/mo.`
+              : `See the comparison table above for a full pricing breakdown.`}
+          </p>
+        </details>
+      </div>
+    </div>
 
     <!-- CTA -->
     <div class="mt-12 bg-indigo-50 rounded-xl p-6 text-center">

@@ -10,11 +10,67 @@ const { cat } = Astro.params;
 const allTools = await getAllTools();
 const tools = allTools.filter((t) => t.categories.includes(cat));
 const categoryName = CATEGORIES[cat] ?? cat;
+const year = new Date().getFullYear();
+
+const CATEGORY_INTROS: Record<string, string> = {
+  crm: "CRM software helps teams manage customer relationships, track deals, and automate follow-ups. The right CRM centralises your contact data, pipeline visibility, and activity history in one place.",
+  "project-management": "Project management tools let teams plan work, assign tasks, and track progress from start to finish. The best options balance structure with flexibility — keeping projects on track without slowing teams down.",
+  "email-marketing": "Email marketing platforms help businesses build lists, design campaigns, and measure performance. Key differentiators include automation depth, list segmentation, deliverability, and pricing as your list grows.",
+  "hr": "HR and payroll software handles hiring, onboarding, benefits, time tracking, and compliance. The right tool depends on your company size, whether you have global employees, and how much you want to automate.",
+  "security-compliance": "Security and compliance tools help businesses meet frameworks like SOC 2, ISO 27001, and GDPR. They automate evidence collection, monitor infrastructure, and reduce audit prep time significantly.",
+  "design": "Design tools range from vector illustration to full-scale prototyping and collaborative design systems. The right choice depends on whether you are working solo, in a team, or handing off to developers.",
+  "analytics": "Analytics platforms track user behaviour, funnel performance, and product engagement. The choice between tools often comes down to data volume, event granularity, and how technical your team is.",
+  "communication": "Communication tools cover messaging, video calls, and async updates. The best platforms reduce context switching by integrating with the tools your team already uses.",
+  "customer-support": "Customer support software manages tickets, live chat, and self-service help centres. The right platform depends on your support volume, team size, and whether you need omnichannel coverage.",
+  "finance-accounting": "Finance and accounting tools handle invoicing, expense tracking, payroll, and reporting. Freelancers and small businesses often need different solutions to mid-market and enterprise finance teams.",
+  "scheduling": "Scheduling tools eliminate back-and-forth by letting contacts book time directly. They sync with calendars, send reminders, and integrate with CRM and video conferencing platforms.",
+  "forms-surveys": "Form and survey tools collect data from customers, leads, and employees. They vary widely in question types, logic branching, integrations, and how they handle large response volumes.",
+  "e-signature": "E-signature platforms let businesses send, sign, and manage contracts digitally. Key considerations are compliance standards, audit trails, template management, and API availability.",
+  "seo-tools": "SEO tools cover keyword research, backlink analysis, technical audits, and rank tracking. The choice often comes down to data freshness, depth of competitor analysis, and budget.",
+  "social-media": "Social media management tools handle scheduling, inbox management, and performance reporting across platforms. The right tool depends on the number of profiles you manage and your reporting needs.",
+  "business-intelligence": "Business intelligence tools connect to your data sources and visualise trends, KPIs, and reports. They range from simple dashboards to full self-service analytics platforms for data teams.",
+  "time-tracking": "Time tracking software records billable hours, project time, and team productivity. It is essential for agencies, freelancers, and any team that bills by the hour or manages project budgets.",
+  "security": "Security tools protect infrastructure, endpoints, and user access. They include vulnerability scanning, identity management, and threat detection — often overlapping with compliance tooling.",
+  "sales-engagement": "Sales engagement platforms automate outreach sequences, track email opens, and surface the right leads to contact. They work best when tightly integrated with your CRM.",
+  "e-commerce": "E-commerce platforms power online stores, from product listings and checkout to shipping and returns. The right choice depends on your product catalogue size, technical resources, and international needs.",
+  "online-courses": "Online course and LMS platforms let creators and businesses host, sell, and deliver educational content. Key factors are student experience, assessment tools, integrations, and revenue share models.",
+};
+
+const intro = CATEGORY_INTROS[cat] ?? `Compare the best ${categoryName.toLowerCase()} tools. See pricing, free plans, and alternatives for ${tools.length}+ options.`;
+
+const freeTools = tools.filter((t) => t.pricing.has_free_plan);
+const sortedByRating = [...tools].sort((a, b) => b.g2_score - a.g2_score);
+const topTool = sortedByRating[0];
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": `Best ${categoryName} Software ${year}`,
+  "description": intro,
+  "numberOfItems": tools.length,
+  "itemListElement": tools.map((tool, i) => ({
+    "@type": "ListItem",
+    "position": i + 1,
+    "name": tool.name,
+    "description": tool.tagline,
+    "url": `https://stackswitch.co/tools/${tool.slug}`
+  }))
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": categoryName, "item": `https://stackswitch.co/category/${cat}` }
+  ]
+};
 ---
 
 <Base
-  title={`Best ${categoryName} Software ${new Date().getFullYear()}: Pricing & Alternatives`}
+  title={`Best ${categoryName} Software ${year}: Pricing & Alternatives`}
   description={`Compare the best ${categoryName} tools. See pricing, free plans, and the top alternatives for ${tools.length}+ options.`}
+  schema={[itemListSchema, breadcrumbSchema]}
 >
   <div class="max-w-5xl mx-auto px-4 py-12">
 
@@ -24,10 +80,27 @@ const categoryName = CATEGORIES[cat] ?? cat;
       <span>{categoryName}</span>
     </nav>
 
-    <h1 class="text-3xl font-bold mb-3">Best {categoryName} Software ({new Date().getFullYear()})</h1>
-    <p class="text-gray-600 mb-10">
-      Comparing {tools.length} {categoryName.toLowerCase()} tools — pricing, free plans, and who each one is best for.
-    </p>
+    <h1 class="text-3xl font-bold mb-3">Best {categoryName} Software ({year})</h1>
+    <p class="text-gray-600 mb-4 leading-relaxed max-w-2xl">{intro}</p>
+
+    <!-- Quick stats bar -->
+    <div class="flex flex-wrap gap-4 mb-10 text-sm">
+      <span class="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">{tools.length} tools compared</span>
+      {freeTools.length > 0 && <span class="bg-green-50 text-green-700 px-3 py-1.5 rounded-full">✓ {freeTools.length} with free plans</span>}
+      {topTool && <span class="bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-full">Top rated: {topTool.name} ({topTool.g2_score}/5)</span>}
+    </div>
+
+    <!-- What to look for -->
+    <div class="bg-gray-50 rounded-xl p-6 mb-10">
+      <h2 class="font-bold mb-3">What to look for in {categoryName.toLowerCase()} software</h2>
+      <ul class="space-y-2 text-sm text-gray-700">
+        <li class="flex gap-2"><span class="text-indigo-500 font-bold">→</span> Pricing model — per user, flat rate, or usage-based can significantly affect total cost at scale</li>
+        <li class="flex gap-2"><span class="text-indigo-500 font-bold">→</span> Free plan availability — useful for testing before committing to a paid tier</li>
+        <li class="flex gap-2"><span class="text-indigo-500 font-bold">→</span> G2 and Capterra ratings — a reliable proxy for real-world user satisfaction</li>
+        <li class="flex gap-2"><span class="text-indigo-500 font-bold">→</span> Integration ecosystem — does it connect with the tools you already use?</li>
+        <li class="flex gap-2"><span class="text-indigo-500 font-bold">→</span> Switching cost — review what data you can export before committing long term</li>
+      </ul>
+    </div>
 
     <div class="grid md:grid-cols-2 gap-4">
       {tools.map((tool) => (
@@ -44,7 +117,8 @@ const categoryName = CATEGORIES[cat] ?? cat;
             <span class="ml-auto text-yellow-500">★ {tool.g2_score}</span>
           </div>
           <div class="flex gap-3 text-sm">
-            <a href={`/alternatives/${tool.slug}`} class="text-indigo-600 hover:underline font-medium">Alternatives →</a>
+            <a href={`/tools/${tool.slug}`} class="text-indigo-600 hover:underline font-medium">Review →</a>
+            <a href={`/alternatives/${tool.slug}`} class="text-gray-500 hover:text-gray-900">Alternatives →</a>
             <a href={`/pricing/${tool.slug}`} class="text-gray-500 hover:text-gray-900">Pricing →</a>
           </div>
         </div>
