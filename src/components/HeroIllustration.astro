@@ -1,0 +1,80 @@
+---
+/**
+ * Homepage hero SVG — layered software stack concept
+ * Shows stacked app cards representing different SaaS categories
+ */
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" class="w-full max-w-md mx-auto" aria-hidden="true">
+  <!-- Background glow -->
+  <defs>
+    <linearGradient id="card-grad-1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="card-grad-2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.04"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Back card (largest, most faded) -->
+  <rect x="80" y="20" width="240" height="140" rx="12" fill="url(#card-grad-1)" stroke="#c7d2fe" stroke-width="1"/>
+  <rect x="96" y="36" width="60" height="6" rx="3" fill="#c7d2fe"/>
+  <rect x="96" y="48" width="100" height="4" rx="2" fill="#e0e7ff" opacity="0.7"/>
+  <rect x="96" y="58" width="80" height="4" rx="2" fill="#e0e7ff" opacity="0.5"/>
+  <circle cx="300" cy="56" r="16" fill="#818cf8" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="300" y="61" text-anchor="middle" font-size="14" fill="#a5b4fc" font-family="Inter, sans-serif">$</text>
+
+  <!-- Middle card -->
+  <rect x="60" y="60" width="240" height="140" rx="12" fill="white" stroke="#c7d2fe" stroke-width="1.5"/>
+  <rect x="76" y="76" width="70" height="6" rx="3" fill="#818cf8" opacity="0.4"/>
+  <rect x="76" y="88" width="120" height="4" rx="2" fill="#e5e7eb"/>
+  <rect x="76" y="98" width="90" height="4" rx="2" fill="#e5e7eb" opacity="0.7"/>
+  <!-- Mini chart in middle card -->
+  <rect x="76" y="114" width="28" height="24" rx="2" fill="#818cf8" opacity="0.08"/>
+  <rect x="82" y="126" width="4" height="10" rx="1" fill="#818cf8" opacity="0.3"/>
+  <rect x="88" y="122" width="4" height="14" rx="1" fill="#818cf8" opacity="0.5"/>
+  <rect x="94" y="118" width="4" height="18" rx="1" fill="#6366f1" opacity="0.3"/>
+  <!-- Star rating -->
+  <g transform="translate(112, 116)">
+    <polygon points="6,0 7.5,4 12,4.5 8.5,7.5 9.5,12 6,10 2.5,12 3.5,7.5 0,4.5 4.5,4" fill="#fbbf24" opacity="0.6" transform="scale(0.8)"/>
+    <polygon points="6,0 7.5,4 12,4.5 8.5,7.5 9.5,12 6,10 2.5,12 3.5,7.5 0,4.5 4.5,4" fill="#fbbf24" opacity="0.6" transform="translate(12,0) scale(0.8)"/>
+    <polygon points="6,0 7.5,4 12,4.5 8.5,7.5 9.5,12 6,10 2.5,12 3.5,7.5 0,4.5 4.5,4" fill="#fbbf24" opacity="0.6" transform="translate(24,0) scale(0.8)"/>
+    <polygon points="6,0 7.5,4 12,4.5 8.5,7.5 9.5,12 6,10 2.5,12 3.5,7.5 0,4.5 4.5,4" fill="#fbbf24" opacity="0.6" transform="translate(36,0) scale(0.8)"/>
+    <polygon points="6,0 7.5,4 12,4.5 8.5,7.5 9.5,12 6,10 2.5,12 3.5,7.5 0,4.5 4.5,4" fill="#e5e7eb" opacity="0.6" transform="translate(48,0) scale(0.8)"/>
+  </g>
+  <!-- Toggle/pill -->
+  <rect x="240" y="80" width="44" height="20" rx="10" fill="#6366f1" opacity="0.15"/>
+  <circle cx="270" cy="90" r="7" fill="#6366f1" opacity="0.4"/>
+
+  <!-- Front card (most prominent) -->
+  <rect x="100" y="100" width="240" height="140" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5" filter="drop-shadow(0 4px 12px rgba(99,102,241,0.1))"/>
+  <rect x="116" y="116" width="80" height="7" rx="3.5" fill="url(#accent-grad)"/>
+  <rect x="116" y="130" width="140" height="4" rx="2" fill="#e5e7eb"/>
+  <rect x="116" y="140" width="110" height="4" rx="2" fill="#e5e7eb" opacity="0.6"/>
+  <!-- Feature pills on front card -->
+  <rect x="116" y="156" width="48" height="18" rx="9" fill="#6366f1" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <rect x="124" y="162" width="32" height="5" rx="2.5" fill="#818cf8" opacity="0.5"/>
+  <rect x="172" y="156" width="56" height="18" rx="9" fill="#6366f1" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <rect x="180" y="162" width="40" height="5" rx="2.5" fill="#818cf8" opacity="0.5"/>
+  <rect x="236" y="156" width="42" height="18" rx="9" fill="#6366f1" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <rect x="244" y="162" width="26" height="5" rx="2.5" fill="#818cf8" opacity="0.5"/>
+  <!-- CTA button on front card -->
+  <rect x="116" y="186" width="90" height="30" rx="8" fill="url(#accent-grad)"/>
+  <rect x="132" y="198" width="58" height="5" rx="2.5" fill="white" opacity="0.9"/>
+  <!-- Price badge -->
+  <rect x="280" y="116" width="44" height="28" rx="6" fill="#6366f1" opacity="0.08"/>
+  <text x="302" y="135" text-anchor="middle" font-size="14" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">$29</text>
+  <text x="302" y="145" text-anchor="middle" font-size="7" fill="#818cf8" font-family="Inter, sans-serif">/mo</text>
+
+  <!-- Floating connection dots -->
+  <circle cx="50" cy="130" r="4" fill="#6366f1" opacity="0.15"/>
+  <circle cx="360" cy="90" r="3" fill="#818cf8" opacity="0.2"/>
+  <circle cx="370" cy="180" r="5" fill="#6366f1" opacity="0.1"/>
+  <circle cx="30" cy="60" r="3" fill="#818cf8" opacity="0.15"/>
+</svg>

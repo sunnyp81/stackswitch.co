@@ -1,0 +1,147 @@
+---
+import Base from '../../layouts/Base.astro';
+import PricingModels from '../../components/svg/PricingModels.astro';
+
+const year = new Date().getFullYear();
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://stackswitch.co/guides" },
+    { "@type": "ListItem", "position": 3, "name": "SaaS Pricing Models", "item": "https://stackswitch.co/guides/saas-pricing-models-explained" }
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": `SaaS Pricing Models Explained (${year})`,
+  "description": "Per-seat, usage-based, flat-rate, freemium: what each pricing model means for your budget and how to choose.",
+  "author": { "@type": "Organization", "name": "StackSwitch" },
+  "publisher": { "@type": "Organization", "name": "StackSwitch", "url": "https://stackswitch.co" },
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20"
+};
+---
+
+<Base
+  title={`SaaS Pricing Models Explained: Per-Seat vs Usage vs Flat-Rate (${year})`}
+  description="Understand how SaaS tools charge: per-seat, usage-based, flat-rate, and freemium. Learn which pricing model works best for your team size and budget."
+  schema={[breadcrumbSchema, articleSchema]}
+>
+  <article class="max-w-3xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/guides" class="hover:text-gray-900">Guides</a>
+      <span class="mx-2">/</span>
+      <span>SaaS Pricing Models</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-4">SaaS pricing models explained</h1>
+    <p class="text-lg text-gray-600 mb-8">
+      The pricing page is where most SaaS evaluations get confusing. Here is what each model actually means for your wallet.
+    </p>
+
+    <PricingModels class="mb-10" />
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Per-seat pricing</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        You pay a fixed price for each user who has access. Slack, Asana, and most CRMs use this model. It is simple to understand: $12 per user per month means a team of 10 costs $120.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it works well:</strong> Teams where every user actively uses the tool daily. If you have 10 seats and all 10 people log in regularly, per-seat is fair.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it hurts:</strong> Teams where some users only need occasional access. Paying $12/mo for someone who logs in once a quarter is a waste. Watch for tools that count "viewers" or "read-only" users differently — some charge full price, others offer reduced viewer seats.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>Budget tip:</strong> Multiply the per-seat price by your expected headcount in 12 months. If you plan to hire aggressively, per-seat costs can balloon. Negotiate volume discounts above 25 seats.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Usage-based pricing</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        You pay based on consumption: API calls, emails sent, data stored, or events tracked. Twilio, Snowflake, and most analytics platforms use this approach.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it works well:</strong> Early-stage companies with low volume. You start small and only pay more as you grow. The cost scales with revenue, which feels fair.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it hurts:</strong> When usage spikes unexpectedly. A viral blog post, a marketing campaign, or an engineering bug can cause usage to 10x overnight — and so does your bill. Always set up billing alerts and understand the overage structure.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>Budget tip:</strong> Ask for committed-use discounts. Most usage-based vendors offer 20-40% off if you commit to a minimum monthly spend. This gives you predictability without losing the benefits of the model.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Flat-rate pricing</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        One price, unlimited users (or very generous limits). Basecamp is the classic example. You pay $49/mo and your whole team uses it — whether that is 5 people or 50.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it works well:</strong> Growing teams who want cost predictability. No nasty surprises when you add your 20th user.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it hurts:</strong> Solo users or very small teams. Paying $49/mo when you are the only user is expensive compared to a per-seat tool at $12/mo. The flat-rate model only becomes economical once you have enough users to bring the per-head cost below alternatives.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Freemium</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        A free tier with limited features, plus paid plans that unlock more. Notion, HubSpot, and Figma all follow this model. The free tier is the product demo — you experience the tool before paying.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it works well:</strong> Always worth testing. The free tier lets you validate fit without risk. Some free tiers are genuinely useful long-term — see our <a href="/guides/free-saas-tools-worth-using" class="text-indigo-600 hover:underline">free tools guide</a> for the best ones.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>When it hurts:</strong> When the free tier is deliberately crippled to frustrate you into upgrading. If you hit the limits within the first week, the free plan is marketing, not a product.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Contact sales / custom pricing</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        No public pricing. You fill in a form, talk to a sales rep, and get a custom quote. Enterprise tools like Salesforce Enterprise, Workday, and Veeva use this approach.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        <strong>The reality:</strong> This almost always means annual contracts, minimum commitments, and a price that depends on how well you negotiate. Come prepared with competitor pricing, your team size, and a clear budget ceiling. Do not let the sales process drag beyond two weeks.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Which model is best?</h2>
+      <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">1-5 users:</span> Per-seat or freemium. Keep costs low while you validate.</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">5-25 users:</span> Per-seat with volume discounts, or flat-rate if available.</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">25-100 users:</span> Flat-rate or negotiated per-seat. Push for annual discounts.</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">Usage-heavy workflows:</span> Usage-based with committed-use discounts and billing alerts.</li>
+        </ul>
+      </div>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The best pricing model is the one that aligns cost with value. If you are paying more as your team grows and gets more value — that is fair. If you are paying more because a vendor designed pricing to punish growth — that is a sign to look at alternatives.
+      </p>
+
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-8">
+      <h2 class="font-bold mb-4">Related guides</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/guides/how-to-choose-saas-tools" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">How to choose the right SaaS tool</div>
+          <div class="text-xs text-gray-500 mt-1">A practical evaluation framework</div>
+        </a>
+        <a href="/guides/free-saas-tools-worth-using" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">Free SaaS tools worth using</div>
+          <div class="text-xs text-gray-500 mt-1">Genuinely good free tiers</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-indigo-50 rounded-xl p-6 text-center">
+      <h3 class="font-bold mb-2">Compare pricing across 85+ tools</h3>
+      <p class="text-gray-600 text-sm mb-4">See real pricing data, free plan availability, and side-by-side comparisons.</p>
+      <a href="/" class="inline-block bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">Browse tools →</a>
+    </div>
+
+  </article>
+</Base>

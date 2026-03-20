@@ -1,0 +1,158 @@
+---
+import Base from '../../layouts/Base.astro';
+import SwitchChecklist from '../../components/svg/SwitchChecklist.astro';
+
+const year = new Date().getFullYear();
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://stackswitch.co/guides" },
+    { "@type": "ListItem", "position": 3, "name": "Switching SaaS Tools", "item": "https://stackswitch.co/guides/switching-saas-tools" }
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": `Switching SaaS Tools Without the Chaos (${year})`,
+  "description": "A practical migration checklist for moving between SaaS tools: data portability, timing, and avoiding downtime.",
+  "author": { "@type": "Organization", "name": "StackSwitch" },
+  "publisher": { "@type": "Organization", "name": "StackSwitch", "url": "https://stackswitch.co" },
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20"
+};
+---
+
+<Base
+  title={`How to Switch SaaS Tools: Migration Checklist & Data Portability (${year})`}
+  description="Switching software does not have to be painful. This migration checklist covers data export, parallel running, team training, and the best time to switch."
+  schema={[breadcrumbSchema, articleSchema]}
+>
+  <article class="max-w-3xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/guides" class="hover:text-gray-900">Guides</a>
+      <span class="mx-2">/</span>
+      <span>Switching SaaS Tools</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-4">Switching SaaS tools without the chaos</h1>
+    <p class="text-lg text-gray-600 mb-8">
+      A migration checklist for when your current tool is not cutting it — and you need to move without breaking everything.
+    </p>
+
+    <SwitchChecklist class="mb-10" />
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Why people avoid switching (and why they should not)</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Most teams stay with the wrong tool far too long because switching feels risky. They worry about data loss, downtime, team resistance, and the sheer hassle of it all. These are valid concerns — but they are all manageable with a plan. Meanwhile, the cost of staying with a bad tool compounds every month: wasted time, frustrated users, overpaying for features you do not use.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The best time to switch is before the frustration peaks. If you are already dreading logging in, you have waited too long.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Before you switch: the data portability check</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Before committing to a new tool, check what you can take with you from the old one. This is the single most important step and most people skip it.
+      </p>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-5 mb-4">
+        <h3 class="font-semibold text-amber-900 text-sm mb-2">Data portability checklist</h3>
+        <ul class="space-y-2 text-sm text-amber-800">
+          <li class="flex gap-2"><span>&#9744;</span> Can you export all data as CSV, JSON, or via API?</li>
+          <li class="flex gap-2"><span>&#9744;</span> Are file attachments included in the export?</li>
+          <li class="flex gap-2"><span>&#9744;</span> Is activity history / audit trail exportable?</li>
+          <li class="flex gap-2"><span>&#9744;</span> Does the new tool have an import feature for your format?</li>
+          <li class="flex gap-2"><span>&#9744;</span> Are there field mapping differences between old and new?</li>
+          <li class="flex gap-2"><span>&#9744;</span> What happens to integrations connected to the old tool?</li>
+        </ul>
+      </div>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        If your current tool makes exporting difficult — hidden behind support tickets, limited export formats, or missing data fields — that is a red flag about the vendor, and an even stronger reason to leave sooner rather than later.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">The migration timeline</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        A typical SaaS migration takes 2-4 weeks for small teams and 4-8 weeks for larger organisations. Here is a realistic timeline.
+      </p>
+      <div class="bg-gray-50 rounded-xl p-5 mb-4">
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="flex gap-3">
+            <span class="font-bold text-indigo-600 w-20 flex-shrink-0">Week 1</span>
+            <span>Export data from old tool. Set up new tool. Map fields and configure settings. Import a test batch.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="font-bold text-indigo-600 w-20 flex-shrink-0">Week 2</span>
+            <span>Run both tools in parallel. Have 2-3 team members use the new tool for real work. Fix issues.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="font-bold text-indigo-600 w-20 flex-shrink-0">Week 3</span>
+            <span>Full team moves to the new tool. Old tool stays read-only for reference. Address training gaps.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="font-bold text-indigo-600 w-20 flex-shrink-0">Week 4</span>
+            <span>Cancel old subscription. Archive export files. Document the new workflow.</span>
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Managing team resistance</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        People resist change, even when the current tool is objectively worse. The key is to involve users early. Do not announce "we are switching next Monday." Instead: share the shortlist, let two or three power users test the finalists, and let them champion the switch. Peer advocacy is 10x more effective than top-down mandates.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Also, accept that productivity will dip for one to two weeks. That is normal. It does not mean the new tool is worse — it means the team is adjusting. Set expectations upfront and it becomes much easier.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">When to time the switch</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Avoid switching during your busiest period. If you are in SaaS, do not migrate your CRM during a sales sprint. If you are an agency, do not switch project tools when you have five active client deadlines.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The best timing is often the start of a quarter, after a major project wraps, or during a natural lull. Align the switch with a billing cycle so you are not paying for two tools longer than necessary.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">The full migration checklist</h2>
+      <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <ol class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">1.</span> Export all data from the old tool (CSV, JSON, or API)</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">2.</span> Map fields between old and new tool</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">3.</span> Import a test batch and verify accuracy</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">4.</span> Configure integrations (Slack, email, calendar)</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">5.</span> Run parallel for one week with pilot users</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">6.</span> Full import and team migration</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">7.</span> Set old tool to read-only for 2 weeks</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">8.</span> Cancel old subscription and archive data</li>
+        </ol>
+      </div>
+
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-8">
+      <h2 class="font-bold mb-4">Related guides</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/guides/how-to-choose-saas-tools" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">How to choose the right SaaS tool</div>
+          <div class="text-xs text-gray-500 mt-1">Evaluation framework</div>
+        </a>
+        <a href="/guides/building-your-tech-stack" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">Building your tech stack</div>
+          <div class="text-xs text-gray-500 mt-1">What to use at every stage</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-indigo-50 rounded-xl p-6 text-center">
+      <h3 class="font-bold mb-2">Find your next tool</h3>
+      <p class="text-gray-600 text-sm mb-4">Compare alternatives side-by-side with real pricing data.</p>
+      <a href="/" class="inline-block bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">Browse tools →</a>
+    </div>
+
+  </article>
+</Base>

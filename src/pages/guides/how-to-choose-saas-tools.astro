@@ -1,0 +1,137 @@
+---
+import Base from '../../layouts/Base.astro';
+import EvaluationFramework from '../../components/svg/EvaluationFramework.astro';
+
+const year = new Date().getFullYear();
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://stackswitch.co/guides" },
+    { "@type": "ListItem", "position": 3, "name": "How to Choose SaaS Tools", "item": "https://stackswitch.co/guides/how-to-choose-saas-tools" }
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": `How to Choose the Right SaaS Tool (${year})`,
+  "description": "A practical framework for evaluating and choosing SaaS software without wasting weeks on comparisons.",
+  "author": { "@type": "Organization", "name": "StackSwitch" },
+  "publisher": { "@type": "Organization", "name": "StackSwitch", "url": "https://stackswitch.co" },
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20"
+};
+---
+
+<Base
+  title={`How to Choose the Right SaaS Tool: A Practical Framework (${year})`}
+  description="Stop comparing feature lists. Here is a step-by-step framework for evaluating SaaS tools based on what actually matters: fit, price, and switching cost."
+  schema={[breadcrumbSchema, articleSchema]}
+>
+  <article class="max-w-3xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/guides" class="hover:text-gray-900">Guides</a>
+      <span class="mx-2">/</span>
+      <span>How to Choose SaaS Tools</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-4">How to choose the right SaaS tool</h1>
+    <p class="text-lg text-gray-600 mb-8">
+      A step-by-step framework for evaluating software when every vendor claims to be the best.
+    </p>
+
+    <EvaluationFramework class="mb-10" />
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 class="text-xl font-bold mt-8 mb-3">The problem with feature comparison</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Most people approach software selection by creating a spreadsheet of features and ticking boxes. This feels productive but rarely leads to good decisions. You end up comparing 15 tools on 40 features, and they all look roughly the same. The tool with the most ticks wins — but that is not how real teams use software.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The better approach is to work backwards from your actual workflow. What are the three to five things this tool needs to do every day? Start there.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Step 1: Define your non-negotiables</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Before looking at any tool, write down your hard requirements. These are not features — they are constraints. For example: "Must integrate with Salesforce," "Must support SSO," or "Must cost less than $20 per user per month." If a tool fails any of these, it is out. No exceptions.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        This step alone usually eliminates half the options. That is the point. You want a shortlist of three to five tools, not a longlist of twenty.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Step 2: Test with real work</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Do not evaluate software with dummy data. Take an actual project, task, or workflow and run it through the tool. You will discover friction that demo videos never show. Can your least technical team member figure it out without training? Does it handle your edge cases — like clients in multiple timezones, or projects with 50+ tasks?
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Give each shortlisted tool one week of real use. Not a full rollout — just enough to feel how it works in practice.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Step 3: Calculate the real cost</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The sticker price is never the full cost. Add up: price per user, overage charges, add-on costs for features you need, the cost of training your team, and the opportunity cost of the time spent migrating. A tool that costs $5 more per user but saves your team two hours a week is cheaper in practice.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Also look at the pricing trajectory. Some tools are cheap at five users and brutal at fifty. Check the per-seat price at your expected team size in 12 months, not just today. Our <a href="/guides/saas-pricing-models-explained" class="text-indigo-600 hover:underline">pricing models guide</a> breaks this down in detail.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Step 4: Assess switching cost before you commit</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Before signing a contract, check: can you export your data? In what format? How painful would it be to move to a competitor in 12 months? Tools that make it hard to leave are betting you will tolerate declining quality rather than migrate. That is not a partnership — it is a trap.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The best tools make it easy to export. If a vendor does not offer a clean data export, treat that as a red flag. See our <a href="/guides/switching-saas-tools" class="text-indigo-600 hover:underline">switching guide</a> for a full migration checklist.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Step 5: Get input from the people who will use it</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The person choosing the tool is rarely the person using it eight hours a day. Before making a final decision, get feedback from at least two daily users. Their friction points will be different from yours. A tool that looks clean in a demo might be frustrating in repetitive daily use.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">The framework in summary</h2>
+      <div class="bg-gray-50 rounded-xl p-6 mb-6">
+        <ol class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">1.</span> Define 3-5 non-negotiable requirements to filter the longlist</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">2.</span> Test shortlisted tools with real work for one week each</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">3.</span> Calculate total cost including training, migration, and growth</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">4.</span> Check data export and switching cost before signing</li>
+          <li class="flex gap-2"><span class="font-bold text-indigo-600">5.</span> Get feedback from daily users, not just decision-makers</li>
+        </ol>
+      </div>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        This process takes a few weeks but saves months of regret. The goal is not to find the perfect tool — it is to find the tool that fits your team, your budget, and your workflow right now, with a clear path to switch if things change.
+      </p>
+
+    </div>
+
+    <!-- Related links -->
+    <div class="mt-12 border-t border-gray-100 pt-8">
+      <h2 class="font-bold mb-4">Related guides</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/guides/saas-pricing-models-explained" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">SaaS pricing models explained</div>
+          <div class="text-xs text-gray-500 mt-1">Per-seat vs usage-based vs flat-rate</div>
+        </a>
+        <a href="/guides/switching-saas-tools" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">Switching SaaS tools</div>
+          <div class="text-xs text-gray-500 mt-1">Migration checklist and data portability</div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Browse CTA -->
+    <div class="mt-8 bg-indigo-50 rounded-xl p-6 text-center">
+      <h3 class="font-bold mb-2">Ready to compare?</h3>
+      <p class="text-gray-600 text-sm mb-4">Browse 85+ tools with real pricing and user ratings.</p>
+      <a href="/" class="inline-block bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">Browse tools →</a>
+    </div>
+
+  </article>
+</Base>

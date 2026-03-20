@@ -1,0 +1,72 @@
+---
+/**
+ * Guides section hero illustration — open book / knowledge concept
+ * with floating tech elements representing SaaS learning
+ */
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240" class={`w-full max-w-md mx-auto ${className}`} aria-hidden="true">
+  <defs>
+    <linearGradient id="guide-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.03"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background shape -->
+  <ellipse cx="200" cy="140" rx="160" ry="80" fill="url(#guide-grad)"/>
+
+  <!-- Open book base -->
+  <path d="M100 160l100-20 100 20" stroke="#6366f1" stroke-width="2" fill="none"/>
+  <path d="M100 160l100-20v60l-100 20z" fill="#818cf8" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <path d="M300 160l-100-20v60l100 20z" fill="#6366f1" opacity="0.06" stroke="#c7d2fe" stroke-width="1"/>
+  <!-- Book pages (lines) -->
+  <line x1="120" y1="164" x2="185" y2="150" stroke="#c7d2fe" stroke-width="1" opacity="0.6"/>
+  <line x1="120" y1="172" x2="185" y2="158" stroke="#c7d2fe" stroke-width="1" opacity="0.5"/>
+  <line x1="120" y1="180" x2="180" y2="166" stroke="#c7d2fe" stroke-width="1" opacity="0.4"/>
+  <line x1="215" y1="150" x2="280" y2="164" stroke="#c7d2fe" stroke-width="1" opacity="0.6"/>
+  <line x1="215" y1="158" x2="280" y2="172" stroke="#c7d2fe" stroke-width="1" opacity="0.5"/>
+  <line x1="215" y1="166" x2="275" y2="180" stroke="#c7d2fe" stroke-width="1" opacity="0.4"/>
+
+  <!-- Floating element: checklist card -->
+  <rect x="54" y="60" width="72" height="64" rx="8" fill="white" stroke="#c7d2fe" stroke-width="1" filter="drop-shadow(0 2px 6px rgba(99,102,241,0.08))"/>
+  <rect x="64" y="70" width="36" height="5" rx="2.5" fill="#818cf8" opacity="0.4"/>
+  <circle cx="70" cy="84" r="3" stroke="#6366f1" stroke-width="1.5" fill="none"/>
+  <polyline points="68,84 70,86 73,82" stroke="#6366f1" stroke-width="1.2" fill="none"/>
+  <rect x="78" y="82" width="38" height="3" rx="1.5" fill="#e5e7eb"/>
+  <circle cx="70" cy="96" r="3" stroke="#6366f1" stroke-width="1.5" fill="none"/>
+  <polyline points="68,96 70,98 73,94" stroke="#6366f1" stroke-width="1.2" fill="none"/>
+  <rect x="78" y="94" width="30" height="3" rx="1.5" fill="#e5e7eb"/>
+  <circle cx="70" cy="108" r="3" stroke="#c7d2fe" stroke-width="1.5" fill="none"/>
+  <rect x="78" y="106" width="34" height="3" rx="1.5" fill="#e5e7eb" opacity="0.6"/>
+
+  <!-- Floating element: pricing badge -->
+  <rect x="280" y="48" width="68" height="52" rx="8" fill="white" stroke="#c7d2fe" stroke-width="1" filter="drop-shadow(0 2px 6px rgba(99,102,241,0.08))"/>
+  <text x="314" y="70" text-anchor="middle" font-size="16" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">$29</text>
+  <text x="314" y="82" text-anchor="middle" font-size="8" fill="#a5b4fc" font-family="Inter, sans-serif">/user/mo</text>
+  <rect x="294" y="88" width="40" height="5" rx="2.5" fill="#6366f1" opacity="0.1"/>
+
+  <!-- Floating element: chart -->
+  <rect x="160" y="36" width="76" height="56" rx="8" fill="white" stroke="#c7d2fe" stroke-width="1" filter="drop-shadow(0 2px 6px rgba(99,102,241,0.08))"/>
+  <polyline points="172,72 182,60 192,66 202,52 212,58 222,48" stroke="#6366f1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="222" cy="48" r="3" fill="#6366f1"/>
+  <rect x="170" y="44" width="30" height="4" rx="2" fill="#818cf8" opacity="0.3"/>
+
+  <!-- Floating dots / connections -->
+  <circle cx="140" cy="100" r="3" fill="#6366f1" opacity="0.15"/>
+  <circle cx="260" cy="108" r="3" fill="#818cf8" opacity="0.2"/>
+  <line x1="126" y1="92" x2="140" y2="100" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2" opacity="0.3"/>
+  <line x1="260" y1="108" x2="280" y2="74" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2" opacity="0.3"/>
+  <line x1="126" y1="68" x2="160" y2="62" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2" opacity="0.3"/>
+  <line x1="236" y1="64" x2="280" y2="64" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2" opacity="0.3"/>
+
+  <!-- Sparkle decorations -->
+  <g opacity="0.3">
+    <path d="M340 120l3-8 3 8-8 3 8 3" stroke="#818cf8" stroke-width="1" fill="none"/>
+    <path d="M56 140l2-6 2 6-6 2 6 2" stroke="#818cf8" stroke-width="1" fill="none"/>
+  </g>
+</svg>

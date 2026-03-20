@@ -1,0 +1,71 @@
+---
+/**
+ * Migration / switching checklist visual
+ * Shows a workflow of moving from tool A to tool B with checkpoints
+ */
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 180" class={`w-full max-w-md mx-auto ${className}`} aria-hidden="true">
+  <defs>
+    <linearGradient id="sw-grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f87171" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#fbbf24" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Progress track -->
+  <rect x="40" y="82" width="320" height="16" rx="8" fill="url(#sw-grad)"/>
+  <rect x="40" y="82" width="240" height="16" rx="8" fill="#6366f1" opacity="0.15"/>
+
+  <!-- Old tool card -->
+  <rect x="20" y="28" width="80" height="44" rx="8" fill="white" stroke="#f87171" stroke-width="1.5" opacity="0.8"/>
+  <rect x="32" y="38" width="40" height="5" rx="2.5" fill="#f87171" opacity="0.3"/>
+  <rect x="32" y="48" width="56" height="3" rx="1.5" fill="#e5e7eb"/>
+  <rect x="32" y="56" width="44" height="3" rx="1.5" fill="#e5e7eb" opacity="0.6"/>
+  <text x="60" y="22" text-anchor="middle" font-size="8" fill="#f87171" font-family="Inter, sans-serif" font-weight="600">Old tool</text>
+
+  <!-- New tool card -->
+  <rect x="300" y="28" width="80" height="44" rx="8" fill="white" stroke="#34d399" stroke-width="1.5"/>
+  <rect x="312" y="38" width="40" height="5" rx="2.5" fill="#34d399" opacity="0.3"/>
+  <rect x="312" y="48" width="56" height="3" rx="1.5" fill="#e5e7eb"/>
+  <rect x="312" y="56" width="44" height="3" rx="1.5" fill="#e5e7eb" opacity="0.6"/>
+  <text x="340" y="22" text-anchor="middle" font-size="8" fill="#34d399" font-family="Inter, sans-serif" font-weight="600">New tool</text>
+
+  <!-- Checkpoint nodes -->
+  <!-- 1: Export -->
+  <circle cx="100" cy="90" r="12" fill="white" stroke="#6366f1" stroke-width="2"/>
+  <polyline points="95,90 99,94 105,86" stroke="#6366f1" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="100" y="118" text-anchor="middle" font-size="7" fill="#6366f1" font-family="Inter, sans-serif" font-weight="600">Export</text>
+  <text x="100" y="128" text-anchor="middle" font-size="7" fill="#9ca3af" font-family="Inter, sans-serif">data</text>
+
+  <!-- 2: Clean -->
+  <circle cx="180" cy="90" r="12" fill="white" stroke="#6366f1" stroke-width="2"/>
+  <polyline points="175,90 179,94 185,86" stroke="#6366f1" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <text x="180" y="118" text-anchor="middle" font-size="7" fill="#6366f1" font-family="Inter, sans-serif" font-weight="600">Clean</text>
+  <text x="180" y="128" text-anchor="middle" font-size="7" fill="#9ca3af" font-family="Inter, sans-serif">& map</text>
+
+  <!-- 3: Import -->
+  <circle cx="260" cy="90" r="12" fill="white" stroke="#818cf8" stroke-width="2"/>
+  <rect x="255" y="86" width="10" height="8" rx="1" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="260" y="118" text-anchor="middle" font-size="7" fill="#818cf8" font-family="Inter, sans-serif" font-weight="600">Import</text>
+  <text x="260" y="128" text-anchor="middle" font-size="7" fill="#9ca3af" font-family="Inter, sans-serif">& test</text>
+
+  <!-- 4: Go live -->
+  <circle cx="340" cy="90" r="12" fill="white" stroke="#c7d2fe" stroke-width="2"/>
+  <circle cx="340" cy="90" r="4" fill="#c7d2fe"/>
+  <text x="340" y="118" text-anchor="middle" font-size="7" fill="#9ca3af" font-family="Inter, sans-serif" font-weight="600">Go live</text>
+
+  <!-- Arrow between old tool and track -->
+  <path d="M60 72l0 6" stroke="#f87171" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.4"/>
+  <!-- Arrow between track and new tool -->
+  <path d="M340 72l0 6" stroke="#34d399" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.4"/>
+
+  <!-- Bottom reminder -->
+  <rect x="110" y="148" width="180" height="22" rx="11" fill="#6366f1" opacity="0.06" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="200" y="163" text-anchor="middle" font-size="8" fill="#6366f1" font-family="Inter, sans-serif">Plan 2-4 weeks for a smooth migration</text>
+</svg>

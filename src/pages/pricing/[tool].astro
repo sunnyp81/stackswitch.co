@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getAllTools, getToolBySlug, formatPrice } from '../../utils/tools';
+import PricingTiers from '../../components/svg/PricingTiers.astro';
 
 export async function getStaticPaths() {
   const tools = await getAllTools();
@@ -113,6 +114,11 @@ const faqSchema = {
       <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
         From {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo
       </span>
+    </div>
+
+    <!-- Pricing visual -->
+    <div class="mb-8">
+      <PricingTiers />
     </div>
 
     <!-- Pricing tiers -->

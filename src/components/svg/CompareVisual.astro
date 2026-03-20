@@ -1,0 +1,73 @@
+---
+/**
+ * Side-by-side app windows for compare pages
+ * Shows two application interfaces being weighed against each other
+ */
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" class={`w-full max-w-lg mx-auto ${className}`} aria-hidden="true">
+  <defs>
+    <linearGradient id="cmp-grad-a" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.01"/>
+    </linearGradient>
+    <linearGradient id="cmp-grad-b" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.01"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left app window -->
+  <rect x="16" y="16" width="180" height="160" rx="10" fill="white" stroke="#6366f1" stroke-width="1.5" filter="drop-shadow(0 2px 8px rgba(99,102,241,0.08))"/>
+  <!-- Title bar -->
+  <rect x="16" y="16" width="180" height="28" rx="10" fill="url(#cmp-grad-a)"/>
+  <rect x="16" y="34" width="180" height="10" fill="url(#cmp-grad-a)"/>
+  <circle cx="32" cy="30" r="4" fill="#f87171" opacity="0.5"/>
+  <circle cx="44" cy="30" r="4" fill="#fbbf24" opacity="0.5"/>
+  <circle cx="56" cy="30" r="4" fill="#34d399" opacity="0.5"/>
+  <!-- Content lines -->
+  <rect x="30" y="56" width="80" height="6" rx="3" fill="#6366f1" opacity="0.3"/>
+  <rect x="30" y="70" width="120" height="4" rx="2" fill="#e5e7eb"/>
+  <rect x="30" y="80" width="100" height="4" rx="2" fill="#e5e7eb" opacity="0.6"/>
+  <!-- Mini bar chart -->
+  <rect x="30" y="96" width="12" height="28" rx="2" fill="#6366f1" opacity="0.15"/>
+  <rect x="48" y="104" width="12" height="20" rx="2" fill="#6366f1" opacity="0.25"/>
+  <rect x="66" y="92" width="12" height="32" rx="2" fill="#6366f1" opacity="0.4"/>
+  <rect x="84" y="100" width="12" height="24" rx="2" fill="#6366f1" opacity="0.2"/>
+  <!-- Rating stars -->
+  <rect x="30" y="140" width="60" height="16" rx="8" fill="#6366f1" opacity="0.08"/>
+  <text x="60" y="152" text-anchor="middle" font-size="9" fill="#6366f1" font-family="Inter, sans-serif" font-weight="600">4.7/5</text>
+
+  <!-- VS badge -->
+  <circle cx="220" cy="96" r="22" fill="white" stroke="#e5e7eb" stroke-width="1.5" filter="drop-shadow(0 2px 6px rgba(0,0,0,0.06))"/>
+  <text x="220" y="101" text-anchor="middle" font-size="13" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">VS</text>
+
+  <!-- Right app window -->
+  <rect x="244" y="16" width="180" height="160" rx="10" fill="white" stroke="#c7d2fe" stroke-width="1.5" filter="drop-shadow(0 2px 8px rgba(99,102,241,0.05))"/>
+  <!-- Title bar -->
+  <rect x="244" y="16" width="180" height="28" rx="10" fill="url(#cmp-grad-b)"/>
+  <rect x="244" y="34" width="180" height="10" fill="url(#cmp-grad-b)"/>
+  <circle cx="260" cy="30" r="4" fill="#f87171" opacity="0.5"/>
+  <circle cx="272" cy="30" r="4" fill="#fbbf24" opacity="0.5"/>
+  <circle cx="284" cy="30" r="4" fill="#34d399" opacity="0.5"/>
+  <!-- Content lines -->
+  <rect x="258" y="56" width="70" height="6" rx="3" fill="#818cf8" opacity="0.3"/>
+  <rect x="258" y="70" width="110" height="4" rx="2" fill="#e5e7eb"/>
+  <rect x="258" y="80" width="90" height="4" rx="2" fill="#e5e7eb" opacity="0.6"/>
+  <!-- Mini pie chart -->
+  <circle cx="290" cy="112" r="18" fill="#818cf8" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <path d="M290 94a18 18 0 0112.7 30.7z" fill="#818cf8" opacity="0.25"/>
+  <path d="M290 94a18 18 0 00-15.6 9l15.6 9z" fill="#6366f1" opacity="0.15"/>
+  <!-- Rating stars -->
+  <rect x="258" y="140" width="60" height="16" rx="8" fill="#818cf8" opacity="0.08"/>
+  <text x="288" y="152" text-anchor="middle" font-size="9" fill="#818cf8" font-family="Inter, sans-serif" font-weight="600">4.5/5</text>
+
+  <!-- Connection lines -->
+  <line x1="196" y1="70" x2="244" y2="70" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <line x1="196" y1="112" x2="244" y2="112" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+  <line x1="196" y1="148" x2="244" y2="148" stroke="#e5e7eb" stroke-width="1" stroke-dasharray="4 3" opacity="0.5"/>
+</svg>

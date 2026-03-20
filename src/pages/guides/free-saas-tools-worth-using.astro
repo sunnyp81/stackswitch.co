@@ -1,0 +1,153 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getAllTools, formatPrice, CATEGORIES, type Tool } from '../../utils/tools';
+import FreeToolsBadge from '../../components/svg/FreeToolsBadge.astro';
+
+const year = new Date().getFullYear();
+
+const allTools = await getAllTools();
+const freeTools = allTools.filter((t) => t.pricing.has_free_plan);
+
+// Group free tools by category, take top-rated per category
+const freeByCat: Record<string, Tool[]> = {};
+for (const tool of freeTools) {
+  if (!freeByCat[tool.category]) freeByCat[tool.category] = [];
+  freeByCat[tool.category].push(tool);
+}
+for (const cat of Object.keys(freeByCat)) {
+  freeByCat[cat].sort((a, b) => b.g2_score - a.g2_score);
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://stackswitch.co/guides" },
+    { "@type": "ListItem", "position": 3, "name": "Free SaaS Tools", "item": "https://stackswitch.co/guides/free-saas-tools-worth-using" }
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": `Free SaaS Tools Worth Using (${year})`,
+  "description": "A curated list of SaaS tools with genuinely useful free plans — not marketing bait.",
+  "author": { "@type": "Organization", "name": "StackSwitch" },
+  "publisher": { "@type": "Organization", "name": "StackSwitch", "url": "https://stackswitch.co" },
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20"
+};
+---
+
+<Base
+  title={`Free SaaS Tools Worth Using in ${year}: Curated by Category`}
+  description={`${freeTools.length}+ SaaS tools with genuinely useful free plans. Organised by category: CRM, project management, design, analytics, and more.`}
+  schema={[breadcrumbSchema, articleSchema]}
+>
+  <article class="max-w-3xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/guides" class="hover:text-gray-900">Guides</a>
+      <span class="mx-2">/</span>
+      <span>Free SaaS Tools</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-4">Free SaaS tools that are actually worth using</h1>
+    <p class="text-lg text-gray-600 mb-8">
+      Not every free plan is a bait-and-switch. These {freeTools.length} tools have free tiers you can genuinely build on — not just trial windows disguised as free plans.
+    </p>
+
+    <FreeToolsBadge class="mb-10" />
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 class="text-xl font-bold mt-8 mb-3">What makes a free plan genuinely useful?</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        A good free plan lets you do real work, not just explore the interface. It should cover your core use case without artificially crippling the experience. The best free plans are designed to get you hooked on the product — which is fine, because it means the product has to be good enough to sell itself.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Red flags for bad free plans: severe data limits (100 contacts, 50 tasks), missing essential features (no export, no API, no integrations), or aggressive upgrade prompts that block your workflow. We have excluded those from this list.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">How we selected these tools</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Every tool on this list meets three criteria: the free plan is usable for ongoing real work (not a 14-day trial), it has a G2 score of 4.0 or above, and the upgrade path is transparent — you know exactly what you are paying for if you outgrow the free tier.
+      </p>
+
+    </div>
+
+    <!-- Dynamic free tools by category -->
+    <div class="space-y-10 mt-8">
+      {Object.entries(freeByCat).map(([cat, tools]) => (
+        <div>
+          <h2 class="text-xl font-bold mb-4 flex items-center gap-2">
+            <span>{CATEGORIES[cat] ?? cat}</span>
+            <span class="text-sm font-normal text-gray-400">({tools.length} free)</span>
+          </h2>
+          <div class="space-y-3">
+            {tools.slice(0, 3).map((tool) => (
+              <div class="border border-gray-200 rounded-xl p-5 hover:border-indigo-200 transition-colors">
+                <div class="flex items-start justify-between gap-4 flex-wrap">
+                  <div>
+                    <a href={`/tools/${tool.slug}`} class="font-bold text-lg hover:text-indigo-600 transition-colors">{tool.name}</a>
+                    <p class="text-gray-500 text-sm mt-0.5">{tool.tagline}</p>
+                  </div>
+                  <div class="text-right flex-shrink-0">
+                    <span class="text-green-600 font-bold text-sm">Free plan</span>
+                    {tool.pricing.starting_price > 0 && (
+                      <div class="text-xs text-gray-400 mt-0.5">Paid from {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo</div>
+                    )}
+                  </div>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-3">
+                  {tool.pros.slice(0, 2).map((pro) => (
+                    <span class="text-xs bg-green-50 text-green-700 px-2 py-1 rounded-full">{pro}</span>
+                  ))}
+                  <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">{tool.g2_score}/5 G2</span>
+                </div>
+                <div class="flex gap-3 mt-3 text-sm">
+                  <a href={`/tools/${tool.slug}`} class="text-indigo-600 font-medium hover:underline">Full review →</a>
+                  <a href={`/pricing/${tool.slug}`} class="text-gray-500 hover:text-gray-900">See all plans →</a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    <div class="prose prose-gray max-w-none mt-12">
+      <h2 class="text-xl font-bold mt-8 mb-3">When to upgrade from free</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Free plans are designed with limits. You should upgrade when those limits actively slow your team down — not when you first encounter them. If you hit the contact cap on a CRM, can you clean your list first? If you hit the project limit, can you archive old ones? Squeeze value from the free tier before paying. That said, if you find yourself spending 30 minutes a week working around free-plan limitations, the paid plan is cheaper than your time.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Check our <a href="/guides/saas-pricing-models-explained" class="text-indigo-600 hover:underline">pricing models guide</a> to understand what you will pay when you do upgrade.
+      </p>
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-8">
+      <h2 class="font-bold mb-4">Related guides</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/guides/saas-pricing-models-explained" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">SaaS pricing models explained</div>
+          <div class="text-xs text-gray-500 mt-1">Understand what you will pay</div>
+        </a>
+        <a href="/guides/building-your-tech-stack" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">Building your tech stack</div>
+          <div class="text-xs text-gray-500 mt-1">Start at $0/mo and scale up</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-indigo-50 rounded-xl p-6 text-center">
+      <h3 class="font-bold mb-2">Compare all {freeTools.length}+ free tools</h3>
+      <p class="text-gray-600 text-sm mb-4">Filter by category, pricing model, and user ratings.</p>
+      <a href="/" class="inline-block bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">Browse tools →</a>
+    </div>
+
+  </article>
+</Base>

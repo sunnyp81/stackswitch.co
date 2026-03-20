@@ -1,0 +1,48 @@
+---
+/**
+ * Evaluation framework visual — decision matrix / funnel
+ * For the "how to choose SaaS tools" guide
+ */
+interface Props {
+  class?: string;
+}
+const { class: className = '' } = Astro.props;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" class={`w-full max-w-md mx-auto ${className}`} aria-hidden="true">
+  <defs>
+    <linearGradient id="ef-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.02"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Funnel shape -->
+  <path d="M80 20h240l-50 50H130z" fill="#818cf8" opacity="0.08" stroke="#c7d2fe" stroke-width="1"/>
+  <path d="M130 70h140l-30 50H160z" fill="#818cf8" opacity="0.12" stroke="#c7d2fe" stroke-width="1"/>
+  <path d="M160 120h80l-15 40H175z" fill="#818cf8" opacity="0.18" stroke="#c7d2fe" stroke-width="1"/>
+  <path d="M175 160h50l-8 30H183z" fill="#6366f1" opacity="0.25" stroke="#6366f1" stroke-width="1"/>
+
+  <!-- Stage labels -->
+  <text x="200" y="50" text-anchor="middle" font-size="10" fill="#6366f1" font-family="Inter, sans-serif" font-weight="600">All options (~20+ tools)</text>
+  <text x="200" y="100" text-anchor="middle" font-size="10" fill="#6366f1" font-family="Inter, sans-serif" font-weight="600">Meets requirements (~5)</text>
+  <text x="200" y="145" text-anchor="middle" font-size="10" fill="#4f46e5" font-family="Inter, sans-serif" font-weight="600">Trial & test (~2-3)</text>
+  <text x="200" y="182" text-anchor="middle" font-size="10" fill="#4f46e5" font-family="Inter, sans-serif" font-weight="700">Your pick</text>
+
+  <!-- Right-side criteria labels -->
+  <rect x="330" y="30" width="60" height="20" rx="4" fill="white" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="360" y="44" text-anchor="middle" font-size="7" fill="#818cf8" font-family="Inter, sans-serif">Features</text>
+  <line x1="320" y1="40" x2="330" y2="40" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <rect x="310" y="80" width="60" height="20" rx="4" fill="white" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="340" y="94" text-anchor="middle" font-size="7" fill="#818cf8" font-family="Inter, sans-serif">Pricing</text>
+  <line x1="270" y1="90" x2="310" y2="90" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <rect x="266" y="130" width="70" height="20" rx="4" fill="white" stroke="#c7d2fe" stroke-width="1"/>
+  <text x="301" y="144" text-anchor="middle" font-size="7" fill="#818cf8" font-family="Inter, sans-serif">Team fit</text>
+  <line x1="240" y1="140" x2="266" y2="140" stroke="#c7d2fe" stroke-width="1" stroke-dasharray="3 2"/>
+
+  <!-- Checkmark at bottom -->
+  <circle cx="200" cy="202" r="10" fill="#6366f1" opacity="0.15"/>
+  <polyline points="195,202 199,206 206,197" stroke="#6366f1" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

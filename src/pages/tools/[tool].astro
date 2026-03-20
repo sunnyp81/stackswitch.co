@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getAllTools, getToolBySlug, formatPrice, CATEGORIES, type Tool } from '../../utils/tools';
+import CategoryIcon from '../../components/CategoryIcon.astro';
 
 export async function getStaticPaths() {
   const tools = await getAllTools();
@@ -18,11 +19,45 @@ const altTools: Tool[] = (
 const year = new Date().getFullYear();
 const categoryName = CATEGORIES[tool.category] ?? tool.category;
 
-const bestForText = tool.pricing.has_free_plan
-  ? `${tool.name} suits teams who want to start for free and scale up. The free tier provides enough functionality for small teams, while paid plans unlock automation and advanced reporting.`
-  : `${tool.name} is best suited to ${categoryName.toLowerCase()} teams who need a reliable, full-featured solution and are ready to invest in a paid plan. It is a strong fit for organisations that prioritise ${tool.features.slice(0, 2).join(' and ').toLowerCase()}.`;
+// --- Quick verdict (2-3 sentences, conversational) ---
+const teamSize = tool.pricing.has_free_plan ? 'solo founders and small teams' : 'growing teams and mid-market companies';
+const pricingAngle = tool.pricing.has_free_plan
+  ? `You can start for free, which makes it low-risk to test.`
+  : `There is no free plan, so you need to be fairly sure it fits before committing.`;
+const quickVerdictText = `${tool.name} is built for ${teamSize} who need solid ${categoryName.toLowerCase()} capabilities. ${tool.g2_score >= 4.5 ? 'Users consistently rate it highly' : 'It holds its own'} against competitors like ${altTools.length > 0 ? altTools[0].name : 'other tools in this space'}. ${pricingAngle}`;
 
-const verdictText = `${tool.name} is a ${tool.g2_score >= 4.5 ? 'top-rated' : 'well-regarded'} ${categoryName.toLowerCase()} tool with ${tool.pricing.tiers.length} pricing plans. ${tool.pricing.has_free_plan ? 'The free plan makes it easy to get started with no upfront cost.' : `Starting at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo, it is priced for ${tool.pricing.model === 'contact' ? 'enterprise buyers' : 'growing teams'}.`} If the cons above are dealbreakers, see the alternatives below.`;
+// --- Use case scenarios ---
+const useCases = [
+  {
+    label: 'Solo / freelancer',
+    text: tool.pricing.has_free_plan
+      ? `The free plan covers the basics. You will probably not need to upgrade until you hit ${tool.pricing.tiers.length > 1 ? `the limits of the ${tool.pricing.tiers[0].name} plan` : 'scale'}.`
+      : `At ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo, it is a real investment for a solo operator. Consider a free alternative first, then switch when you outgrow it.`
+  },
+  {
+    label: '5-person startup',
+    text: tool.pricing.model === 'freemium'
+      ? `Start on the free plan and upgrade when collaboration features become essential. Budget around ${formatPrice(tool.pricing.starting_price * 5, tool.pricing.currency)}/mo for a team of five on the paid plan.`
+      : tool.pricing.model === 'contact'
+      ? `You will need to talk to sales. For a team this size, expect a custom quote. Make sure to negotiate — most vendors flex on price for early-stage companies.`
+      : `For a team of five, expect to pay roughly ${formatPrice(tool.pricing.starting_price * 5, tool.pricing.currency)}/mo on the ${tool.pricing.tiers[0]?.name ?? 'starter'} plan. That is ${tool.pricing.starting_price * 5 > 200 ? 'a significant line item' : 'reasonable'} for a startup budget.`
+  },
+  {
+    label: '50+ person company',
+    text: tool.pricing.tiers.length >= 3
+      ? `You will likely need the ${tool.pricing.tiers[tool.pricing.tiers.length > 3 ? 2 : 1]?.name ?? 'mid-tier'} plan or above. At this scale, check the ${tool.features.slice(-2).join(' and ').toLowerCase()} capabilities — they matter more as teams grow.`
+      : `With ${tool.pricing.tiers.length} plan${tool.pricing.tiers.length > 1 ? 's' : ''}, larger teams may find the feature set limiting. Worth comparing against enterprise-focused alternatives.`
+  }
+];
+
+// --- Pricing commentary ---
+const pricingCommentary = tool.pricing.has_free_plan
+  ? `The free plan is genuinely useful for ${tool.features.slice(0, 2).join(' and ').toLowerCase()} — not just a teaser. You can run real work on it. When you outgrow it, the jump to ${tool.pricing.tiers.length > 1 ? tool.pricing.tiers[1]?.name : 'paid'} at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo is reasonable.`
+  : tool.pricing.model === 'contact'
+  ? `No public pricing means you are entering a negotiation. Come prepared with your team size and usage requirements. Expect annual contracts with discounts for longer commitments.`
+  : `Starting at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo with no free tier, ${tool.name} is positioned for buyers who already know they need this category of tool. The ${tool.pricing.tiers[0]?.name ?? 'base'} plan is ${tool.pricing.starting_price <= 20 ? 'competitively priced' : tool.pricing.starting_price <= 50 ? 'mid-range' : 'premium'} for the ${categoryName.toLowerCase()} market.`;
+
+const verdictText = `${tool.name} is a ${tool.g2_score >= 4.5 ? 'top-rated' : 'well-regarded'} ${categoryName.toLowerCase()} tool with ${tool.pricing.tiers.length} pricing plans. ${tool.pricing.has_free_plan ? 'The free plan makes it easy to get started with no upfront cost.' : `Starting at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo, it is priced for ${tool.pricing.model === 'contact' ? 'enterprise buyers' : 'growing teams'}.`} If the watch-outs above are dealbreakers, see the alternatives below.`;
 
 const toolSchema = {
   "@context": "https://schema.org",
@@ -109,11 +144,16 @@ const faqSchema = {
       <span>{tool.name}</span>
     </nav>
 
-    <h1 class="text-3xl font-bold mb-2">{tool.name}</h1>
-    <p class="text-xl text-gray-600 mb-6">{tool.tagline}</p>
+    <div class="flex items-start gap-4 mb-2">
+      <CategoryIcon category={tool.category} size={48} class="flex-shrink-0 mt-1" />
+      <div>
+        <h1 class="text-3xl font-bold">{tool.name}</h1>
+        <p class="text-xl text-gray-600 mt-1">{tool.tagline}</p>
+      </div>
+    </div>
 
     <!-- Quick stats -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 mt-6">
       <div class="bg-gray-50 rounded-xl p-4 text-center">
         <div class="text-2xl font-bold text-indigo-600">
           {tool.pricing.has_free_plan ? 'Free' : formatPrice(tool.pricing.starting_price, tool.pricing.currency)}
@@ -134,36 +174,65 @@ const faqSchema = {
       </div>
     </div>
 
+    <!-- Quick verdict box -->
+    <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-10">
+      <div class="flex items-center gap-2 mb-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/></svg>
+        <h2 class="font-bold text-indigo-900">Quick verdict</h2>
+      </div>
+      <p class="text-gray-700 leading-relaxed">{quickVerdictText}</p>
+    </div>
+
     <p class="text-gray-700 leading-relaxed mb-8">{tool.description}</p>
 
-    <!-- Key features -->
+    <!-- What we like / Watch out for (conversational pros/cons) -->
+    <div class="grid md:grid-cols-2 gap-6 mb-10">
+      <div class="bg-green-50 border border-green-200 rounded-xl p-5">
+        <h3 class="font-semibold text-green-800 mb-3 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          What we like
+        </h3>
+        <ul class="space-y-2">
+          {tool.pros.map((pro) => <li class="text-sm text-gray-700 leading-relaxed">{pro}</li>)}
+        </ul>
+      </div>
+      <div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
+        <h3 class="font-semibold text-amber-800 mb-3 flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+          Watch out for
+        </h3>
+        <ul class="space-y-2">
+          {tool.cons.map((con) => <li class="text-sm text-gray-700 leading-relaxed">{con}</li>)}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Key features as pills -->
     <h2 class="text-xl font-bold mb-3">Key features</h2>
-    <div class="flex flex-wrap gap-2 mb-8">
+    <div class="flex flex-wrap gap-2 mb-10">
       {tool.features.map((feature) => (
         <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1.5 rounded-full">{feature}</span>
       ))}
     </div>
 
-    <!-- Pros/cons -->
-    <div class="grid md:grid-cols-2 gap-6 mb-10">
-      <div>
-        <h3 class="font-semibold text-green-700 mb-3">Pros</h3>
-        <ul class="space-y-2">
-          {tool.pros.map((pro) => <li class="text-sm flex gap-2 text-gray-700"><span class="text-green-500">✓</span>{pro}</li>)}
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-semibold text-red-700 mb-3">Cons</h3>
-        <ul class="space-y-2">
-          {tool.cons.map((con) => <li class="text-sm flex gap-2 text-gray-700"><span class="text-red-400">✗</span>{con}</li>)}
-        </ul>
+    <!-- Use case scenarios -->
+    <div class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Who should use {tool.name}?</h2>
+      <div class="space-y-4">
+        {useCases.map(({ label, text }) => (
+          <div class="border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold text-sm text-indigo-600 mb-1">If you are a {label}...</h3>
+            <p class="text-gray-700 text-sm leading-relaxed">{text}</p>
+          </div>
+        ))}
       </div>
     </div>
 
-    <!-- Who is it best for -->
-    <div class="bg-gray-50 rounded-xl p-6 mb-8">
-      <h2 class="text-lg font-bold mb-2">Who is {tool.name} best for?</h2>
-      <p class="text-gray-700 text-sm leading-relaxed">{bestForText}</p>
+    <!-- Pricing commentary -->
+    <div class="bg-gray-50 rounded-xl p-6 mb-10">
+      <h2 class="text-lg font-bold mb-2">Pricing: the honest take</h2>
+      <p class="text-gray-700 text-sm leading-relaxed mb-3">{pricingCommentary}</p>
+      <a href={`/pricing/${tool.slug}`} class="text-indigo-600 text-sm font-medium hover:underline">See full {tool.name} pricing breakdown →</a>
     </div>
 
     <!-- Action links -->

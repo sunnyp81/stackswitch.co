@@ -1,6 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import { getAllTools, formatPrice, CATEGORIES } from '../../utils/tools';
+import CategoryIcon from '../../components/CategoryIcon.astro';
 
 export async function getStaticPaths() {
   return Object.keys(CATEGORIES).map((cat) => ({ params: { cat } }));
@@ -80,7 +81,10 @@ const breadcrumbSchema = {
       <span>{categoryName}</span>
     </nav>
 
-    <h1 class="text-3xl font-bold mb-3">Best {categoryName} Software ({year})</h1>
+    <div class="flex items-center gap-3 mb-3">
+      <CategoryIcon category={cat} size={40} />
+      <h1 class="text-3xl font-bold">Best {categoryName} Software ({year})</h1>
+    </div>
     <p class="text-gray-600 mb-4 leading-relaxed max-w-2xl">{intro}</p>
 
     <!-- Quick stats bar -->

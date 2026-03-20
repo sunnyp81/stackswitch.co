@@ -1,0 +1,145 @@
+---
+import Base from '../../layouts/Base.astro';
+import StackBlocks from '../../components/svg/StackBlocks.astro';
+
+const year = new Date().getFullYear();
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stackswitch.co" },
+    { "@type": "ListItem", "position": 2, "name": "Guides", "item": "https://stackswitch.co/guides" },
+    { "@type": "ListItem", "position": 3, "name": "Building Your Tech Stack", "item": "https://stackswitch.co/guides/building-your-tech-stack" }
+  ]
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": `Building Your SaaS Tech Stack by Company Stage (${year})`,
+  "description": "What tools you need at solo, startup, scale-up, and enterprise stages — and when to add each layer.",
+  "author": { "@type": "Organization", "name": "StackSwitch" },
+  "publisher": { "@type": "Organization", "name": "StackSwitch", "url": "https://stackswitch.co" },
+  "datePublished": "2026-03-20",
+  "dateModified": "2026-03-20"
+};
+---
+
+<Base
+  title={`Building Your Tech Stack: What You Need at Every Stage (${year})`}
+  description="The right SaaS tools at each company stage: solo founder, startup, scale-up, and enterprise. Avoid overbuying early and underbuying late."
+  schema={[breadcrumbSchema, articleSchema]}
+>
+  <article class="max-w-3xl mx-auto px-4 py-12">
+
+    <nav class="text-sm text-gray-500 mb-6">
+      <a href="/" class="hover:text-gray-900">Home</a>
+      <span class="mx-2">/</span>
+      <a href="/guides" class="hover:text-gray-900">Guides</a>
+      <span class="mx-2">/</span>
+      <span>Building Your Tech Stack</span>
+    </nav>
+
+    <h1 class="text-3xl font-bold mb-4">Building your tech stack</h1>
+    <p class="text-lg text-gray-600 mb-8">
+      What you need at each stage — and what you definitely do not need yet.
+    </p>
+
+    <StackBlocks class="mb-10" />
+
+    <div class="prose prose-gray max-w-none">
+
+      <h2 class="text-xl font-bold mt-8 mb-3">The biggest mistake: buying too early</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        The most common tech stack mistake is not picking the wrong tool — it is picking the right tool at the wrong time. A solo founder does not need enterprise CRM. A 5-person startup does not need a business intelligence platform. Every tool you add creates maintenance overhead, training debt, and monthly cost.
+      </p>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Add tools when the pain of not having them is obvious. If you are losing deals because you cannot track follow-ups, get a CRM. If projects are slipping because no one knows who owns what, get a project management tool. Do not buy software because a blog post told you it is essential.
+      </p>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Stage 1: Solo founder (0-1 people)</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        At this stage, simplicity is everything. You do not need integrations because there is nothing to integrate. You need tools that let one person move fast.
+      </p>
+      <div class="bg-gray-50 rounded-xl p-5 mb-4">
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Email:</span> Gmail or your domain email. That is it.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Docs:</span> Google Docs or Notion (free tier). Write proposals, notes, and plans in one place.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Invoicing:</span> Stripe or Wave (free). Do not pay for accounting software yet.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Website:</span> A simple landing page. Carrd, Framer, or a one-page site.</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-3">Monthly cost: $0-20</p>
+      </div>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Stage 2: Small team (2-10 people)</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Now coordination matters. You need to know who is doing what, communicate without drowning in email, and track customer relationships beyond a spreadsheet.
+      </p>
+      <div class="bg-gray-50 rounded-xl p-5 mb-4">
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Communication:</span> <a href="/category/communication" class="text-indigo-600 hover:underline">Slack or Teams</a>. Pick one and commit.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Project management:</span> <a href="/category/project-management" class="text-indigo-600 hover:underline">Asana, Linear, or Notion</a>. Depends on whether you are product-led or service-led.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">CRM:</span> <a href="/category/crm" class="text-indigo-600 hover:underline">HubSpot (free) or Pipedrive</a>. You need this once you have more than 20 active leads.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">File storage:</span> Google Drive or Dropbox. One place for all shared files.</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-3">Monthly cost: $50-200</p>
+      </div>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Stage 3: Scale-up (10-50 people)</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        At this stage, processes start breaking. What worked with five people — ad-hoc Slack messages, shared spreadsheets — creates chaos with thirty. You need structure without bureaucracy.
+      </p>
+      <div class="bg-gray-50 rounded-xl p-5 mb-4">
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">HR:</span> <a href="/category/hr" class="text-indigo-600 hover:underline">Deel, Gusto, or BambooHR</a>. Payroll, onboarding, and leave tracking need to be automated.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Analytics:</span> <a href="/category/analytics" class="text-indigo-600 hover:underline">Mixpanel, Amplitude, or Heap</a>. You need data-driven decisions, not gut feelings.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Customer support:</span> <a href="/category/customer-support" class="text-indigo-600 hover:underline">Intercom or Zendesk</a>. Shared inboxes stop working at this scale.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Security:</span> <a href="/category/compliance" class="text-indigo-600 hover:underline">Vanta or Drata</a>. If you sell to enterprise, SOC 2 is not optional.</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-3">Monthly cost: $500-2,000</p>
+      </div>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">Stage 4: Enterprise (50+ people)</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Enterprise is not about adding more tools — it is about consolidating and integrating the ones you have. At this stage, the cost of context switching between disconnected tools is higher than the cost of any individual tool.
+      </p>
+      <div class="bg-gray-50 rounded-xl p-5 mb-4">
+        <ul class="space-y-2 text-sm text-gray-700">
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Integration layer:</span> Zapier, Workato, or custom APIs. Connect everything.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Business intelligence:</span> <a href="/category/bi-analytics" class="text-indigo-600 hover:underline">Looker, Tableau, or Metabase</a>. Dashboards for leadership decisions.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Identity management:</span> Okta or Azure AD. SSO across all tools.</li>
+          <li class="flex gap-2"><span class="text-indigo-600 font-bold">Finance:</span> <a href="/category/finance" class="text-indigo-600 hover:underline">NetSuite or Xero</a>. Real accounting, not spreadsheets.</li>
+        </ul>
+        <p class="text-gray-500 text-xs mt-3">Monthly cost: $5,000+</p>
+      </div>
+
+      <h2 class="text-xl font-bold mt-8 mb-3">The golden rule</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Add one new tool at a time. Give it 30 days to prove its value. If it does not clearly improve a workflow, remove it. Your tech stack should be as small as possible and as large as necessary.
+      </p>
+
+    </div>
+
+    <div class="mt-12 border-t border-gray-100 pt-8">
+      <h2 class="font-bold mb-4">Related guides</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <a href="/guides/how-to-choose-saas-tools" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">How to choose the right SaaS tool</div>
+          <div class="text-xs text-gray-500 mt-1">Evaluation framework</div>
+        </a>
+        <a href="/guides/free-saas-tools-worth-using" class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors">
+          <div class="font-semibold text-sm">Free SaaS tools worth using</div>
+          <div class="text-xs text-gray-500 mt-1">Start with $0/mo</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-8 bg-indigo-50 rounded-xl p-6 text-center">
+      <h3 class="font-bold mb-2">Find the right tool for your stage</h3>
+      <p class="text-gray-600 text-sm mb-4">Browse by category and filter by free plan, pricing model, and user ratings.</p>
+      <a href="/" class="inline-block bg-indigo-600 text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">Browse all tools →</a>
+    </div>
+
+  </article>
+</Base>
