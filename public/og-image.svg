@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eef2ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <!-- Top accent bar -->
+  <rect width="1200" height="6" fill="#4f46e5" />
+  <!-- Logo wordmark -->
+  <text x="600" y="210" font-family="Inter, system-ui, sans-serif" font-size="80" font-weight="700" text-anchor="middle" fill="#111827">
+    <tspan fill="#4f46e5">stack</tspan>switch
+  </text>
+  <!-- Tagline -->
+  <text x="600" y="300" font-family="Inter, system-ui, sans-serif" font-size="36" font-weight="400" text-anchor="middle" fill="#6b7280">SaaS Alternatives, Pricing &amp; Comparisons</text>
+  <!-- Sub-line -->
+  <text x="600" y="370" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="400" text-anchor="middle" fill="#9ca3af">Independent software comparisons for 100+ tools</text>
+  <!-- Pill tags -->
+  <rect x="270" y="430" width="140" height="44" rx="22" fill="#4f46e5" opacity="0.1"/>
+  <text x="340" y="458" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#4f46e5">CRM</text>
+  <rect x="430" y="430" width="200" height="44" rx="22" fill="#4f46e5" opacity="0.1"/>
+  <text x="530" y="458" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#4f46e5">Email Marketing</text>
+  <rect x="650" y="430" width="160" height="44" rx="22" fill="#4f46e5" opacity="0.1"/>
+  <text x="730" y="458" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#4f46e5">Analytics</text>
+  <rect x="830" y="430" width="100" height="44" rx="22" fill="#4f46e5" opacity="0.1"/>
+  <text x="880" y="458" font-family="Inter, system-ui, sans-serif" font-size="20" font-weight="500" text-anchor="middle" fill="#4f46e5">HR</text>
+  <!-- Domain -->
+  <text x="600" y="570" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="500" text-anchor="middle" fill="#4f46e5">stackswitch.co</text>
+</svg>
