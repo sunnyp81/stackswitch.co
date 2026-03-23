@@ -129,20 +129,31 @@ const featured = tools
       <div id="email-success" class="hidden text-indigo-700 font-medium py-3">
         Reports coming your way — check your inbox.
       </div>
-      <form id="email-form" action="https://api.staticforms.xyz/submit" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+      <form id="email-form" action="https://api.staticforms.xyz/submit" method="POST" class="flex flex-col gap-3 max-w-md mx-auto text-left">
         <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
         <input type="hidden" name="redirectTo" value="https://stackswitch.co/?joined=true" />
         <input type="hidden" name="subject" value="New subscriber — StackSwitch.co" />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          required
+          class="border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400"
+        />
         <input
           type="email"
           name="email"
           placeholder="Your email address"
           required
-          class="flex-1 border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400"
+          class="border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400"
         />
+        <label class="flex items-start gap-2.5 text-xs text-gray-500 cursor-pointer">
+          <input type="checkbox" name="cookieConsent" value="yes" required class="mt-0.5 accent-indigo-600 shrink-0" />
+          <span>I agree to StackSwitch storing my name and email to send comparison reports. You can unsubscribe at any time. See our <a href="/privacy" class="underline hover:text-gray-700">Privacy Policy</a>.</span>
+        </label>
         <button
           type="submit"
-          class="bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors whitespace-nowrap"
+          class="bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
         >
           Send Me Reports
         </button>
