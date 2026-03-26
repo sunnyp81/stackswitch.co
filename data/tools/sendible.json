@@ -1,0 +1,29 @@
+{
+  "slug": "sendible",
+  "name": "Sendible",
+  "tagline": "Social media management platform built for agencies",
+  "description": "Sendible is a social media management platform designed specifically for agencies and teams managing multiple clients. It offers scheduling, content creation tools, client dashboards, approval workflows, and white-label reporting — making it one of the most agency-friendly Hootsuite alternatives available.",
+  "category": "social-media",
+  "categories": ["social-media"],
+  "website": "https://sendible.com",
+  "affiliate_url": "",
+  "founded": 2008,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 29,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Creator", "price": 29, "period": "mo", "features": ["1 user", "6 profiles", "Scheduling & publishing", "Basic analytics"] },
+      { "name": "Traction", "price": 89, "period": "mo", "features": ["4 users", "24 profiles", "Content calendar", "Engagement inbox"] },
+      { "name": "Scale", "price": 199, "period": "mo", "features": ["7 users", "49 profiles", "Approval workflows", "White-label reports"] },
+      { "name": "Advanced", "price": 299, "period": "mo", "features": ["10+ users", "100+ profiles", "Client portals", "Priority support"] }
+    ]
+  },
+  "features": ["Multi-client management", "Content scheduling", "Approval workflows", "White-label reports", "Social inbox", "Content suggestions", "Canva integration"],
+  "pros": ["Best white-label options for agencies", "Strong approval workflow tools", "Supports many platforms including Google My Business", "Good client management features"],
+  "cons": ["UI feels dated compared to newer tools", "Analytics less advanced than Sprout Social", "Per-user pricing adds up for large teams"],
+  "alternatives": ["hootsuite", "buffer", "sprout-social", "later", "metricool"],
+  "g2_score": 4.5,
+  "capterra_score": 4.6
+}

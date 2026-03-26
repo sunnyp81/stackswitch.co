@@ -1,0 +1,29 @@
+{
+  "slug": "sistrix",
+  "name": "SISTRIX",
+  "tagline": "SEO visibility platform trusted by European agencies",
+  "description": "SISTRIX is a leading SEO platform particularly strong in European markets. It provides a Visibility Index — an industry-standard metric for tracking organic search performance — alongside keyword research, backlink analysis, content tools, and competitor monitoring. Widely used by agencies in Germany, UK, Spain, Italy, and France.",
+  "category": "seo-tools",
+  "categories": ["seo-tools"],
+  "website": "https://www.sistrix.com",
+  "affiliate_url": "",
+  "founded": 2008,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 99,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Start", "price": 99, "period": "mo", "features": ["1 user", "Visibility Index", "Keyword research", "Basic reports"] },
+      { "name": "Plus", "price": 199, "period": "mo", "features": ["3 users", "Content module", "Marketplace data", "API access"] },
+      { "name": "Professional", "price": 349, "period": "mo", "features": ["5 users", "All modules", "White-label reports", "Priority support"] },
+      { "name": "Premium", "price": 599, "period": "mo", "features": ["10 users", "Unlimited projects", "Advanced API", "Dedicated manager"] }
+    ]
+  },
+  "features": ["Visibility Index", "Keyword research", "Backlink analysis", "Competitor monitoring", "Content analysis", "SERP features tracking", "Local SEO"],
+  "pros": ["Industry-standard Visibility Index metric", "Excellent European market data", "Clean interface", "Strong competitor benchmarking"],
+  "cons": ["Less well-known outside Europe", "Fewer features than Semrush for PPC/social", "Pricing can add up with multiple modules"],
+  "alternatives": ["semrush", "ahrefs", "moz", "serpstat", "searchmetrics"],
+  "g2_score": 4.4,
+  "capterra_score": 4.5
+}

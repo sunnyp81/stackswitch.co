@@ -1,0 +1,28 @@
+{
+  "slug": "later",
+  "name": "Later",
+  "tagline": "Visual social media scheduler built for Instagram",
+  "description": "Later is a social media scheduling and analytics platform with a focus on visual content, particularly Instagram. Its drag-and-drop calendar and Linkin.bio feature make it popular with brands, influencers, and social media managers who prioritise Instagram, TikTok, and Pinterest alongside Facebook and LinkedIn.",
+  "category": "social-media",
+  "categories": ["social-media"],
+  "website": "https://later.com",
+  "affiliate_url": "",
+  "founded": 2014,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 18,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 18, "period": "mo", "features": ["1 user", "1 social set", "30 posts/profile/month", "Basic analytics"] },
+      { "name": "Growth", "price": 40, "period": "mo", "features": ["3 users", "3 social sets", "Unlimited posts", "Best time to post"] },
+      { "name": "Advanced", "price": 80, "period": "mo", "features": ["6 users", "6 social sets", "Advanced analytics", "Linkin.bio"] }
+    ]
+  },
+  "features": ["Visual scheduling calendar", "Instagram grid preview", "Linkin.bio page", "Hashtag suggestions", "Analytics dashboard", "TikTok scheduling", "Pinterest scheduling"],
+  "pros": ["Best-in-class Instagram workflow", "Visual grid preview for Instagram", "Linkin.bio is excellent for creators", "Clean, easy-to-use interface"],
+  "cons": ["Less powerful for Twitter/X and LinkedIn", "Limited social listening features", "More expensive per post than competitors", "No bulk upload on starter plan"],
+  "alternatives": ["hootsuite", "buffer", "sprout-social", "metricool", "sendible"],
+  "g2_score": 4.5,
+  "capterra_score": 4.4
+}

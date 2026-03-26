@@ -1,0 +1,28 @@
+{
+  "slug": "metricool",
+  "name": "Metricool",
+  "tagline": "Social media management with built-in ad analytics",
+  "description": "Metricool is an all-in-one social media management platform covering scheduling, analytics, competitor analysis, and advertising performance in one dashboard. Popular with agencies and freelancers for its combination of social media scheduling and ad campaign tracking (Google Ads, Meta Ads) at a competitive price.",
+  "category": "social-media",
+  "categories": ["social-media"],
+  "website": "https://metricool.com",
+  "affiliate_url": "",
+  "founded": 2016,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": true,
+    "starting_price": 22,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Starter", "price": 22, "period": "mo", "features": ["1 brand", "2,000 posts/mo", "3 months analytics", "Basic automation"] },
+      { "name": "Advanced", "price": 59, "period": "mo", "features": ["2 brands", "Unlimited posts", "1 year analytics", "Ad performance"] },
+      { "name": "Expert", "price": 119, "period": "mo", "features": ["5 brands", "Unlimited posts", "2 years analytics", "White-label reports"] }
+    ]
+  },
+  "features": ["Social media scheduling", "Ad performance tracking", "Competitor analysis", "Best time to post", "Auto-posting", "Link in bio", "White-label reporting"],
+  "pros": ["Includes ad analytics (Meta, Google) — unique at this price", "Free plan available", "Good competitor monitoring", "Affordable for agencies"],
+  "cons": ["UI can feel busy", "Less polished than Later or Buffer", "Analytics depth limited on lower plans", "Customer support can be slow"],
+  "alternatives": ["hootsuite", "buffer", "sprout-social", "later", "sendible"],
+  "g2_score": 4.4,
+  "capterra_score": 4.6
+}

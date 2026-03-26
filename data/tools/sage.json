@@ -1,0 +1,28 @@
+{
+  "slug": "sage",
+  "name": "Sage",
+  "tagline": "UK accounting software trusted by small businesses and accountants",
+  "description": "Sage is one of the UK's most established accounting software providers, offering cloud-based bookkeeping, invoicing, payroll, and VAT management. Sage 50 is a desktop solution for more complex needs, while Sage Accounting (formerly Sage One) targets small businesses. Well-regarded by UK accountants for compliance with HMRC Making Tax Digital.",
+  "category": "finance",
+  "categories": ["finance"],
+  "website": "https://www.sage.com",
+  "affiliate_url": "",
+  "founded": 1981,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 15,
+    "currency": "GBP",
+    "tiers": [
+      { "name": "Accounting Start", "price": 15, "period": "mo", "features": ["Income & expense tracking", "Invoicing", "MTD VAT filing", "Bank feeds"] },
+      { "name": "Accounting", "price": 30, "period": "mo", "features": ["Everything in Start", "Quotes & estimates", "Cash flow forecast", "Multi-currency"] },
+      { "name": "Accounting Plus", "price": 43, "period": "mo", "features": ["Everything in Accounting", "Inventory management", "Advanced reporting", "3 users"] }
+    ]
+  },
+  "features": ["Invoicing", "VAT returns", "Bank reconciliation", "Payroll (add-on)", "Making Tax Digital", "Multi-currency", "Cash flow forecasting"],
+  "pros": ["Strong HMRC MTD compliance", "Trusted by UK accountants", "Comprehensive UK tax features", "Good accountant collaboration tools"],
+  "cons": ["Less intuitive than Xero or FreshBooks", "Pricing can be high for small teams", "Older interface on desktop versions", "Payroll costs extra"],
+  "alternatives": ["quickbooks", "xero", "freshbooks", "wave", "zoho-crm"],
+  "g2_score": 4.0,
+  "capterra_score": 4.2
+}

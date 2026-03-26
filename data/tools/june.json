@@ -1,0 +1,28 @@
+{
+  "slug": "june",
+  "name": "June",
+  "tagline": "Product analytics for B2B SaaS teams using Segment data",
+  "description": "June is a product analytics tool built on top of Segment, designed specifically for B2B SaaS companies. It auto-generates reports for key SaaS metrics — activation, retention, churn, company-level analytics — without requiring manual dashboard setup. Simpler and faster to get value from than Mixpanel or Amplitude for early-stage and growth-stage SaaS teams.",
+  "category": "analytics",
+  "categories": ["analytics"],
+  "website": "https://june.so",
+  "affiliate_url": "",
+  "founded": 2020,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": true,
+    "starting_price": 149,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Free", "price": 0, "period": "mo", "features": ["Up to 1,000 MTUs", "Core reports", "Segment integration", "1 workspace"] },
+      { "name": "Growth", "price": 149, "period": "mo", "features": ["Up to 5,000 MTUs", "All reports", "Company analytics", "Slack alerts"] },
+      { "name": "Pro", "price": 399, "period": "mo", "features": ["Up to 20,000 MTUs", "Custom reports", "CRM sync", "Priority support"] }
+    ]
+  },
+  "features": ["Auto-generated SaaS reports", "Company-level analytics", "Activation tracking", "Retention analysis", "Churn monitoring", "Segment native", "Slack integration"],
+  "pros": ["Much faster to set up than Amplitude or Mixpanel", "Pre-built SaaS metrics reports", "Company-level analytics out of the box", "Free plan available"],
+  "cons": ["Requires Segment — not standalone", "Limited customisation vs Mixpanel/Amplitude", "Focused on B2B SaaS only", "Smaller ecosystem"],
+  "alternatives": ["mixpanel", "amplitude", "posthog", "heap", "google-analytics"],
+  "g2_score": 4.7,
+  "capterra_score": 4.6
+}

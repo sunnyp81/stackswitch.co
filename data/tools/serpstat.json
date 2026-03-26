@@ -1,0 +1,28 @@
+{
+  "slug": "serpstat",
+  "name": "Serpstat",
+  "tagline": "All-in-one SEO platform at a fraction of Semrush's price",
+  "description": "Serpstat is an all-in-one SEO and PPC platform offering keyword research, backlink analysis, site audits, rank tracking, and competitor analysis. It covers 230+ countries and provides a large keyword database at a significantly lower price point than Semrush or Ahrefs, making it popular with freelancers and growing agencies.",
+  "category": "seo-tools",
+  "categories": ["seo-tools"],
+  "website": "https://serpstat.com",
+  "affiliate_url": "",
+  "founded": 2013,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": true,
+    "starting_price": 50,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Individual", "price": 50, "period": "mo", "features": ["1 user", "4,000 queries/day", "15,000 results/query", "Basic API"] },
+      { "name": "Team", "price": 100, "period": "mo", "features": ["3 users", "7,000 queries/day", "50,000 results/query", "Scheduled reports"] },
+      { "name": "Agency", "price": 200, "period": "mo", "features": ["5 users", "Unlimited queries", "White-label reports", "Advanced API"] }
+    ]
+  },
+  "features": ["Keyword research", "Backlink analysis", "Site audit", "Rank tracking", "Competitor analysis", "Batch analysis", "PPC research"],
+  "pros": ["Very affordable compared to Semrush and Ahrefs", "Large keyword database", "Good batch analysis tools", "Free plan available"],
+  "cons": ["Data accuracy not always as strong as top-tier tools", "Interface can feel cluttered", "Customer support response times vary"],
+  "alternatives": ["semrush", "ahrefs", "moz", "mangools", "ubersuggest"],
+  "g2_score": 4.3,
+  "capterra_score": 4.6
+}

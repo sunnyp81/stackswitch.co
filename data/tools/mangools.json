@@ -1,0 +1,29 @@
+{
+  "slug": "mangools",
+  "name": "Mangools",
+  "tagline": "Affordable SEO suite built around KWFinder",
+  "description": "Mangools is a suite of five SEO tools — KWFinder (keyword research), SERPChecker (SERP analysis), SERPWatcher (rank tracking), LinkMiner (backlink analysis), and SiteProfiler (site metrics). Known for its clean UI and affordability, it is popular with bloggers, small businesses, and SEO beginners looking for an accessible Semrush alternative.",
+  "category": "seo-tools",
+  "categories": ["seo-tools"],
+  "website": "https://mangools.com",
+  "affiliate_url": "",
+  "founded": 2014,
+  "pricing": {
+    "model": "paid",
+    "has_free_plan": false,
+    "starting_price": 29,
+    "currency": "USD",
+    "tiers": [
+      { "name": "Entry", "price": 29, "period": "mo", "features": ["1 user", "100 keyword lookups/day", "200 SERP lookups/day", "25 tracked keywords"] },
+      { "name": "Basic", "price": 49, "period": "mo", "features": ["1 user", "200 keyword lookups/day", "700 SERP lookups/day", "200 tracked keywords"] },
+      { "name": "Premium", "price": 69, "period": "mo", "features": ["3 users", "500 keyword lookups/day", "Unlimited SERP lookups", "700 tracked keywords"] },
+      { "name": "Agency", "price": 129, "period": "mo", "features": ["10 users", "1,200 keyword lookups/day", "Unlimited SERP lookups", "1,500 tracked keywords"] }
+    ]
+  },
+  "features": ["KWFinder keyword research", "SERP analysis", "Rank tracking", "Backlink analysis", "Site metrics", "Keyword difficulty scoring", "Local keyword data"],
+  "pros": ["Very beginner-friendly UI", "Cheapest full SEO suite available", "Accurate keyword difficulty scores", "Good local SEO data"],
+  "cons": ["Limited data volume on lower plans", "No content marketing tools", "No PPC/advertising data", "Single-user on entry plans"],
+  "alternatives": ["semrush", "ahrefs", "moz", "serpstat", "ubersuggest"],
+  "g2_score": 4.7,
+  "capterra_score": 4.8
+}
