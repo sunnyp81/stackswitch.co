@@ -1,0 +1,151 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="About StackSwitch — Independent SaaS Comparisons"
+  description="Learn how StackSwitch compares SaaS tools. Our methodology uses publicly available pricing, official docs, and verified user reviews — no vendor bias."
+>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+
+    <h1 class="text-3xl font-bold mb-4">About StackSwitch</h1>
+    <p class="text-lg text-gray-600 mb-10">
+      Independent software comparisons built for buyers, not vendors.
+    </p>
+
+    <!-- Trust shield SVG -->
+    <div class="flex justify-center mb-12">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" class="w-40 h-40" aria-hidden="true">
+        <defs>
+          <linearGradient id="shield-grad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#6366f1" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#6366f1" stop-opacity="0.03"/>
+          </linearGradient>
+        </defs>
+        <!-- Shield shape -->
+        <path d="M100 16 L168 48 L168 108 Q168 156 100 184 Q32 156 32 108 L32 48 Z"
+              fill="url(#shield-grad)" stroke="#6366f1" stroke-width="2"/>
+        <!-- Checkmark -->
+        <path d="M72 100 L92 120 L128 76" fill="none" stroke="#6366f1" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Small accent lines -->
+        <line x1="60" y1="52" x2="140" y2="52" stroke="#c7d2fe" stroke-width="1" opacity="0.5"/>
+        <line x1="56" y1="62" x2="144" y2="62" stroke="#c7d2fe" stroke-width="1" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <!-- Mission -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Our mission</h2>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        StackSwitch exists to help teams make better software decisions without vendor bias. Choosing the right SaaS tool
+        can save thousands of pounds a year and hundreds of hours in productivity — but most comparison sites are funded
+        by the tools they review, which skews the recommendations.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        We built StackSwitch to be the comparison resource we wished existed: clear data, honest trade-offs, and no hidden
+        incentives pushing you towards a particular product.
+      </p>
+    </section>
+
+    <!-- How we compare tools -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">How we compare tools</h2>
+      <p class="text-gray-700 leading-relaxed mb-6">
+        Every comparison on StackSwitch follows a consistent, repeatable methodology. Here is how we do it:
+      </p>
+
+      <!-- Methodology SVG: 3-step process -->
+      <div class="flex justify-center mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 140" class="w-full max-w-xl" aria-hidden="true">
+          <!-- Step 1: Research -->
+          <rect x="16" y="20" width="160" height="100" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+          <circle cx="52" cy="52" r="16" fill="#6366f1" opacity="0.1"/>
+          <text x="52" y="57" text-anchor="middle" font-size="14" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">1</text>
+          <text x="80" y="56" font-size="12" font-weight="600" fill="#1f2937" font-family="Inter, sans-serif">Research</text>
+          <text x="32" y="80" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Pricing from official sites</text>
+          <text x="32" y="94" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Features from docs</text>
+          <text x="32" y="108" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Ratings from G2/Capterra</text>
+
+          <!-- Arrow 1 -->
+          <line x1="186" y1="70" x2="216" y2="70" stroke="#c7d2fe" stroke-width="2"/>
+          <polygon points="216,64 228,70 216,76" fill="#c7d2fe"/>
+
+          <!-- Step 2: Compare -->
+          <rect x="232" y="20" width="160" height="100" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+          <circle cx="268" cy="52" r="16" fill="#6366f1" opacity="0.1"/>
+          <text x="268" y="57" text-anchor="middle" font-size="14" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">2</text>
+          <text x="296" y="56" font-size="12" font-weight="600" fill="#1f2937" font-family="Inter, sans-serif">Compare</text>
+          <text x="248" y="80" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Side-by-side pricing</text>
+          <text x="248" y="94" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Feature matching</text>
+          <text x="248" y="108" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Pros and cons analysis</text>
+
+          <!-- Arrow 2 -->
+          <line x1="402" y1="70" x2="432" y2="70" stroke="#c7d2fe" stroke-width="2"/>
+          <polygon points="432,64 444,70 432,76" fill="#c7d2fe"/>
+
+          <!-- Step 3: Recommend -->
+          <rect x="448" y="20" width="140" height="100" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+          <circle cx="484" cy="52" r="16" fill="#6366f1" opacity="0.1"/>
+          <text x="484" y="57" text-anchor="middle" font-size="14" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">3</text>
+          <text x="508" y="56" font-size="10" font-weight="600" fill="#1f2937" font-family="Inter, sans-serif">Recommend</text>
+          <text x="464" y="80" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Verdicts by use case</text>
+          <text x="464" y="94" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Budget-based picks</text>
+          <text x="464" y="108" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Clear trade-offs</text>
+        </svg>
+      </div>
+
+      <div class="space-y-4 text-gray-700 leading-relaxed">
+        <p>
+          <strong>Data collection:</strong> We gather pricing information directly from official product websites and documentation.
+          Feature lists come from vendor docs, changelogs, and help centres. User sentiment is sourced from verified reviews on
+          G2 and Capterra — platforms where reviewers must prove they use the software.
+        </p>
+        <p>
+          <strong>Structured comparison:</strong> Each tool is evaluated on the same criteria: starting price, pricing model,
+          free plan availability, core features, G2 score, and Capterra score. This makes apples-to-apples comparison possible
+          across categories.
+        </p>
+        <p>
+          <strong>Context-aware verdicts:</strong> Rather than declaring a single "winner", we explain which tool suits
+          which use case. The best CRM for a 5-person startup is rarely the best for a 500-person enterprise.
+        </p>
+      </div>
+    </section>
+
+    <!-- Editorial independence -->
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Editorial independence</h2>
+      <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-6 mb-6">
+        <ul class="space-y-3 text-sm text-gray-700">
+          <li class="flex gap-3">
+            <span class="text-indigo-600 font-bold shrink-0">1.</span>
+            <span><strong>No sponsored placements.</strong> Tool rankings are based on user ratings and feature fit — not payments from vendors.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-indigo-600 font-bold shrink-0">2.</span>
+            <span><strong>No affiliate links influencing rankings.</strong> Where we include affiliate links, they never affect which tool is ranked first or recommended.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-indigo-600 font-bold shrink-0">3.</span>
+            <span><strong>Transparent data sources.</strong> Every data point we cite — pricing, ratings, features — can be verified on the original source.</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="text-indigo-600 font-bold shrink-0">4.</span>
+            <span><strong>Regular updates.</strong> Pricing changes frequently in SaaS. We review and update our data to keep comparisons accurate.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="border-t border-gray-100 pt-10">
+      <p class="text-gray-600 mb-4">
+        Have a question about our methodology, or spotted something that needs updating?
+      </p>
+      <a href="/contact" class="inline-block bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors">
+        Get in touch
+      </a>
+    </section>
+
+  </div>
+</Base>

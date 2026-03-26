@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Contact StackSwitch — Get in Touch"
+  description="Have a question, correction, or suggestion? Contact the StackSwitch team. We typically respond within 48 hours."
+>
+  <div class="max-w-4xl mx-auto px-4 py-12">
+
+    <h1 class="text-3xl font-bold mb-4">Contact us</h1>
+    <p class="text-lg text-gray-600 mb-10">
+      Have a question about a comparison, spotted outdated pricing, or want to suggest a tool we should cover?
+      We would love to hear from you.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Contact form -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">Send a message</h2>
+
+        <div id="contact-success" class="hidden bg-green-50 border border-green-200 rounded-xl p-5 mb-6">
+          <p class="text-green-800 font-medium">Message sent. We will get back to you shortly.</p>
+        </div>
+
+        <form id="contact-form" action="https://api.staticforms.xyz/submit" method="POST" class="space-y-4">
+          <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
+          <input type="hidden" name="redirectTo" value="https://stackswitch.co/contact?sent=true" />
+          <input type="hidden" name="subject" value="Contact form — StackSwitch.co" />
+
+          <div>
+            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400"
+              placeholder="Your name"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400"
+              placeholder="you@example.com"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows="5"
+              class="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-300 focus:border-indigo-400 resize-y"
+              placeholder="What can we help with?"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="bg-indigo-600 text-white px-6 py-2.5 rounded-lg text-sm font-medium hover:bg-indigo-700 transition-colors"
+          >
+            Send message
+          </button>
+        </form>
+      </div>
+
+      <!-- Direct contact info -->
+      <div>
+        <h2 class="text-xl font-bold mb-4">Other ways to reach us</h2>
+
+        <div class="space-y-6">
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold mb-2">Email</h3>
+            <p class="text-gray-700 text-sm">
+              For general enquiries, corrections, or partnership requests:
+            </p>
+            <a href="mailto:hello@stackswitch.co" class="text-indigo-600 hover:underline text-sm font-medium mt-1 inline-block">
+              hello@stackswitch.co
+            </a>
+          </div>
+
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold mb-2">Response time</h3>
+            <p class="text-gray-700 text-sm">
+              We aim to respond to all messages within 48 hours during weekdays.
+            </p>
+          </div>
+
+          <div class="bg-gray-50 border border-gray-200 rounded-xl p-5">
+            <h3 class="font-semibold mb-2">Suggest a tool</h3>
+            <p class="text-gray-700 text-sm">
+              Know a SaaS tool we should add to our comparisons? Drop us a message with the tool name,
+              website, and category — we will review it for inclusion.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('sent') === 'true') {
+      document.getElementById('contact-form')?.classList.add('hidden');
+      document.getElementById('contact-success')?.classList.remove('hidden');
+    }
+  </script>
+</Base>

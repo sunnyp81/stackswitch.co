@@ -1,0 +1,17 @@
+# StackSwitch
+> StackSwitch compares 85+ SaaS tools across pricing, features, and alternatives.
+
+## About
+StackSwitch is an independent SaaS comparison directory. We help teams find the right software by comparing pricing plans, features, user ratings (G2/Capterra), and alternatives — without vendor bias or sponsored placements.
+
+## Content
+- 85+ SaaS tools compared
+- 22 categories (CRM, project management, email marketing, HR, analytics, and more)
+- Head-to-head comparisons, alternatives pages, and pricing breakdowns
+- Buyer guides for evaluating software
+
+## Sitemap
+https://stackswitch.co/sitemap-index.xml
+
+## Contact
+hello@stackswitch.co

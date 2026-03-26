@@ -103,10 +103,47 @@ const faqSchema = {
 
     <!-- Hero -->
     <h1 class="text-3xl font-bold mb-3">Best {tool.name} Alternatives ({year})</h1>
-    <p class="text-lg text-gray-600 mb-8">
+    <p class="text-lg text-gray-600 mb-4">
       {tool.name} is {tool.tagline.toLowerCase()}, starting at {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo.
       Here are the best alternatives — whether you need something cheaper, simpler, or with different features.
     </p>
+
+    <!-- Switching visual -->
+    <div class="flex justify-center mb-8">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" class="w-full max-w-sm" aria-hidden="true">
+        <!-- Source box (current tool) -->
+        <rect x="8" y="28" width="80" height="44" rx="8" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+        <rect x="20" y="40" width="40" height="5" rx="2.5" fill="#6366f1" opacity="0.3"/>
+        <rect x="20" y="50" width="56" height="4" rx="2" fill="#e5e7eb"/>
+        <rect x="20" y="58" width="48" height="4" rx="2" fill="#e5e7eb" opacity="0.6"/>
+
+        <!-- Arrows fanning out -->
+        <line x1="98" y1="42" x2="148" y2="24" stroke="#c7d2fe" stroke-width="1.5"/>
+        <polygon points="148,18 156,24 148,28" fill="#c7d2fe"/>
+        <line x1="98" y1="50" x2="148" y2="50" stroke="#6366f1" stroke-width="1.5" opacity="0.4"/>
+        <polygon points="148,44 156,50 148,56" fill="#6366f1" opacity="0.4"/>
+        <line x1="98" y1="58" x2="148" y2="76" stroke="#c7d2fe" stroke-width="1.5"/>
+        <polygon points="148,70 156,76 148,82" fill="#c7d2fe"/>
+
+        <!-- Alternative box 1 -->
+        <rect x="160" y="4" width="80" height="40" rx="8" fill="white" stroke="#c7d2fe" stroke-width="1.5"/>
+        <rect x="172" y="14" width="36" height="5" rx="2.5" fill="#818cf8" opacity="0.3"/>
+        <rect x="172" y="24" width="52" height="3" rx="1.5" fill="#e5e7eb"/>
+        <rect x="172" y="32" width="44" height="3" rx="1.5" fill="#e5e7eb" opacity="0.6"/>
+
+        <!-- Alternative box 2 -->
+        <rect x="160" y="30" width="80" height="40" rx="8" fill="white" stroke="#6366f1" stroke-width="1.5" transform="translate(100, 0)"/>
+        <rect x="272" y="40" width="36" height="5" rx="2.5" fill="#6366f1" opacity="0.3"/>
+        <rect x="272" y="50" width="52" height="3" rx="1.5" fill="#e5e7eb"/>
+        <rect x="272" y="58" width="44" height="3" rx="1.5" fill="#e5e7eb" opacity="0.6"/>
+
+        <!-- Alternative box 3 -->
+        <rect x="160" y="56" width="80" height="40" rx="8" fill="white" stroke="#c7d2fe" stroke-width="1.5"/>
+        <rect x="172" y="66" width="36" height="5" rx="2.5" fill="#818cf8" opacity="0.3"/>
+        <rect x="172" y="76" width="52" height="3" rx="1.5" fill="#e5e7eb"/>
+        <rect x="172" y="84" width="44" height="3" rx="1.5" fill="#e5e7eb" opacity="0.6"/>
+      </svg>
+    </div>
 
     <!-- Quick facts bar -->
     <div class="flex flex-wrap gap-4 mb-8 text-sm">

@@ -165,12 +165,76 @@ const featured = tools
     }
   </script>
 
-  <!-- Trust bar -->
-  <section class="max-w-4xl mx-auto px-4 py-14 text-center">
-    <h2 class="text-2xl font-bold mb-3">Independent. No vendor bias.</h2>
-    <p class="text-gray-600 max-w-xl mx-auto">
-      StackSwitch is built for buyers, not sellers. We compare SaaS tools based on real pricing and user ratings — not who pays us the most.
-    </p>
+  <!-- Trust & methodology -->
+  <section class="border-t border-gray-100 py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-bold mb-3 text-center">How we compare tools</h2>
+      <p class="text-gray-600 max-w-xl mx-auto text-center mb-10">
+        Every comparison follows the same rigorous process — no shortcuts, no vendor influence.
+      </p>
+
+      <!-- Methodology SVG -->
+      <div class="flex justify-center mb-10">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 120" class="w-full max-w-xl" aria-hidden="true">
+          <!-- Step 1: Research -->
+          <rect x="8" y="10" width="170" height="100" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+          <circle cx="40" cy="40" r="14" fill="#6366f1" opacity="0.1"/>
+          <text x="40" y="45" text-anchor="middle" font-size="13" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">1</text>
+          <text x="62" y="44" font-size="12" font-weight="600" fill="#1f2937" font-family="Inter, sans-serif">Research</text>
+          <text x="24" y="68" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Official pricing and docs</text>
+          <text x="24" y="82" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">G2 and Capterra reviews</text>
+          <text x="24" y="96" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Feature verification</text>
+
+          <!-- Arrow 1 -->
+          <line x1="188" y1="60" x2="210" y2="60" stroke="#c7d2fe" stroke-width="2"/>
+          <polygon points="210,54 222,60 210,66" fill="#c7d2fe"/>
+
+          <!-- Step 2: Compare -->
+          <rect x="226" y="10" width="170" height="100" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+          <circle cx="258" cy="40" r="14" fill="#6366f1" opacity="0.1"/>
+          <text x="258" y="45" text-anchor="middle" font-size="13" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">2</text>
+          <text x="280" y="44" font-size="12" font-weight="600" fill="#1f2937" font-family="Inter, sans-serif">Compare</text>
+          <text x="242" y="68" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Side-by-side pricing</text>
+          <text x="242" y="82" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Feature matching</text>
+          <text x="242" y="96" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Pros and cons analysis</text>
+
+          <!-- Arrow 2 -->
+          <line x1="406" y1="60" x2="428" y2="60" stroke="#c7d2fe" stroke-width="2"/>
+          <polygon points="428,54 440,60 428,66" fill="#c7d2fe"/>
+
+          <!-- Step 3: Recommend -->
+          <rect x="444" y="10" width="150" height="100" rx="12" fill="white" stroke="#6366f1" stroke-width="1.5"/>
+          <circle cx="476" cy="40" r="14" fill="#6366f1" opacity="0.1"/>
+          <text x="476" y="45" text-anchor="middle" font-size="13" font-weight="700" fill="#6366f1" font-family="Inter, sans-serif">3</text>
+          <text x="496" y="44" font-size="10" font-weight="600" fill="#1f2937" font-family="Inter, sans-serif">Recommend</text>
+          <text x="460" y="68" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Verdicts by use case</text>
+          <text x="460" y="82" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Budget-based picks</text>
+          <text x="460" y="96" font-size="9" fill="#6b7280" font-family="Inter, sans-serif">Clear trade-offs</text>
+        </svg>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid grid-cols-3 gap-4 max-w-lg mx-auto mb-8">
+        <div class="text-center">
+          <div class="text-2xl font-bold text-indigo-600">85+</div>
+          <div class="text-sm text-gray-500">Tools compared</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-indigo-600">22</div>
+          <div class="text-sm text-gray-500">Categories</div>
+        </div>
+        <div class="text-center">
+          <div class="text-2xl font-bold text-indigo-600">{new Date().getFullYear()}</div>
+          <div class="text-sm text-gray-500">Updated</div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="/about" class="text-sm text-indigo-600 font-medium hover:underline">
+          Learn more about our methodology
+        </a>
+      </div>
+    </div>
   </section>
 
 </Base>
