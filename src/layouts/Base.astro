@@ -61,7 +61,16 @@ const schemas = [websiteSchema, ...(schema ? (Array.isArray(schema) ? schema : [
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <script type="application/ld+json" set:html={JSON.stringify(schemas)} />
   <meta name="msvalidate.01" content="F4F5EB5B902BBBE925DCC681F18545C1" />
-</head>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2W5RS0XFSC"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-2W5RS0XFSC');
+    </script>
+  </head>
 <body class="bg-white text-gray-900 font-sans antialiased">
   <header class="border-b border-gray-100 sticky top-0 bg-white/95 backdrop-blur z-50">
     <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
