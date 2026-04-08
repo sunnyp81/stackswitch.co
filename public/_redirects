@@ -1,0 +1,6 @@
+# Redirect trailing slashes to canonical no-slash URLs
+/alternatives/:slug/  /alternatives/:slug  301
+/compare/:slug/       /compare/:slug       301
+/tools/:slug/         /tools/:slug         301
+/blog/:slug/          /blog/:slug          301
+/categories/:slug/    /categories/:slug    301
