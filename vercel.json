@@ -4,6 +4,31 @@
       "source": "/sitemap.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
+    },
+    {
+      "source": "/alternatives/:slug/",
+      "destination": "/alternatives/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/compare/:slug/",
+      "destination": "/compare/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/tools/:slug/",
+      "destination": "/tools/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug/",
+      "destination": "/blog/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/categories/:slug/",
+      "destination": "/categories/:slug",
+      "permanent": true
     }
   ]
 }
