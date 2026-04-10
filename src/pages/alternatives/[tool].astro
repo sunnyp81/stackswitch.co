@@ -257,6 +257,45 @@ const faqSchema = {
       </div>
     )}
 
+    <!-- How to switch -->
+    <div class="mt-12 border border-gray-200 rounded-xl p-6">
+      <h2 class="text-xl font-bold mb-5">How to switch from {tool.name}</h2>
+      <ol class="space-y-5">
+        <li class="flex gap-4">
+          <span class="font-bold text-indigo-600 text-lg shrink-0 w-6">1.</span>
+          <div>
+            <div class="font-semibold text-sm mb-1">Export your data first</div>
+            <p class="text-gray-600 text-sm">Before cancelling, export everything from {tool.name} — contacts, projects, records, or reports. Most tools offer a CSV export under Settings → Data Export. Download and store it as a backup even if you don't need it immediately.</p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="font-bold text-indigo-600 text-lg shrink-0 w-6">2.</span>
+          <div>
+            <div class="font-semibold text-sm mb-1">Trial the alternative with a real project</div>
+            <p class="text-gray-600 text-sm">
+              {freeAlts.length > 0
+                ? `${freeAlts.slice(0, 2).map(a => a.name).join(' and ')} ${freeAlts.length > 1 ? 'both offer' : 'offers'} free plans — sign up and run a live project in parallel before committing. Most paid alternatives also offer 14–30 day trials.`
+                : `Most alternatives above offer 14–30 day free trials. Sign up and run a real project — not a demo — before making a final decision.`}
+            </p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="font-bold text-indigo-600 text-lg shrink-0 w-6">3.</span>
+          <div>
+            <div class="font-semibold text-sm mb-1">Import and run both tools briefly</div>
+            <p class="text-gray-600 text-sm">Use the import wizard in your chosen alternative to bring across your exported data. Run both tools in parallel for 2–4 weeks so your team can adapt without losing continuity. Most migrations take less than a day for small teams.</p>
+          </div>
+        </li>
+        <li class="flex gap-4">
+          <span class="font-bold text-indigo-600 text-lg shrink-0 w-6">4.</span>
+          <div>
+            <div class="font-semibold text-sm mb-1">Cancel before the next billing cycle</div>
+            <p class="text-gray-600 text-sm">Cancel {tool.name} before renewal to avoid being charged for another month or year. Check whether you're on a monthly or annual plan — annual plans often have no mid-cycle refunds. Keep your final data export on file.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+
     <!-- Verdict -->
     {topAlt && (
       <div class="mt-10 border-l-4 border-indigo-400 pl-5 py-1">
