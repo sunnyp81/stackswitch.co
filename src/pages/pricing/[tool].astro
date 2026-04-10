@@ -86,8 +86,8 @@ const faqSchema = {
 ---
 
 <Base
-  title={`${tool.name} Pricing ${year}: All Plans Explained`}
-  description={`${tool.name} pricing starts at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo. See all ${tool.pricing.tiers.length} plans, what's included, and whether there's a free option.`}
+  title={`${tool.name} Pricing ${year}: True Cost & All Plans`}
+  description={`${tool.name} pricing starts at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo — but the real cost is often higher. We break down all ${tool.pricing.tiers.length} plans, add-on fees, and what's actually included.`}
   schema={[productSchema, breadcrumbSchema, faqSchema]}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">

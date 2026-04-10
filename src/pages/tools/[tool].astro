@@ -130,8 +130,8 @@ const faqSchema = {
 ---
 
 <Base
-  title={`${tool.name} Review ${year}: Pricing, Features & Alternatives`}
-  description={`${tool.name} review: ${tool.tagline}. Pricing starts at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo. ${tool.pricing.has_free_plan ? 'Free plan available.' : 'No free plan.'} See alternatives.`}
+  title={`${tool.name} Review ${year}: Pros, Cons & Verdict`}
+  description={`Read our ${tool.name} review: ${tool.tagline}. Pricing from ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo${tool.pricing.has_free_plan ? ' — free plan available' : ''}. See how it stacks up against every major ${categoryName} alternative.`}
   schema={[toolSchema, breadcrumbSchema, faqSchema]}
 >
   <div class="max-w-4xl mx-auto px-4 py-12">
