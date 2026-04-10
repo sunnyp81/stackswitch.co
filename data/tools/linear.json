@@ -24,6 +24,12 @@
   "pros": ["Blazing fast", "Beautiful UI", "Keyboard shortcuts", "Excellent GitHub integration"],
   "cons": ["Less flexible than ClickUp/Notion", "No built-in docs", "Free plan limited to 250 issues"],
   "alternatives": ["asana", "jira", "clickup", "height", "shortcut"],
+  "use_cases": [
+    "You're a software development or engineering team tracking issues and sprints",
+    "You use GitHub or GitLab and want native issue sync with automatic status updates",
+    "Speed matters — Linear loads near-instantly and is keyboard-first by design",
+    "You want opinionated workflows (cycles, triage, roadmaps) without heavy configuration"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

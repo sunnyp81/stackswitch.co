@@ -24,6 +24,12 @@
   "pros": ["Best-in-class automation builder", "Powerful conditional logic", "Good deliverability", "Strong CRM integration"],
   "cons": ["No free plan", "Learning curve for automations", "UI can feel complex", "Pricing scales up quickly"],
   "alternatives": ["mailchimp", "klaviyo", "convertkit", "drip", "hubspot"],
+  "use_cases": [
+    "You run complex multi-step email automations with conditional branching and lead scoring",
+    "Your business depends on behaviour-triggered sequences (cart abandonment, site visits, link clicks)",
+    "You want CRM and email marketing tightly integrated in one platform",
+    "You're an agency or consultant managing lead nurture for multiple clients"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

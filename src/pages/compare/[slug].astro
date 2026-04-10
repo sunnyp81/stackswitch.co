@@ -39,8 +39,52 @@ const g2Winner = winner(toolA.g2_score, toolB.g2_score);
 const cheaperTool = priceWinner === 'a' ? toolA : priceWinner === 'b' ? toolB : null;
 const higherRatedTool = g2Winner === 'a' ? toolA : g2Winner === 'b' ? toolB : null;
 
-const chooseAText = `${toolA.name} is the better choice if you need ${toolA.features.slice(0, 2).join(' or ').toLowerCase()}${toolA.pricing.has_free_plan ? ', or want to start for free' : ''}. It scores ${toolA.g2_score}/5 on G2.`;
-const chooseBText = `${toolB.name} is the better choice if you prioritise ${toolB.features.slice(0, 2).join(' or ').toLowerCase()}${toolB.pricing.has_free_plan ? ', or need a free plan' : ''}. It scores ${toolB.g2_score}/5 on G2.`;
+const chooseAItems: string[] = toolA.use_cases && toolA.use_cases.length > 0
+  ? toolA.use_cases.slice(0, 3)
+  : [
+      toolA.pros[0] ?? toolA.features[0] ?? 'strong feature set',
+      toolA.pros[1] ?? toolA.features[1] ?? 'reliable performance',
+      ...(toolA.pricing.has_free_plan ? ['you want a free plan to start with'] : []),
+    ];
+const chooseBItems: string[] = toolB.use_cases && toolB.use_cases.length > 0
+  ? toolB.use_cases.slice(0, 3)
+  : [
+      toolB.pros[0] ?? toolB.features[0] ?? 'strong feature set',
+      toolB.pros[1] ?? toolB.features[1] ?? 'reliable performance',
+      ...(toolB.pricing.has_free_plan ? ['you want a free plan to start with'] : []),
+    ];
+
+// Smarter verdict
+const ratingDiff = toolA.g2_score - toolB.g2_score;
+let verdictText = '';
+if (Math.abs(ratingDiff) >= 0.2) {
+  const better = ratingDiff > 0 ? toolA : toolB;
+  const lower = ratingDiff > 0 ? toolB : toolA;
+  verdictText += `${better.name} scores higher on G2 (${better.g2_score}/5 vs ${lower.g2_score}/5), suggesting stronger overall user satisfaction. `;
+} else {
+  verdictText += `${toolA.name} and ${toolB.name} are closely matched on user ratings. `;
+}
+if (cheaperTool) {
+  verdictText += `${cheaperTool.name} is the more affordable option. `;
+}
+if (toolA.pricing.has_free_plan !== toolB.pricing.has_free_plan) {
+  const withFree = toolA.pricing.has_free_plan ? toolA : toolB;
+  verdictText += `${withFree.name} offers a free plan — a lower-risk way to test before committing. `;
+}
+verdictText += `The right pick depends on your team size and workflow.`;
+
+// Related comparisons
+const relatedAltASlugs = toolA.alternatives.filter(s => s !== bSlug).slice(0, 3);
+const relatedAltBSlugs = toolB.alternatives.filter(s => s !== aSlug).slice(0, 3);
+const allRelatedSlugs = [...new Set([...relatedAltASlugs, ...relatedAltBSlugs])].slice(0, 6);
+const relatedToolLookup: Record<string, Tool> = {};
+for (const t of (await Promise.all(allRelatedSlugs.map(s => getToolBySlug(s)))).filter((t): t is Tool => t !== null)) {
+  relatedToolLookup[t.slug] = t;
+}
+const relatedComparisons = [
+  ...relatedAltASlugs.filter(s => relatedToolLookup[s]).map(s => ({ slug: `${aSlug}-vs-${s}`, label: `${toolA.name} vs ${relatedToolLookup[s].name}` })),
+  ...relatedAltBSlugs.filter(s => relatedToolLookup[s]).map(s => ({ slug: `${bSlug}-vs-${s}`, label: `${toolB.name} vs ${relatedToolLookup[s].name}` })),
+].slice(0, 5);
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -74,6 +118,14 @@ const faqSchema = {
       "acceptedAnswer": {
         "@type": "Answer",
         "text": `${toolA.name} focuses on ${toolA.features.slice(0, 3).join(', ').toLowerCase()}. ${toolB.name} focuses on ${toolB.features.slice(0, 3).join(', ').toLowerCase()}. Both serve similar use cases but differ in pricing model, feature depth, and target audience.`
+      }
+    },
+    {
+      "@type": "Question",
+      "name": `Can I migrate from ${toolA.name} to ${toolB.name}?`,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": `Most teams migrate between ${toolA.name} and ${toolB.name} within a day or two. Export your data from ${toolA.name} (typically as CSV or via API), then use ${toolB.name}'s import wizard to bring it across. Check each tool's help centre for a step-by-step migration guide before switching.`
       }
     }
   ]
@@ -212,27 +264,29 @@ const breadcrumbSchema = {
     <!-- Who should choose which -->
     <div class="grid md:grid-cols-2 gap-4 mb-12">
       <div class="bg-indigo-50 border border-indigo-100 rounded-xl p-5">
-        <h3 class="font-bold mb-2">Choose {toolA.name} if...</h3>
-        <p class="text-sm text-gray-700 leading-relaxed">{chooseAText}</p>
-        <a href={`/tools/${toolA.slug}`} class="text-sm text-indigo-600 hover:underline mt-3 inline-block">Read {toolA.name} review →</a>
+        <h3 class="font-bold mb-3">Choose {toolA.name} if...</h3>
+        <ul class="space-y-2 mb-3">
+          {chooseAItems.map(item => (
+            <li class="text-sm text-gray-700 flex gap-2"><span class="text-indigo-500 shrink-0 mt-0.5">→</span>{item}</li>
+          ))}
+        </ul>
+        <a href={`/tools/${toolA.slug}`} class="text-sm text-indigo-600 hover:underline inline-block">Read {toolA.name} review →</a>
       </div>
       <div class="bg-gray-50 border border-gray-100 rounded-xl p-5">
-        <h3 class="font-bold mb-2">Choose {toolB.name} if...</h3>
-        <p class="text-sm text-gray-700 leading-relaxed">{chooseBText}</p>
-        <a href={`/tools/${toolB.slug}`} class="text-sm text-indigo-600 hover:underline mt-3 inline-block">Read {toolB.name} review →</a>
+        <h3 class="font-bold mb-3">Choose {toolB.name} if...</h3>
+        <ul class="space-y-2 mb-3">
+          {chooseBItems.map(item => (
+            <li class="text-sm text-gray-700 flex gap-2"><span class="text-gray-400 shrink-0 mt-0.5">→</span>{item}</li>
+          ))}
+        </ul>
+        <a href={`/tools/${toolB.slug}`} class="text-sm text-indigo-600 hover:underline inline-block">Read {toolB.name} review →</a>
       </div>
     </div>
 
     <!-- Verdict -->
     <div class="border-l-4 border-indigo-400 pl-5 py-1 mb-12">
       <h2 class="font-bold mb-1">Our verdict</h2>
-      <p class="text-gray-700 text-sm leading-relaxed">
-        {higherRatedTool
-          ? `${higherRatedTool.name} edges ahead on user ratings (${higherRatedTool.g2_score}/5 on G2).`
-          : `${toolA.name} and ${toolB.name} are closely matched on ratings.`}
-        {cheaperTool ? ` ${cheaperTool.name} is the cheaper option.` : ' Both are similarly priced.'}
-        {' '}The right choice depends on which features matter most to your team — use the comparison table above to decide.
-      </p>
+      <p class="text-gray-700 text-sm leading-relaxed">{verdictText}</p>
     </div>
 
     <!-- FAQ -->
@@ -266,11 +320,17 @@ const breadcrumbSchema = {
             Both serve similar use cases but differ in approach and pricing model.
           </p>
         </details>
+        <details class="border border-gray-200 rounded-xl p-4">
+          <summary class="font-medium cursor-pointer text-sm">Can I migrate from {toolA.name} to {toolB.name}?</summary>
+          <p class="text-gray-600 text-sm mt-3">
+            Most teams migrate between {toolA.name} and {toolB.name} within a day or two. Export your data from {toolA.name} (typically as CSV or via API), then use {toolB.name}'s import wizard to bring it across. Check each tool's help centre for a step-by-step migration guide before switching.
+          </p>
+        </details>
       </div>
     </div>
 
     <!-- CTAs -->
-    <div class="grid md:grid-cols-2 gap-4">
+    <div class="grid md:grid-cols-2 gap-4 mb-10">
       <a href={`/alternatives/${toolA.slug}`} class="border border-gray-200 rounded-xl p-4 hover:border-indigo-200 transition-colors text-center">
         <div class="font-semibold mb-1">More {toolA.name} alternatives</div>
         <div class="text-sm text-indigo-600">See all options →</div>
@@ -280,6 +340,23 @@ const breadcrumbSchema = {
         <div class="text-sm text-indigo-600">See all options →</div>
       </a>
     </div>
+
+    <!-- Related comparisons -->
+    {relatedComparisons.length > 0 && (
+      <div class="border-t border-gray-100 pt-8">
+        <h2 class="text-base font-semibold mb-4 text-gray-700">Related comparisons</h2>
+        <div class="flex flex-wrap gap-2">
+          {relatedComparisons.map(c => (
+            <a href={`/compare/${c.slug}`} class="text-sm border border-gray-200 rounded-lg px-3 py-1.5 hover:border-indigo-300 hover:text-indigo-600 transition-colors">
+              {c.label}
+            </a>
+          ))}
+          <a href={`/category/${toolA.category}`} class="text-sm border border-gray-200 rounded-lg px-3 py-1.5 hover:border-indigo-300 hover:text-indigo-600 transition-colors">
+            All {toolA.category.replace(/-/g, ' ')} tools →
+          </a>
+        </div>
+      </div>
+    )}
 
   </div>
 </Base>

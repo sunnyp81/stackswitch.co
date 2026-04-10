@@ -24,6 +24,12 @@
   "pros": ["Clean, intuitive interface", "Strong automation", "Good integrations", "Excellent enterprise features"],
   "cons": ["Free plan limited to 10 users", "Expensive at scale", "No built-in time tracking", "No native chat"],
   "alternatives": ["clickup", "monday", "notion", "linear", "trello"],
+  "use_cases": [
+    "Your team values a clean interface with minimal setup time",
+    "You manage structured projects with clear owners, deadlines, and milestones",
+    "You need portfolio views to track status across multiple projects at once",
+    "Your team is primarily non-technical (marketing, ops, HR, design)"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

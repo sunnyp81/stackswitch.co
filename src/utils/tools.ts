@@ -26,6 +26,7 @@ export interface Tool {
   pros: string[];
   cons: string[];
   alternatives: string[];
+  use_cases?: string[];
   g2_score: number;
   capterra_score: number;
 }

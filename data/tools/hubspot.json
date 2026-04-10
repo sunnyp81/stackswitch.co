@@ -24,6 +24,12 @@
   "pros": ["Generous free plan", "All-in-one platform", "Easy to use", "Strong integrations"],
   "cons": ["Gets expensive fast", "Contact-based pricing adds up", "Some features gated behind expensive tiers"],
   "alternatives": ["salesforce", "pipedrive", "zoho-crm", "close", "activecampaign"],
+  "use_cases": [
+    "You want to start free and scale into paid CRM, marketing, or sales hubs later",
+    "Your team is non-technical and needs fast onboarding with minimal configuration",
+    "You need sales, marketing, and support data visible in a single platform",
+    "You're a small business growing from first hires to first 100 customers"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

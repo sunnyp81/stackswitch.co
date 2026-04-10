@@ -24,6 +24,12 @@
   "pros": ["Feature-rich free plan", "Extremely customisable", "Affordable paid plans", "Constant improvements"],
   "cons": ["Feature overload can be overwhelming", "Occasional performance issues", "Mobile app lags behind desktop"],
   "alternatives": ["notion", "asana", "monday", "linear", "basecamp"],
+  "use_cases": [
+    "You want tasks, docs, goals, and whiteboards in a single workspace",
+    "Your team needs deep customisation — custom fields, views, and 50+ automation triggers",
+    "You're budget-conscious and need a genuinely capable free plan",
+    "Your team includes developers who want sprint management built in"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.6
 }
