@@ -23,6 +23,12 @@
   "pros": ["Familiar spreadsheet interface", "Powerful Gantt views", "Strong enterprise features", "Good for operations teams"],
   "cons": ["Looks and feels dated", "No free plan", "Less intuitive than monday.com", "Expensive at scale"],
   "alternatives": ["monday", "asana", "airtable", "clickup", "wrike"],
+  "use_cases": [
+    "Your operations or PMO team lives in spreadsheets and needs Gantt charts and automations without retraining staff on a new interface",
+    "You're running construction, manufacturing, or event projects that require resource management and portfolio-level Gantt views",
+    "Your team needs to collect structured data via forms that feed directly into project sheets with automated approval workflows",
+    "You work in an enterprise that mandates SSO, admin controls, and audit trails for project data — features Smartsheet's Enterprise tier handles natively"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

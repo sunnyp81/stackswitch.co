@@ -24,6 +24,12 @@
   "pros": ["Pricing based on emails sent, not contacts", "All-in-one platform", "Good free tier", "Transactional email included"],
   "cons": ["Automation less powerful than ActiveCampaign", "Template editor can be clunky", "Deliverability varies"],
   "alternatives": ["mailchimp", "activecampaign", "klaviyo", "omnisend", "convertkit"],
+  "use_cases": [
+    "You have a large contact list and are paying too much on Mailchimp — Brevo charges per email sent, not per contact stored",
+    "Your marketing mix includes email, SMS, and WhatsApp and you want all three managed in one platform",
+    "You need transactional emails (order confirmations, password resets) bundled with your marketing emails under one account",
+    "You're a small business that wants a built-in CRM and live chat without paying for separate tools"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.5
 }

@@ -23,6 +23,12 @@
   "pros": ["Broadest feature set of any SEO tool", "Excellent PPC and ad intelligence", "Good content marketing tools", "Large keyword database"],
   "cons": ["Expensive", "Can be overwhelming", "Some data less accurate than Ahrefs for backlinks"],
   "alternatives": ["ahrefs", "moz", "sistrix", "serpstat", "mangools"],
+  "use_cases": [
+    "You run PPC campaigns alongside SEO and need competitor ad intelligence, CPC data, and keyword overlap in one platform",
+    "Your agency needs to manage 15+ client projects with rank tracking, site audits, and white-label reporting all in one subscription",
+    "You want to research competitors' organic and paid strategies — including their ad copy, landing pages, and display spend",
+    "Your in-house marketing team needs a single tool covering keyword research, backlink analysis, and content optimisation without juggling multiple subscriptions"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

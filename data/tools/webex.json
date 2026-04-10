@@ -23,6 +23,12 @@
   "pros": ["Enterprise-grade security", "Excellent noise cancellation", "Strong compliance features", "Good for regulated industries"],
   "cons": ["Less intuitive than Zoom", "UI feels dated", "Overkill for small teams", "Higher cost"],
   "alternatives": ["zoom", "microsoft-teams", "google-meet", "slack", "whereby"],
+  "use_cases": [
+    "You work in a regulated industry — government, finance, healthcare — where end-to-end encryption and FEDRAMP/FedRAMP compliance are non-negotiable",
+    "Your organisation needs enterprise noise cancellation and AI transcription built into the meeting platform without third-party add-ons",
+    "You run large-scale webinars or hybrid events and need a platform with Cisco's networking infrastructure behind the reliability",
+    "Your IT team requires on-premise or private cloud deployment options that consumer-grade tools like Zoom don't offer"
+  ],
   "g2_score": 4.2,
   "capterra_score": 4.4
 }

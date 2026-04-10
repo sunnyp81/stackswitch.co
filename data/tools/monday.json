@@ -24,6 +24,12 @@
   "pros": ["Very visual and intuitive", "Highly customisable", "Strong automation", "Great dashboards"],
   "cons": ["Minimum 3 seats on paid plans", "Automations limited on lower tiers", "Can get expensive for large teams"],
   "alternatives": ["clickup", "asana", "notion", "smartsheet", "wrike"],
+  "use_cases": [
+    "Your ops, marketing, or HR team wants to build custom workflows with no-code automations and visual dashboards",
+    "You need a work management tool that non-technical teams will actually enjoy using day-to-day",
+    "Your team runs recurring processes — client onboarding, campaign launches, hiring pipelines — that need repeatable board templates",
+    "You want a single dashboard that rolls up status across multiple projects without writing custom reports"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.6
 }

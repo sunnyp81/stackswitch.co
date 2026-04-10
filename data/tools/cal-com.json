@@ -23,6 +23,12 @@
   "pros": ["Open source with full data ownership", "More generous free plan than Calendly", "Strong developer API", "Self-hosting option"],
   "cons": ["Less polished than Calendly", "Fewer native integrations", "Self-hosting requires technical skill"],
   "alternatives": ["calendly", "acuity-scheduling", "savvycal", "tidycal", "chili-piper"],
+  "use_cases": [
+    "You want full data ownership over your scheduling — self-hosting means no third-party holds your booking data",
+    "Your team needs routing forms to send leads to the right rep based on answers before they book",
+    "You're a developer who needs webhook and API access to embed scheduling flows inside your own product",
+    "You want the same core functionality as Calendly but with a more generous free plan and open-source flexibility"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.5
 }

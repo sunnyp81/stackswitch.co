@@ -24,6 +24,12 @@
   "pros": ["Most widely used accounting software", "Strong accountant ecosystem", "Comprehensive features", "Good integrations"],
   "cons": ["Can be expensive", "Prices increase after promo period", "Not ideal for non-US businesses", "Payroll costs extra"],
   "alternatives": ["xero", "freshbooks", "wave", "sage", "zoho-books"],
+  "use_cases": [
+    "Your accountant already uses QuickBooks and you want seamless collaboration on tax prep and reconciliation",
+    "You need payroll, invoicing, inventory, and expense tracking managed from a single US-centric platform",
+    "You're a service business billing clients and need professional invoicing with automatic payment reminders",
+    "Your business is growing past basic spreadsheets and you need proper double-entry accounting with job costing"
+  ],
   "g2_score": 4.0,
   "capterra_score": 4.3
 }

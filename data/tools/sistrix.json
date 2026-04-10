@@ -24,6 +24,12 @@
   "pros": ["Industry-standard Visibility Index metric", "Excellent European market data", "Clean interface", "Strong competitor benchmarking"],
   "cons": ["Less well-known outside Europe", "Fewer features than Semrush for PPC/social", "Pricing can add up with multiple modules"],
   "alternatives": ["semrush", "ahrefs", "moz", "serpstat", "searchmetrics"],
+  "use_cases": [
+    "You're an SEO agency working in German, Spanish, French, or Italian markets where SISTRIX's Visibility Index is the standard reporting metric",
+    "You need to benchmark a client's organic visibility against competitors using a credible, widely-recognised index rather than raw traffic estimates",
+    "Your team monitors algorithm update impacts across European markets and wants granular historical Visibility data to detect drops fast",
+    "You want clean, focused competitor monitoring without the feature bloat of Semrush's PPC and social modules"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

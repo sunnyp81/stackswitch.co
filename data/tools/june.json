@@ -23,6 +23,12 @@
   "pros": ["Much faster to set up than Amplitude or Mixpanel", "Pre-built SaaS metrics reports", "Company-level analytics out of the box", "Free plan available"],
   "cons": ["Requires Segment — not standalone", "Limited customisation vs Mixpanel/Amplitude", "Focused on B2B SaaS only", "Smaller ecosystem"],
   "alternatives": ["mixpanel", "amplitude", "posthog", "heap", "google-analytics"],
+  "use_cases": [
+    "You already use Segment and want SaaS product metrics — activation rate, retention, churn — surfaced automatically without building dashboards from scratch",
+    "Your B2B SaaS needs company-level analytics to see which accounts are healthy, expanding, or at risk, not just individual user events",
+    "You're an early-stage or growth-stage SaaS team that wants Mixpanel-quality insights without Mixpanel's setup time and complexity",
+    "You want Slack alerts when a key account goes quiet or a new company hits an activation milestone so your team can act immediately"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.6
 }

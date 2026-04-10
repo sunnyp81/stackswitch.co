@@ -23,6 +23,12 @@
   "pros": ["Best-in-class Instagram workflow", "Visual grid preview for Instagram", "Linkin.bio is excellent for creators", "Clean, easy-to-use interface"],
   "cons": ["Less powerful for Twitter/X and LinkedIn", "Limited social listening features", "More expensive per post than competitors", "No bulk upload on starter plan"],
   "alternatives": ["hootsuite", "buffer", "sprout-social", "metricool", "sendible"],
+  "use_cases": [
+    "Your brand is Instagram-first and you want a visual grid preview before scheduling posts",
+    "You rely on a link-in-bio page (Linkin.bio) to drive traffic from Instagram to multiple URLs",
+    "Your team manages content for Instagram, TikTok, and Pinterest alongside other channels",
+    "You're a solo creator or small social media team who wants a clean, easy scheduling interface"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.4
 }

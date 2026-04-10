@@ -24,6 +24,12 @@
   "pros": ["Easy to use", "Generous free plan", "Good template library", "Strong e-commerce integrations"],
   "cons": ["Pricing jumps steeply", "Automations less powerful than competitors", "Contact-based pricing gets expensive"],
   "alternatives": ["klaviyo", "activecampaign", "convertkit", "beehiiv", "brevo"],
+  "use_cases": [
+    "You're a small business or startup sending newsletters and promotional emails to under 5,000 contacts",
+    "You run a Shopify or WooCommerce store and want basic abandoned cart and welcome automations without complex setup",
+    "Your team is non-technical and needs a drag-and-drop email builder with a large template library",
+    "You want a single platform that covers email, landing pages, and a basic contact CRM in one place"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.5
 }

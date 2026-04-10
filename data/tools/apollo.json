@@ -24,6 +24,12 @@
   "pros": ["Huge contact database", "All-in-one prospecting + outreach", "Generous free plan", "Great value vs ZoomInfo"],
   "cons": ["Data accuracy varies by region", "Can hit email deliverability issues if overused", "UI has many features to navigate"],
   "alternatives": ["zoominfo", "lusha", "outreach", "salesloft", "instantly"],
+  "use_cases": [
+    "You need to prospect and run outbound email sequences from a single tool without stitching multiple products together",
+    "Your SDR team wants to find verified contacts by company size, industry, or job title from a 275M+ contact database",
+    "You're replacing ZoomInfo and want similar data quality at a fraction of the cost",
+    "Your sales team uses a built-in dialer and needs call recordings synced automatically to your CRM"
+  ],
   "g2_score": 4.8,
   "capterra_score": 4.6
 }

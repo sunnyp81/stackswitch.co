@@ -24,6 +24,12 @@
   "pros": ["Best white-label options for agencies", "Strong approval workflow tools", "Supports many platforms including Google My Business", "Good client management features"],
   "cons": ["UI feels dated compared to newer tools", "Analytics less advanced than Sprout Social", "Per-user pricing adds up for large teams"],
   "alternatives": ["hootsuite", "buffer", "sprout-social", "later", "metricool"],
+  "use_cases": [
+    "You run a social media agency and need white-label reports and client dashboards without them seeing your tooling",
+    "Your team requires approval workflows where clients sign off on content before it goes live across their profiles",
+    "You're managing social accounts for 10+ clients and need separate workspaces, profiles, and logins per client",
+    "You post to Google My Business alongside standard social channels and need a tool that handles both in one queue"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

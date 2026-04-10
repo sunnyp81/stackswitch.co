@@ -23,6 +23,12 @@
   "pros": ["Powerful event-based analytics", "Generous free plan", "Strong funnel and retention reports", "Easy SDK setup"],
   "cons": ["Can be complex to set up correctly", "Expensive at scale", "Less suited for marketing analytics"],
   "alternatives": ["amplitude", "heap", "posthog", "june", "google-analytics"],
+  "use_cases": [
+    "Your product team tracks user behaviour with event-based analytics and needs powerful funnel and retention reports",
+    "You want to run cohort analyses to understand how different user segments behave over time",
+    "Your growth team needs self-serve analytics where non-engineers can build reports without SQL",
+    "You're a B2C or consumer app with up to 1M monthly events and want a free plan that covers core product analytics"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.5
 }

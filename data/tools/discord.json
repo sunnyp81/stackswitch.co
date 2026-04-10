@@ -23,6 +23,12 @@
   "pros": ["Free for most use cases", "Excellent community features", "Strong bot ecosystem", "Good voice quality"],
   "cons": ["Not designed for enterprise", "No SLAs", "Message search limited", "Can feel informal for business"],
   "alternatives": ["slack", "microsoft-teams", "lark", "zulip", "twist"],
+  "use_cases": [
+    "You're building a developer community or open-source project and need channels, forums, and voice rooms without paying per member",
+    "Your startup wants team communication with persistent voice channels for spontaneous collaboration, not just scheduled calls",
+    "You run an online community (paid or free) and want bots to automate moderation, onboarding, and member roles",
+    "Your community or team is cost-sensitive and the free tier covers all core communication needs without per-seat fees"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

@@ -22,6 +22,12 @@
   "pros": ["True all-in-one HR + IT platform", "Fast employee onboarding/offboarding", "Strong automation", "Modern UI"],
   "cons": ["Pricing not transparent", "Complex initial setup", "Can be expensive for small teams"],
   "alternatives": ["deel", "gusto", "bamboohr", "remote", "workday"],
+  "use_cases": [
+    "You want to automatically provision and deprovision SaaS apps and laptops the moment someone joins or leaves",
+    "Your HR team is drowning in manual onboarding steps across payroll, IT, and benefits that could be automated",
+    "You're scaling from 20 to 200 employees and need HR, payroll, and device management to grow together",
+    "You want a single source of truth for headcount planning that connects org structure to finance and IT systems"
+  ],
   "g2_score": 4.8,
   "capterra_score": 4.9
 }

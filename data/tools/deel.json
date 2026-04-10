@@ -23,6 +23,12 @@
   "pros": ["Covers 150+ countries", "Streamlined onboarding", "Strong compliance features", "Fast payments"],
   "cons": ["EOR pricing is premium", "Can be complex for simple use cases", "Support quality varies by region"],
   "alternatives": ["rippling", "remote", "papaya-global", "oyster", "gusto"],
+  "use_cases": [
+    "You're hiring full-time employees in countries where you have no legal entity and need an Employer of Record to handle compliance",
+    "Your company works with international contractors and needs compliant contracts, tax forms, and fast payment in local currencies",
+    "You're scaling a remote-first team across multiple countries and want a single platform for payroll, benefits, and equipment provisioning",
+    "You need to onboard international hires quickly without months of local legal setup in each new country"
+  ],
   "g2_score": 4.8,
   "capterra_score": 4.7
 }

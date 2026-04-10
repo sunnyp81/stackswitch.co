@@ -23,6 +23,12 @@
   "pros": ["Very clean and easy to use", "Affordable per-channel pricing", "Good free plan", "Great for small teams"],
   "cons": ["Less analytics depth than Sprout Social", "No social listening", "Limited reporting on free plan"],
   "alternatives": ["hootsuite", "later", "sprout-social", "metricool", "publer"],
+  "use_cases": [
+    "You're a small team or solo creator who needs to schedule posts across a few channels without paying for an enterprise tool",
+    "You want per-channel pricing so you only pay for the platforms you actually post to",
+    "Your team needs a simple approval workflow for drafts before anything goes live",
+    "You want a start page (link-in-bio) and basic engagement inbox bundled with your scheduling tool"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.5
 }

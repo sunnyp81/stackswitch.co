@@ -24,6 +24,12 @@
   "pros": ["Easiest time tracker to use", "Great browser and desktop apps", "Good free plan", "Strong reporting"],
   "cons": ["Free plan limited to 5 users", "Invoicing needs integrations", "Less project management than Harvest"],
   "alternatives": ["harvest", "clockify", "timely", "hubstaff", "rize"],
+  "use_cases": [
+    "You're a freelancer or consultant who bills by the hour and needs one-click tracking across projects with minimal friction",
+    "Your team tracks time across multiple clients and projects and needs reports to split billable vs non-billable hours for invoicing",
+    "You want automatic idle detection and calendar integration so you never forget to log time even when you switch tasks frequently",
+    "You work across desktop, browser, and mobile throughout the day and need a time tracker that syncs seamlessly across all three"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.7
 }

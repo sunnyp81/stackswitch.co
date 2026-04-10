@@ -23,6 +23,12 @@
   "pros": ["Beautiful, intuitive UI", "Faster to value than Vanta", "Strong customer support", "Competitive pricing"],
   "cons": ["Pricing requires contact", "Fewer integrations than Vanta", "Relatively newer platform"],
   "alternatives": ["vanta", "secureframe", "sprinto", "strike-graph", "scytale"],
+  "use_cases": [
+    "You need SOC 2 or ISO 27001 certification and want continuous automated evidence collection rather than a manual audit scramble",
+    "Your engineering team is stretched and you need compliance monitoring that runs without dedicated compliance headcount",
+    "You're closing enterprise deals where security questionnaires and audit reports are a recurring blocker",
+    "You want a cleaner, faster onboarding experience than Vanta with equally strong customer support"
+  ],
   "g2_score": 4.9,
   "capterra_score": 4.9
 }

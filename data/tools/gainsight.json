@@ -22,6 +22,12 @@
   "pros": ["Most comprehensive CS platform", "Strong automation", "Industry leader", "Excellent reporting"],
   "cons": ["Very expensive", "Implementation takes months", "Overkill for small CS teams", "Complex to configure"],
   "alternatives": ["totango", "churnzero", "vitally", "client-success", "planhat"],
+  "use_cases": [
+    "Your CS team manages hundreds of accounts and needs automated health scoring based on product usage, support tickets, and NPS in one view",
+    "You want to run playbooks that automatically trigger onboarding, renewal, or at-risk interventions without manual CSM effort",
+    "Your organisation runs quarterly business reviews and needs built-in QBR tools and customer 360 data to prepare at scale",
+    "You're a mid-to-large SaaS company where reducing churn by even 1% has a material revenue impact worth the platform investment"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.4
 }

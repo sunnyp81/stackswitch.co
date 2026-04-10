@@ -23,6 +23,12 @@
   "pros": ["Easiest payroll for small businesses", "Full-service tax filing", "Great employee experience", "Good benefits marketplace"],
   "cons": ["US only", "More expensive than DIY options", "Limited international support"],
   "alternatives": ["rippling", "deel", "quickbooks", "adp", "paychex"],
+  "use_cases": [
+    "You're a US-based small business owner who wants payroll taxes filed automatically across all states without hiring a payroll specialist",
+    "You're hiring your first employees and want onboarding, offer letters, and benefits enrollment in a single platform with no paper forms",
+    "Your team wants to offer health insurance and 401(k) through one provider rather than managing separate benefit brokers",
+    "You need a payroll tool your employees will actually use via self-service — pay stubs, W-2s, PTO requests — without contacting HR"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

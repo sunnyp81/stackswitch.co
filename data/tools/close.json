@@ -23,6 +23,12 @@
   "pros": ["Best built-in calling of any CRM", "No integrations needed for outreach", "Clean UI", "Fast onboarding"],
   "cons": ["Expensive per seat", "No free plan", "Less suited for non-sales-heavy teams", "Limited marketing features"],
   "alternatives": ["hubspot", "pipedrive", "salesforce", "zoho-crm", "apollo"],
+  "use_cases": [
+    "Your inside sales team makes high call volumes daily and needs a built-in dialler with call recordings — no Aircall integration required",
+    "You want email sequences, SMS, and VoIP calling managed from a single CRM without bolting tools together",
+    "Your reps use Smart Views to filter leads by last contacted date, deal stage, or custom criteria and need instant pipeline visibility",
+    "You're a small or mid-size sales team that wants fast onboarding and a clean UI without Salesforce's configuration overhead"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

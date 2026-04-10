@@ -24,6 +24,12 @@
   "pros": ["Very beginner-friendly UI", "Cheapest full SEO suite available", "Accurate keyword difficulty scores", "Good local SEO data"],
   "cons": ["Limited data volume on lower plans", "No content marketing tools", "No PPC/advertising data", "Single-user on entry plans"],
   "alternatives": ["semrush", "ahrefs", "moz", "serpstat", "ubersuggest"],
+  "use_cases": [
+    "You're a blogger, freelancer, or small business owner who needs keyword research and rank tracking at a fraction of Ahrefs or Semrush prices",
+    "You're new to SEO and want a clean, non-overwhelming interface across keyword research, SERP analysis, and rank tracking",
+    "You need accurate keyword difficulty scores and local keyword data to find low-competition opportunities",
+    "Your budget is under $50/mo but you still need a complete five-tool SEO suite with backlink analysis"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.8
 }

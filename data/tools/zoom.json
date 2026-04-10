@@ -24,6 +24,12 @@
   "pros": ["Industry standard for video calls", "Reliable performance", "Easy to join (no account needed)", "Broad platform support"],
   "cons": ["Security concerns historically", "Free plan limited to 40 mins", "Gets expensive with Zoom Phone add-ons"],
   "alternatives": ["microsoft-teams", "google-meet", "webex", "whereby", "around"],
+  "use_cases": [
+    "You run frequent external meetings where guests join without an account and need a link-and-click experience that just works",
+    "Your team hosts webinars and virtual events with hundreds of attendees and needs Zoom Webinars' registration, Q&A, and recording tools",
+    "You want to replace your phone system with Zoom Phone and consolidate calling, messaging, and video into a single app",
+    "Your organisation needs AI Companion to auto-generate meeting summaries, action items, and transcripts without a separate notetaking tool"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

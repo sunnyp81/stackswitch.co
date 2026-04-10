@@ -23,6 +23,12 @@
   "pros": ["Built for growth-focused newsletters", "Best referral & boost tools", "No transaction fees on paid subs", "Strong analytics"],
   "cons": ["Less suited for e-commerce or lead nurture", "Newer platform", "Free plan limited to 2,500 subs"],
   "alternatives": ["convertkit", "substack", "mailchimp", "ghost", "ghost-pro"],
+  "use_cases": [
+    "You're building a newsletter business and want a referral programme and Boosts network to grow your list without paid ads",
+    "You want to monetise your newsletter with paid subscriptions and keep 100% of revenue with no platform cut",
+    "You're moving from Substack and need better analytics, segmentation, and growth infrastructure",
+    "Your newsletter strategy involves cross-promotions and recommendations to other newsletters in the beehiiv network"
+  ],
   "g2_score": 4.8,
   "capterra_score": 4.8
 }

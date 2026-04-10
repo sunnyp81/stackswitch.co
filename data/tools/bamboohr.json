@@ -23,6 +23,12 @@
   "pros": ["Very easy to use", "Clean UI loved by employees", "Strong onboarding tools", "Good mobile app"],
   "cons": ["Pricing not transparent", "Payroll costs extra", "US-focused", "Limited customisation vs Rippling"],
   "alternatives": ["rippling", "deel", "gusto", "workday", "hibob"],
+  "use_cases": [
+    "You're a small or mid-size US business moving off spreadsheets to manage employee records and time-off in one place",
+    "Your HR team wants structured onboarding flows so new hires complete paperwork and tasks before day one",
+    "You need performance reviews and eNPS surveys without buying a separate engagement tool",
+    "Your employees and managers need a self-service portal they can actually navigate without training"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.6
 }

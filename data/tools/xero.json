@@ -23,6 +23,12 @@
   "pros": ["Clean, modern UI", "Excellent bank feeds", "Strong accountant ecosystem", "Good for non-US businesses"],
   "cons": ["Starter plan very restrictive", "Can be pricey for full features", "Payroll limited to some countries"],
   "alternatives": ["quickbooks", "freshbooks", "sage", "wave", "zoho-books"],
+  "use_cases": [
+    "You're a UK, Australian, or New Zealand small business that wants cloud accounting with bank feeds that reconcile automatically every day",
+    "Your accountant uses Xero and you want real-time collaboration on books, payroll, and year-end without emailing spreadsheets",
+    "You deal in multiple currencies and need automatic exchange rate updates built into invoices and expenses without add-ons",
+    "You want to connect payroll, inventory, and expense tools from Xero's marketplace into a single accounting hub"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.4
 }

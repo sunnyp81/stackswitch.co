@@ -23,6 +23,12 @@
   "pros": ["Very fast time to SOC 2", "200+ integrations", "AI-powered gap analysis", "Strong pen testing marketplace"],
   "cons": ["Pricing requires contact", "Some integrations need manual setup", "Smaller community than Vanta"],
   "alternatives": ["vanta", "drata", "sprinto", "strike-graph", "scytale"],
+  "use_cases": [
+    "You're a startup that needs to pass a SOC 2 Type II audit in weeks, not months, to close enterprise deals",
+    "Your infra is spread across AWS, GCP, and Okta and you need 200+ integrations to automate evidence collection",
+    "You want AI-powered remediation guidance that tells you exactly what to fix when a control fails",
+    "You need a built-in pen testing marketplace to satisfy auditor requirements without managing separate vendor relationships"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.8
 }

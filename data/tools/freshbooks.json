@@ -24,6 +24,12 @@
   "pros": ["Best invoicing experience", "Great for freelancers", "Easy to use", "Strong mobile app"],
   "cons": ["Client limits on lower plans", "Not ideal for product businesses", "Limited inventory features"],
   "alternatives": ["quickbooks", "xero", "wave", "honeybook", "bonsai"],
+  "use_cases": [
+    "You're a freelancer or solo consultant who needs to send professional invoices and get paid online without learning double-entry accounting",
+    "Your agency bills clients by the hour and needs time tracking, project expenses, and invoicing all in one place",
+    "You want to send estimates and proposals that convert directly into invoices once a client approves",
+    "You need a clean mobile app to log expenses and track time on the go between client meetings"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.5
 }

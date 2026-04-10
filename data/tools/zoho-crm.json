@@ -24,6 +24,12 @@
   "pros": ["Excellent value for money", "Highly customisable", "Strong automation", "Good Zoho ecosystem integration"],
   "cons": ["UI feels dated", "Customer support can be slow", "Learning curve for advanced features", "Some features buried in menus"],
   "alternatives": ["hubspot", "salesforce", "pipedrive", "close", "freshsales"],
+  "use_cases": [
+    "You want Salesforce-level CRM customisation — custom modules, Blueprint process builder, territory management — at a fraction of the cost",
+    "Your team already uses Zoho Desk, Zoho Books, or Zoho Projects and wants tight native integration across the Zoho ecosystem",
+    "You need AI-powered lead scoring and deal predictions via Zia without paying for a Salesforce Einstein licence",
+    "You're a growing SMB that needs advanced workflow automation and multichannel communication (email, phone, social, WhatsApp) in one CRM"
+  ],
   "g2_score": 4.1,
   "capterra_score": 4.3
 }

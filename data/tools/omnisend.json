@@ -23,6 +23,12 @@
   "pros": ["Built for e-commerce", "Email + SMS in one platform", "Good Shopify integration", "Generous free plan"],
   "cons": ["Less powerful for non-e-commerce", "Automation builder can be limiting", "Smaller template library than Mailchimp"],
   "alternatives": ["klaviyo", "mailchimp", "drip", "activecampaign", "brevo"],
+  "use_cases": [
+    "You run a Shopify, WooCommerce, or BigCommerce store and want email and SMS automations that trigger on shopping behaviour like abandoned cart or post-purchase",
+    "You want email and SMS marketing in one platform without paying separately for two tools",
+    "Your e-commerce store is growing and you need audience segmentation based on purchase history, browse behaviour, and order value",
+    "You want a generous free plan to start with push notifications, signup forms, and basic automations before committing to a paid tier"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.7
 }

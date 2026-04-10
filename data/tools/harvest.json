@@ -22,6 +22,12 @@
   "pros": ["Best invoicing of any time tracker", "Simple two-plan pricing", "Great integrations with PM tools", "Project budget alerts"],
   "cons": ["Free plan very limited (1 user)", "UI hasn't changed much in years", "Limited reporting vs Toggl"],
   "alternatives": ["toggl", "clockify", "freshbooks", "hubstaff", "timely"],
+  "use_cases": [
+    "Your agency or consultancy bills clients by the hour and needs tracked time to flow directly into invoices without manual re-entry",
+    "You want to see real-time project budget burn so you can flag scope creep before a project goes over",
+    "Your team uses tools like Asana, Basecamp, or Trello and needs time tracking that integrates into existing project workflows",
+    "You're a freelancer who needs simple, clean time tracking with invoicing built in — without paying for a full accounting platform"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.6
 }

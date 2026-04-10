@@ -23,6 +23,12 @@
   "pros": ["Includes ad analytics (Meta, Google) — unique at this price", "Free plan available", "Good competitor monitoring", "Affordable for agencies"],
   "cons": ["UI can feel busy", "Less polished than Later or Buffer", "Analytics depth limited on lower plans", "Customer support can be slow"],
   "alternatives": ["hootsuite", "buffer", "sprout-social", "later", "sendible"],
+  "use_cases": [
+    "You're a freelancer or agency managing multiple client brands and want scheduling plus white-label reporting in one affordable tool",
+    "You run paid ads on Meta or Google and want to see social media and ad performance in the same dashboard",
+    "You want to monitor competitor social accounts alongside your own posting calendar",
+    "Your team needs best-time-to-post recommendations and automated scheduling without paying Sprout Social prices"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.6
 }

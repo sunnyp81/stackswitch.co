@@ -22,6 +22,12 @@
   "pros": ["Free for most use cases", "Integrates with Google ecosystem", "Industry standard", "BigQuery export on free tier"],
   "cons": ["GA4 migration was painful", "Privacy concerns (GDPR)", "Sampled data on free tier at scale", "Less user-friendly than Mixpanel"],
   "alternatives": ["mixpanel", "amplitude", "posthog", "plausible", "fathom"],
+  "use_cases": [
+    "You run Google Ads campaigns and need conversion tracking, audience lists, and attribution tied directly to your ad spend",
+    "Your team wants free funnel and path exploration reports without paying for a dedicated product analytics tool",
+    "You need to export raw event data into BigQuery for custom analysis or data warehouse joins — free on GA4",
+    "You're already in the Google ecosystem (Search Console, Ads, Merchant Center) and want native integration without extra connectors"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

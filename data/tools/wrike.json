@@ -24,6 +24,12 @@
   "pros": ["Powerful for complex projects", "Strong enterprise features", "Good request management", "Flexible views"],
   "cons": ["Steep learning curve", "Can feel heavy for small teams", "UI not as modern as monday.com"],
   "alternatives": ["monday", "asana", "clickup", "smartsheet", "teamwork"],
+  "use_cases": [
+    "Your marketing or creative team needs structured intake via request forms that route briefs into the right project automatically",
+    "You're running a PMO with multiple concurrent projects and need cross-tagging, portfolio dashboards, and resource load balancing",
+    "You manage work across departments where the same task appears in multiple project contexts and cross-tagging keeps everything linked",
+    "Your enterprise team needs custom workflows, approval chains, and SSO that lighter tools like Trello or Basecamp don't support"
+  ],
   "g2_score": 4.2,
   "capterra_score": 4.3
 }

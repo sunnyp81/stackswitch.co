@@ -24,6 +24,12 @@
   "pros": ["Unique combo of analytics + in-app guidance", "No-code guide creation", "Good NPS tooling", "Strong enterprise adoption"],
   "cons": ["Pricing not transparent", "Can be expensive", "Complex initial setup", "Free plan limited to 1K MAUs"],
   "alternatives": ["amplitude", "mixpanel", "appcues", "userflow", "chameleon"],
+  "use_cases": [
+    "Your product team wants to see feature adoption analytics AND create in-app tooltips or walkthroughs to improve it — without writing code",
+    "You want to run NPS surveys inside your product and tie the responses directly to usage data and user segments",
+    "Your customer success team needs to onboard users with guided walkthroughs and announcements that can be updated without an engineering sprint",
+    "You manage multiple products or a platform with sub-apps and need cross-app analytics under a single Portfolio view"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

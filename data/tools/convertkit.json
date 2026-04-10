@@ -23,6 +23,12 @@
   "pros": ["Best for creators and solopreneurs", "Very generous free plan (10K subs)", "Clean, simple interface", "Built-in digital product sales"],
   "cons": ["Limited design customisation", "Not ideal for e-commerce brands", "Fewer features than ActiveCampaign"],
   "alternatives": ["mailchimp", "beehiiv", "activecampaign", "substack", "ghost"],
+  "use_cases": [
+    "You're a blogger, podcaster, or course creator who wants to tag and segment subscribers based on interests and purchase behaviour",
+    "You sell digital products or courses and want a single platform to collect email, automate follow-up sequences, and process sales",
+    "You have up to 10,000 subscribers and want unlimited broadcasts and landing pages on the free plan without paying anything",
+    "Your automations are simple — welcome sequences, content upgrades, lead magnets — and you don't need the complexity of ActiveCampaign"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.7
 }

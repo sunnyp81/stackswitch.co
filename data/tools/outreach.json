@@ -23,6 +23,12 @@
   "pros": ["Best-in-class for enterprise sales", "Strong forecasting tools", "Excellent conversation intelligence", "Deep Salesforce integration"],
   "cons": ["Very expensive", "Pricing not transparent", "Overkill for SMBs", "Long implementation time"],
   "alternatives": ["salesloft", "apollo", "gong", "clari", "groove"],
+  "use_cases": [
+    "You run an enterprise sales team and need full pipeline visibility — sequences, calls, deal intelligence, and forecasting in one platform",
+    "Your sales manager wants conversation intelligence to review rep calls, score them, and coach based on real data",
+    "You use Salesforce as your CRM and need a sales engagement layer with deep two-way sync for sequences and activity logging",
+    "Your revenue operations team needs sales forecasting and pipeline analytics that go beyond what your CRM provides natively"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.4
 }

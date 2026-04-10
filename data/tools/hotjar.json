@@ -24,6 +24,12 @@
   "pros": ["Easy to install", "Great heatmap visualisations", "Good free plan", "User-friendly interface"],
   "cons": ["Session limits on lower tiers", "Less powerful for event analytics", "Can slow down pages slightly"],
   "alternatives": ["microsoft-clarity", "fullstory", "heap", "lucky-orange", "crazy-egg"],
+  "use_cases": [
+    "You want to see exactly where users click, scroll, and drop off on landing pages using visual heatmaps without digging through event data",
+    "Your UX team needs session recordings to watch real user journeys and identify friction points before running A/B tests",
+    "You want to trigger on-site surveys at specific moments — post-purchase, exit intent, or after a feature interaction — to capture qualitative feedback",
+    "You're a small team or solo marketer who needs quick behaviour insights without the cost and setup complexity of a full analytics platform"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.7
 }

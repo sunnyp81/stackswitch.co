@@ -24,6 +24,12 @@
   "pros": ["Great document builder", "Strong sales team features", "Generous free e-sign plan", "Good CRM integrations"],
   "cons": ["Advanced features need Business plan", "Template library could be larger", "Occasional editor bugs"],
   "alternatives": ["docusign", "hellosign", "proposify", "better-proposals", "qwilr"],
+  "use_cases": [
+    "Your sales team sends proposals and quotes frequently and wants to see when prospects open, view, and spend time on specific pages",
+    "You need e-signatures alongside a full document builder — not just a signing tool — so proposals, contracts, and quotes live in one place",
+    "You use HubSpot or Salesforce and want to auto-populate deal data into documents without copying and pasting",
+    "You want approval workflows so deals above a certain value require manager sign-off before the document is sent to the prospect"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.5
 }

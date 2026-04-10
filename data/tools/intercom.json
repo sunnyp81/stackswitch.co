@@ -23,6 +23,12 @@
   "pros": ["Best-in-class live chat", "Powerful AI agent", "Great onboarding tools", "Strong integrations"],
   "cons": ["Very expensive", "Pricing adds up with usage", "Overkill for small teams"],
   "alternatives": ["zendesk", "freshdesk", "crisp", "help-scout", "drift"],
+  "use_cases": [
+    "You want an AI agent (Fin) that can resolve a significant share of support conversations automatically before a human needs to step in",
+    "Your SaaS product needs in-app messaging for onboarding sequences, feature announcements, and proactive support — not just reactive ticketing",
+    "Your support team handles high-volume live chat and needs smart routing, shared inboxes, and workflow automation to manage it efficiently",
+    "You want product tours, checklists, and targeted messages that trigger based on what users do inside your app to improve activation"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.5
 }

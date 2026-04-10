@@ -24,6 +24,12 @@
   "pros": ["Industry standard for dev teams", "Extremely powerful", "Huge integration ecosystem", "Scales to enterprise"],
   "cons": ["Steep learning curve", "Can be slow and bloated", "Complex configuration", "Overkill for non-dev teams"],
   "alternatives": ["linear", "clickup", "asana", "shortcut", "height"],
+  "use_cases": [
+    "Your engineering team runs agile sprints and needs scrum boards, backlog grooming, and velocity tracking built around the software development lifecycle",
+    "You use Bitbucket, GitHub, or GitLab and want issues, branches, and pull requests linked so engineers can transition tickets directly from their IDE",
+    "Your organisation needs advanced roadmaps that roll up epics across multiple teams with dependency tracking and timeline views",
+    "You're at a larger company where custom workflows, project roles, and audit logs are required for compliance or governance"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.4
 }

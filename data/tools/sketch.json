@@ -22,6 +22,12 @@
   "pros": ["Native Mac performance", "Mature plugin ecosystem", "Affordable", "Clean, focused UI"],
   "cons": ["Mac only — no Windows or Linux", "No real-time collaboration like Figma", "Losing market share to Figma"],
   "alternatives": ["figma", "adobe-xd", "penpot", "framer", "lunacy"],
+  "use_cases": [
+    "Your entire design team works on Macs and prioritises native app performance over browser-based collaboration",
+    "You have an established Sketch plugin workflow for design tokens, icons, or handoff that would be expensive to rebuild in another tool",
+    "You want a focused UI design tool at half the price of Figma without paying for features your team doesn't use",
+    "You're a solo designer or small Mac-only studio that values shared libraries and symbol reuse over real-time multiplayer editing"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

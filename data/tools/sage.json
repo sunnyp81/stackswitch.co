@@ -23,6 +23,12 @@
   "pros": ["Strong HMRC MTD compliance", "Trusted by UK accountants", "Comprehensive UK tax features", "Good accountant collaboration tools"],
   "cons": ["Less intuitive than Xero or FreshBooks", "Pricing can be high for small teams", "Older interface on desktop versions", "Payroll costs extra"],
   "alternatives": ["quickbooks", "xero", "freshbooks", "wave", "zoho-crm"],
+  "use_cases": [
+    "You're a UK small business that needs to file VAT returns under HMRC Making Tax Digital without extra setup",
+    "Your accountant specifically recommends Sage and you need tight collaboration on year-end accounts",
+    "You run a more established business that needs Sage 50's desktop-grade stock control and departmental reporting",
+    "You want UK-native payroll and accounting tightly integrated rather than patching separate tools together"
+  ],
   "g2_score": 4.0,
   "capterra_score": 4.2
 }

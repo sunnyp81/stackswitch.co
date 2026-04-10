@@ -24,6 +24,12 @@
   "pros": ["Easiest e-commerce setup", "Massive app ecosystem", "Reliable hosting", "Great POS for in-person"],
   "cons": ["Transaction fees if not using Shopify Payments", "Monthly fees add up", "Customisation limited without Liquid knowledge"],
   "alternatives": ["bigcommerce", "woocommerce", "wix", "squarespace", "webflow"],
+  "use_cases": [
+    "You want to launch a product store quickly without managing hosting, security, or server infrastructure yourself",
+    "Your business sells across online store, physical POS, and social channels and needs unified inventory in one place",
+    "You're scaling from a handful of products to thousands of SKUs and need a reliable platform that won't break under traffic spikes",
+    "You rely heavily on app integrations — email, reviews, upsells, loyalty — and need the world's largest ecommerce app ecosystem"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

@@ -24,6 +24,12 @@
   "pros": ["Most established platform", "Supports all major networks", "Strong team features", "Extensive integrations"],
   "cons": ["Very expensive", "UI feels dated", "Free plan removed", "Pricing increased significantly"],
   "alternatives": ["buffer", "sprout-social", "later", "metricool", "sendible"],
+  "use_cases": [
+    "Your marketing team manages 10+ social accounts across multiple networks and needs all scheduling, monitoring, and reporting in one dashboard",
+    "You need team-based approval workflows where one person drafts posts and a manager approves before publishing",
+    "Your brand needs social listening to monitor mentions, competitor activity, and industry keywords across platforms in real time",
+    "You run paid social alongside organic and want ad management for Facebook and Instagram integrated into the same tool as your organic scheduling"
+  ],
   "g2_score": 4.2,
   "capterra_score": 4.4
 }

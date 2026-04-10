@@ -24,6 +24,12 @@
   "pros": ["Included in Microsoft 365", "Deep Office integration", "Strong enterprise features", "Large meeting capacity"],
   "cons": ["Complex and bloated UI", "Notification management is poor", "Less pleasant than Slack for daily use", "Requires Microsoft ecosystem"],
   "alternatives": ["slack", "zoom", "google-chat", "webex", "lark"],
+  "use_cases": [
+    "Your organisation already pays for Microsoft 365 and wants chat, meetings, and file sharing without adding another subscription",
+    "Your team works heavily in Word, Excel, and SharePoint and wants to co-edit documents directly inside the communication tool",
+    "You're in enterprise or education where IT manages device policies and Microsoft 365 licensing is already standardised",
+    "You need large-capacity video meetings (up to 1,000 participants) or live events without a separate conferencing tool"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.4
 }

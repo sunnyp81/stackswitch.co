@@ -23,6 +23,12 @@
   "pros": ["Most powerful visualisations available", "Huge chart type library", "Active community", "Good Salesforce integration"],
   "cons": ["Very expensive", "Desktop app required for full features", "Steep learning curve", "Slow performance with large datasets"],
   "alternatives": ["power-bi", "looker", "metabase", "superset", "grafana"],
+  "use_cases": [
+    "Your analysts need to build complex, interactive dashboards connecting multiple data sources without writing SQL or custom code",
+    "You present data to executive stakeholders and need pixel-perfect, highly visual charts that go beyond what Excel or Google Sheets can produce",
+    "Your organisation is already on Salesforce and wants native integration for CRM analytics and pipeline reporting in Tableau",
+    "You're embedding analytics into a customer-facing product and need Tableau's Embedded Analytics to serve personalised dashboards at scale"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

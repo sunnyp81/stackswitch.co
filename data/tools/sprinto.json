@@ -23,6 +23,12 @@
   "pros": ["Fast SOC 2 (4-6 weeks)", "Built for cloud-native stacks", "Strong support team", "Good pricing for startups"],
   "cons": ["Less known than Vanta/Drata", "Fewer total integrations", "Newer platform"],
   "alternatives": ["vanta", "drata", "secureframe", "strike-graph", "scytale"],
+  "use_cases": [
+    "You're a cloud-native SaaS startup that needs SOC 2 certification in 4–6 weeks to unblock an enterprise sales deal",
+    "Your infrastructure is AWS or GCP-native and you want automated checks that map directly to how your stack is actually configured",
+    "You need GDPR and ISO 27001 coverage simultaneously without managing separate compliance programmes for each framework",
+    "Your team is small and needs hands-on audit support from Sprinto's compliance team, not just software"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.8
 }

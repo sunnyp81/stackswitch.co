@@ -24,6 +24,12 @@
   "pros": ["Invented Domain Authority metric", "Clean, beginner-friendly UI", "Good keyword research tools", "Free MozBar extension"],
   "cons": ["Less data than Ahrefs or Semrush", "Expensive for what you get", "Link database smaller than competitors"],
   "alternatives": ["ahrefs", "semrush", "mangools", "serpstat", "ubersuggest"],
+  "use_cases": [
+    "Your team or clients rely on Domain Authority as a benchmark metric for tracking link-building progress over time",
+    "You want a beginner-friendly SEO platform where the learning curve is lower than Ahrefs or Semrush",
+    "You do on-page SEO and want page-level grading with specific recommendations from the On-Page Grader",
+    "You use the free MozBar Chrome extension daily to check DA and PA while browsing competitor sites"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

@@ -24,6 +24,12 @@
   "pros": ["No manual event tagging needed", "Retroactive analysis", "Good session replay", "Easy to get started"],
   "cons": ["Pricing not transparent", "Can generate too much noise", "Advanced features expensive"],
   "alternatives": ["mixpanel", "amplitude", "posthog", "fullstory", "pendo"],
+  "use_cases": [
+    "You want to analyse user behaviour retroactively — answering questions about events that happened before you thought to track them",
+    "Your team lacks engineering bandwidth to manually tag every click and form interaction before analysis can begin",
+    "You need to combine session recordings with funnel data to pinpoint exactly where users drop off in a specific flow",
+    "Your product team wants to run cohort and retention analysis without setting up a complex event taxonomy from scratch"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

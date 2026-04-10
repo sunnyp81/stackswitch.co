@@ -23,6 +23,12 @@
   "pros": ["Transparent pricing", "180+ countries covered", "Free HRIS for EOR customers", "Strong IP protection"],
   "cons": ["EOR pricing premium", "Slower to add new countries vs Deel", "Customer support response times vary"],
   "alternatives": ["deel", "rippling", "oyster", "papaya-global", "velocity-global"],
+  "use_cases": [
+    "You want to hire full-time employees in countries where you have no legal entity, without setting up subsidiaries",
+    "You're managing a mix of international contractors and full-time employees and need compliant contracts for both",
+    "Your team needs transparent, predictable EOR pricing with no hidden fees baked into the quote",
+    "You want IP and invention rights automatically protected when onboarding engineers across multiple jurisdictions"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

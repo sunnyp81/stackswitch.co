@@ -23,6 +23,12 @@
   "pros": ["Beautiful, modern UI", "Employees love using it", "Strong performance management", "Good analytics"],
   "cons": ["Pricing not transparent", "Better for 50-500 employees", "Payroll needs integrations"],
   "alternatives": ["bamboohr", "rippling", "workday", "lattice", "leapsome"],
+  "use_cases": [
+    "Your company is scaling from 50 to 500 employees and needs a proper HRIS that replaces spreadsheets without requiring enterprise-level budget",
+    "You want employees to actually engage with the HR platform — org charts, kudos, surveys, and announcements — not just use it for payslips",
+    "Your People team runs performance cycles and compensation reviews and needs both in the same system alongside core HR data",
+    "You're a global team with employees across multiple countries who need localised time-off policies and compliance without a separate tool"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

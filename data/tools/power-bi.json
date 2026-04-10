@@ -24,6 +24,12 @@
   "pros": ["Included in Microsoft 365", "Very affordable Pro tier", "Massive connector library", "Strong Excel users will adapt quickly"],
   "cons": ["Steep learning curve (DAX)", "Desktop app required for authoring", "Sharing requires Pro licence for recipients", "UI less polished than Tableau"],
   "alternatives": ["tableau", "looker", "metabase", "qlik", "sisense"],
+  "use_cases": [
+    "Your organisation already uses Microsoft 365 and wants BI dashboards without paying for a separate Tableau or Looker licence",
+    "Your analysts are heavy Excel users who want to graduate to interactive dashboards while reusing their existing data models and formulas",
+    "You need to connect to 300+ data sources — including Azure SQL, SharePoint, and Dynamics — with first-party connectors built in",
+    "Your team needs to share reports and dashboards internally at a low per-user cost using the £10/mo Pro tier"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

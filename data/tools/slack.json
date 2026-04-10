@@ -24,6 +24,12 @@
   "pros": ["Industry standard for teams", "Huge integration library", "Great search", "Easy to set up"],
   "cons": ["Free plan limits message history", "Can become noisy", "Video calls less featured than Teams/Zoom"],
   "alternatives": ["microsoft-teams", "discord", "google-chat", "lark", "twist"],
+  "use_cases": [
+    "Your engineering or product team relies on bot integrations — GitHub, PagerDuty, Jira — that trigger alerts and actions directly in channels",
+    "You want to organise company communication into topic-specific channels so decisions and context are searchable later",
+    "You're a startup that needs a tool that connects to 2,000+ apps via Workflow Builder without custom dev work",
+    "Your remote team needs quick async communication that feels lighter than email but more organised than group chats"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

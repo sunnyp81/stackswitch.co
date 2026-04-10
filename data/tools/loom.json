@@ -23,6 +23,12 @@
   "pros": ["Fastest async video tool", "Clean shareable links", "Good free plan", "AI transcription"],
   "cons": ["Free plan limited to 25 videos", "No native mobile recording", "Atlassian acquisition raised concerns"],
   "alternatives": ["screen-studio", "cap", "claap", "zoom-clips", "tella"],
+  "use_cases": [
+    "Your team works across time zones and you want to replace status meetings with quick recorded walkthroughs",
+    "You give frequent design or code review feedback and want to show your screen rather than write long comments",
+    "You onboard new hires or customers and want reusable video guides they can watch on demand",
+    "You use Slack heavily and want async video messages that embed directly in conversations"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

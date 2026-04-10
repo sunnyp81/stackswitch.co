@@ -24,6 +24,12 @@
   "pros": ["Easiest tool to learn", "Great free plan", "Intuitive drag-and-drop", "Good mobile apps"],
   "cons": ["Limited for complex projects", "No Gantt or dependency tracking", "Scales poorly for large teams"],
   "alternatives": ["asana", "clickup", "notion", "monday", "jira"],
+  "use_cases": [
+    "You want to get a small team organised in under an hour without training — drag cards across lists and you're done",
+    "You're managing a simple content calendar, product backlog, or personal task list that doesn't need Gantt charts or dependencies",
+    "Your team is already using Atlassian tools like Jira or Confluence and wants a lightweight board that integrates natively",
+    "You need a free, no-fuss Kanban tool for a side project, freelance workflow, or team with under 10 people"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

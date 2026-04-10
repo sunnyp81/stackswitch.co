@@ -24,6 +24,12 @@
   "pros": ["Huge template library", "Many payment integrations", "Feature-rich at all tiers", "HIPAA-compliant option"],
   "cons": ["Free plan very limited", "Can feel cluttered", "Pricing jumps between plans"],
   "alternatives": ["typeform", "google-forms", "tally", "paperform", "cognito-forms"],
+  "use_cases": [
+    "You need to collect payments directly through a form — booking deposits, event registrations, product orders — using Stripe, PayPal, or Square",
+    "Your organisation handles medical or legal data and needs a HIPAA-compliant form builder without building a custom solution",
+    "You want conditional logic that shows or hides fields based on previous answers, building dynamic multi-step forms without code",
+    "Your team needs approval workflows where form submissions trigger a review process before data is acted on or passed to another system"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.6
 }

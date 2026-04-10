@@ -24,6 +24,12 @@
   "pros": ["Simple, clean interface", "Strong API for developers", "Good Dropbox integration", "Reasonable pricing"],
   "cons": ["Free plan limited to 3 docs/mo", "Less powerful than DocuSign for enterprise", "Fewer native CRM integrations"],
   "alternatives": ["docusign", "pandadoc", "adobe-sign", "signwell", "signnow"],
+  "use_cases": [
+    "You need to embed a signing flow directly inside your own app or product using the API without customers leaving your platform",
+    "Your team already uses Dropbox for document storage and wants e-signatures that integrate natively without extra connectors",
+    "You send a moderate volume of contracts — NDAs, proposals, SOWs — and want a simple, affordable alternative to DocuSign",
+    "You need reusable document templates so your team can send standard agreements in seconds rather than reformatting each time"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

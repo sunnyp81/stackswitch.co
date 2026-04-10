@@ -24,6 +24,12 @@
   "pros": ["Easy to build and sell courses", "Strong student experience", "Built-in marketing tools", "Good affiliate system"],
   "cons": ["Transaction fees on lower plans", "Limited customisation vs Kajabi", "Basic plan relatively expensive for what you get"],
   "alternatives": ["thinkific", "kajabi", "podia", "circle", "learnworlds"],
+  "use_cases": [
+    "You're a creator or coach launching your first paid course and want video hosting, payments, and student management handled without technical setup",
+    "You want to monetise your expertise through drip-content courses, digital downloads, and coaching packages all in one storefront",
+    "Your course business is growing and you need an affiliate programme to let students refer others and earn commissions",
+    "You want to offer completion certificates and quizzes to increase student engagement and course completion rates"
+  ],
   "g2_score": 4.0,
   "capterra_score": 4.4
 }

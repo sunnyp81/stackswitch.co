@@ -24,6 +24,12 @@
   "pros": ["Best design-to-web tool", "Stunning animations", "No code required", "Fast hosting"],
   "cons": ["Page view limits on lower plans", "CMS less powerful than Webflow", "Learning curve for complex sites"],
   "alternatives": ["webflow", "figma", "squarespace", "wix", "wordpress"],
+  "use_cases": [
+    "You're a designer who wants to ship polished, production-ready websites without handing off to a developer",
+    "Your startup needs a high-converting landing page with scroll animations and micro-interactions that Webflow or Squarespace can't easily produce",
+    "You want pixel-level design control with Figma-like component logic but published directly to the web",
+    "You're building a portfolio or personal site where visual quality matters more than CMS depth"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

@@ -23,6 +23,12 @@
   "pros": ["Fastest path to SOC 2", "Extensive integrations", "Continuous monitoring", "Strong enterprise adoption"],
   "cons": ["Expensive", "Pricing lacks transparency", "Can have false positives in monitoring"],
   "alternatives": ["drata", "secureframe", "sprinto", "anecdotes", "scytale"],
+  "use_cases": [
+    "You need SOC 2 Type II certification quickly to satisfy enterprise customer security questionnaires and close deals",
+    "Your team wants continuous automated monitoring across AWS, GCP, GitHub, and Okta so control failures surface before auditors do",
+    "You're managing vendor risk across your supply chain and need a centralised platform to track third-party security assessments",
+    "Your company needs to maintain multiple frameworks — SOC 2, HIPAA, ISO 27001 — and wants a single compliance programme covering all of them"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.6
 }

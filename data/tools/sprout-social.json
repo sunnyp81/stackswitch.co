@@ -24,6 +24,12 @@
   "pros": ["Best analytics of any social tool", "Excellent reporting", "Strong team features", "Good social CRM"],
   "cons": ["Very expensive", "Per-seat pricing adds up fast", "Overkill for small teams"],
   "alternatives": ["hootsuite", "buffer", "later", "metricool", "agorapulse"],
+  "use_cases": [
+    "Your brand needs social listening to monitor competitor mentions, industry conversations, and emerging sentiment at scale",
+    "You're a mid-market or enterprise team that presents monthly social ROI reports to executives and needs boardroom-ready analytics",
+    "Your support team handles high volumes of inbound social messages and needs a unified inbox with smart routing and CSAT measurement",
+    "You want CRM-level context on who is engaging with your brand across platforms — tagging conversations and tracking customer history"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.4
 }

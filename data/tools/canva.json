@@ -23,6 +23,12 @@
   "pros": ["Extremely easy to use", "Massive template library", "Great for non-designers", "Affordable"],
   "cons": ["Not suited for complex design work", "Limited vector editing", "Less precise than Figma/Adobe"],
   "alternatives": ["figma", "adobe-express", "piktochart", "visme", "snappa"],
+  "use_cases": [
+    "Your marketing team creates social graphics, presentations, and print materials and needs everyone working from the same brand kit",
+    "You're a non-designer who needs professional-looking assets quickly without learning Figma or Illustrator",
+    "You want Magic Resize to repurpose one design across Instagram, LinkedIn, and Twitter without rebuilding each format",
+    "Your team needs a workflow approval process before designs go live, with shared template libraries to keep branding consistent"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

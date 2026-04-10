@@ -23,6 +23,12 @@
   "pros": ["Free until $250K ARR", "Handles complex billing logic", "Strong integrations", "Good revenue analytics"],
   "cons": ["Expensive beyond free tier", "Complex initial setup", "Pricing scales with revenue"],
   "alternatives": ["stripe", "paddle", "recurly", "zuora", "maxio"],
+  "use_cases": [
+    "Your SaaS offers trials, plan upgrades, downgrades, and add-ons — and Stripe alone can't handle the billing logic cleanly",
+    "You're pre-$250K ARR and need enterprise-grade subscription management without paying platform fees",
+    "Your team needs automated dunning to recover failed payments and reduce involuntary churn",
+    "You require revenue recognition reports for accounting and need subscriptions modelled correctly across billing periods"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.4
 }

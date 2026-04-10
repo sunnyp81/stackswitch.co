@@ -24,6 +24,12 @@
   "pros": ["Industry standard for scheduling", "Very easy to use", "Good free plan", "Strong integrations"],
   "cons": ["Advanced routing needs Teams plan", "Limited customisation on free", "Can feel impersonal for high-touch sales"],
   "alternatives": ["cal-com", "acuity-scheduling", "savvycal", "chili-piper", "hubspot-meetings"],
+  "use_cases": [
+    "You're a sales team or recruiter who needs a polished booking page that connects to your CRM and sends automated reminders",
+    "You want round-robin routing so inbound meeting requests distribute evenly across your team",
+    "Your prospects and clients already recognise Calendly links and you want zero friction on the booking side",
+    "You need group events and collective scheduling where multiple team members join the same booked call"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

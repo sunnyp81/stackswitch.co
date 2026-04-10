@@ -24,6 +24,12 @@
   "pros": ["Best backlink database", "Accurate keyword difficulty scores", "Excellent content gap analysis", "Regular data updates"],
   "cons": ["Expensive — no trial", "Steep learning curve", "Some features need higher plans"],
   "alternatives": ["semrush", "moz", "majestic", "serpstat", "ubersuggest"],
+  "use_cases": [
+    "You're doing serious link building and need the most accurate backlink database available",
+    "Your team runs content gap analysis to find what competitor pages rank for that yours don't",
+    "You manage SEO for multiple client sites and need project-level rank tracking and audits",
+    "You want to validate keyword difficulty before investing in content — not just search volume"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.7
 }

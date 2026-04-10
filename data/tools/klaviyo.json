@@ -23,6 +23,12 @@
   "pros": ["Best-in-class e-commerce features", "Deep Shopify integration", "Powerful segmentation", "Revenue attribution"],
   "cons": ["Expensive at scale", "Overkill for non-e-commerce", "Learning curve for automations"],
   "alternatives": ["mailchimp", "activecampaign", "omnisend", "drip", "brevo"],
+  "use_cases": [
+    "Your Shopify store needs abandoned cart, browse abandonment, and post-purchase flows that trigger from real-time storefront behaviour",
+    "You want to segment your email list by purchase history, predicted lifetime value, or product category to send genuinely relevant campaigns",
+    "Your brand does both email and SMS and wants both channels running from a single automation flow with unified revenue attribution",
+    "You're scaling past £1M GMV and need analytics that show exactly how much revenue each flow, segment, and campaign is generating"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.6
 }

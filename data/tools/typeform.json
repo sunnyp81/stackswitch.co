@@ -24,6 +24,12 @@
   "pros": ["Highest form completion rates", "Beautiful design out of the box", "Strong logic capabilities", "Good integrations"],
   "cons": ["Response limits on all paid plans", "Expensive for high-volume", "Overkill for simple forms"],
   "alternatives": ["google-forms", "jotform", "tally", "paperform", "surveymonkey"],
+  "use_cases": [
+    "You need a lead gen form or quiz embedded on a landing page where completion rate matters and a standard HTML form would kill conversions",
+    "Your customer research depends on NPS surveys and in-depth feedback forms where respondent experience directly affects response quality",
+    "You want to build a conditional logic form — showing questions based on previous answers — without writing code",
+    "Your brand requires polished, on-brand forms that match your website design, not generic form-builder aesthetics"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

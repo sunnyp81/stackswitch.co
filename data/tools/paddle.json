@@ -22,6 +22,12 @@
   "pros": ["Handles all tax compliance globally", "No setup fees", "Great for international SaaS", "Reduces legal/accounting burden"],
   "cons": ["Higher transaction fees than Stripe", "Less control than Stripe", "Not suited for non-SaaS businesses"],
   "alternatives": ["stripe", "lemon-squeezy", "chargebee", "fastspring", "gumroad"],
+  "use_cases": [
+    "You sell SaaS globally and want someone else to handle VAT, GST, and sales tax compliance in every country so you don't need a tax lawyer",
+    "Your team is small and you can't afford the engineering time to build and maintain a compliant global payments stack",
+    "You're expanding into new markets and want to accept local currencies and payment methods without extra integration work",
+    "You want subscriptions, dunning, and fraud protection bundled into one Merchant of Record solution rather than stitching together Stripe plus separate tools"
+  ],
   "g2_score": 4.0,
   "capterra_score": 4.3
 }

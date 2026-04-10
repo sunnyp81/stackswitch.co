@@ -24,6 +24,12 @@
   "pros": ["Extremely flexible", "Great for custom workflows", "Strong automation", "Visual and intuitive"],
   "cons": ["Gets expensive at scale", "Record limits on free plan", "Performance with large datasets", "Learning curve for databases"],
   "alternatives": ["notion", "clickup", "monday", "smartsheet", "coda"],
+  "use_cases": [
+    "Your team needs a database-backed workflow that goes beyond what a spreadsheet can handle",
+    "You want to build a lightweight internal app — CRM, content calendar, asset tracker — without writing code",
+    "Your operations involve linked data across multiple tables, like orders tied to clients tied to projects",
+    "You need to collect structured data via forms and route it directly into an automated workflow"
+  ],
   "g2_score": 4.6,
   "capterra_score": 4.7
 }

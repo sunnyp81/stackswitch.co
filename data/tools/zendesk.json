@@ -24,6 +24,12 @@
   "pros": ["Industry-leading ticketing", "Massive ecosystem", "Scales to enterprise", "Strong reporting"],
   "cons": ["Very expensive", "Complex setup", "Feels bloated for small teams", "Price jumps at higher tiers"],
   "alternatives": ["intercom", "freshdesk", "help-scout", "hubspot", "groove"],
+  "use_cases": [
+    "Your support team handles thousands of tickets per month across email, chat, and social and needs intelligent routing and SLA management",
+    "You want a self-service knowledge base that deflects tickets automatically using AI-powered answers before an agent gets involved",
+    "Your organisation needs enterprise-grade workforce management — scheduling, QA scoring, and agent performance tracking — inside the support platform",
+    "You're scaling a B2B support operation where customers need a dedicated portal, custom ticket views, and HIPAA-compliant handling"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.4
 }

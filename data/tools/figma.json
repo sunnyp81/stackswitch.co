@@ -24,6 +24,12 @@
   "pros": ["Industry standard", "Real-time collaboration", "Massive plugin ecosystem", "Excellent dev handoff"],
   "cons": ["Expensive for large teams", "Performance with large files", "Adobe acquisition uncertainty"],
   "alternatives": ["sketch", "adobe-xd", "penpot", "framer", "canva"],
+  "use_cases": [
+    "Your design and engineering teams need to collaborate in real-time on the same file without version conflicts",
+    "You're building and maintaining a design system with shared component libraries used across multiple products",
+    "Your developers need accurate specs and CSS values through Dev Mode without chasing up designers",
+    "You run design sprints or workshops where multiple stakeholders need to contribute simultaneously on FigJam"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.8
 }

@@ -24,6 +24,12 @@
   "pros": ["Very intuitive UI", "Affordable entry price", "Strong mobile app", "Good automation at mid tiers"],
   "cons": ["Limited marketing features", "No free plan", "Reporting less advanced than Salesforce"],
   "alternatives": ["hubspot", "salesforce", "close", "zoho-crm", "copper"],
+  "use_cases": [
+    "Your sales team wants a visual drag-and-drop pipeline that gives instant clarity on which deals to chase and what activity is overdue",
+    "You're a small to mid-size sales team that finds Salesforce overwhelming but needs more than a basic spreadsheet CRM",
+    "You want activity-based selling with automatic reminders so reps never miss a follow-up call or email",
+    "Your reps are frequently on the road and need a strong mobile CRM app to log calls and update deals from their phone"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.5
 }

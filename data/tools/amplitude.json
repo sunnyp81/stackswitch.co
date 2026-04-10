@@ -24,6 +24,12 @@
   "pros": ["Powerful behavioural analytics", "Strong cohort and funnel tools", "Generous free tier", "Good data governance"],
   "cons": ["Complex setup", "Can be expensive at scale", "Steep learning curve", "Less suited for marketing analytics"],
   "alternatives": ["mixpanel", "heap", "posthog", "pendo", "fullstory"],
+  "use_cases": [
+    "Your product team needs to understand which features drive retention versus churn",
+    "You're running funnel analysis to find where users drop off before converting or activating",
+    "You want to build and compare behavioural cohorts — e.g. users who did X in week 1 vs those who didn't",
+    "Your growth team needs event-level data with pathfinder analysis to map actual user journeys"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

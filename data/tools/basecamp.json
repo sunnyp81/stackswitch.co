@@ -22,6 +22,12 @@
   "pros": ["Flat pricing at scale", "Opinionated but easy to use", "Great for agencies with clients", "Includes messaging + PM in one"],
   "cons": ["No Gantt/timeline view", "Less customisable than ClickUp", "No time tracking built in", "Minimal reporting"],
   "alternatives": ["clickup", "asana", "notion", "monday", "teamwork"],
+  "use_cases": [
+    "You run an agency and want clients to have their own project space with message boards and file sharing",
+    "Your team is overwhelmed by ClickUp or Asana complexity and wants a simpler, opinionated setup",
+    "You have a growing headcount and the flat $299/mo pricing makes more sense than per-seat tools",
+    "You need project management, team chat, and async check-ins without stitching together multiple apps"
+  ],
   "g2_score": 4.1,
   "capterra_score": 4.3
 }

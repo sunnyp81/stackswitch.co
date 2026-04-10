@@ -24,6 +24,12 @@
   "pros": ["Extremely flexible", "Generous free plan", "Excellent templates", "Great for documentation"],
   "cons": ["Can be overwhelming for new users", "Performance issues with large databases", "AI features cost extra"],
   "alternatives": ["clickup", "asana", "coda", "confluence", "linear"],
+  "use_cases": [
+    "Your team needs a single workspace that combines internal wiki, meeting notes, project tracking, and company documentation",
+    "You're a startup or solopreneur who wants a flexible, database-driven workspace you can shape exactly to your workflow",
+    "Your team creates a lot of linked documents and wants pages, databases, and project boards to reference each other seamlessly",
+    "You want to replace scattered tools — Google Docs for notes, Trello for tasks, Confluence for docs — with one connected system"
+  ],
   "g2_score": 4.7,
   "capterra_score": 4.8
 }

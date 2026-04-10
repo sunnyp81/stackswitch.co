@@ -23,6 +23,12 @@
   "pros": ["Very affordable compared to Semrush and Ahrefs", "Large keyword database", "Good batch analysis tools", "Free plan available"],
   "cons": ["Data accuracy not always as strong as top-tier tools", "Interface can feel cluttered", "Customer support response times vary"],
   "alternatives": ["semrush", "ahrefs", "moz", "mangools", "ubersuggest"],
+  "use_cases": [
+    "You're a freelancer or small agency that needs full-stack SEO data — keyword research, rank tracking, site audit — without a Semrush-sized budget",
+    "You run batch keyword or domain analyses regularly and need high query limits at a low per-month cost",
+    "Your clients are spread across 230+ countries and you need broad geographic keyword data outside the US and UK",
+    "You want white-label reporting and PPC keyword research in a single tool without paying for two separate subscriptions"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.6
 }

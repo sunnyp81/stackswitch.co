@@ -22,6 +22,12 @@
   "pros": ["Open source with self-hosted option", "All-in-one platform", "Very generous free tier", "Developer-friendly"],
   "cons": ["Less polished UI than Amplitude/Mixpanel", "Self-hosting requires technical expertise", "Usage-based pricing can surprise"],
   "alternatives": ["mixpanel", "amplitude", "heap", "fullstory", "june"],
+  "use_cases": [
+    "Your engineering team wants analytics, feature flags, session recording, and A/B testing in one tool without managing four separate vendor contracts",
+    "You handle sensitive data and need the option to self-host on your own infrastructure for full data ownership and privacy compliance",
+    "You're an early-stage startup that wants a generous free tier covering 1M events per month plus all core analytics features",
+    "Your developers want to deploy feature flags and roll out changes gradually to specific user segments without a separate experimentation tool"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

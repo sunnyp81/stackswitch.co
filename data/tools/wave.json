@@ -23,6 +23,12 @@
   "pros": ["Core features are free", "No limits on invoices or clients", "Easy to use", "Good for freelancers"],
   "cons": ["Payment processing fees", "Less powerful than QuickBooks", "US & Canada focused", "Limited integrations"],
   "alternatives": ["quickbooks", "freshbooks", "xero", "zoho-books", "bonsai"],
+  "use_cases": [
+    "You're a freelancer or sole trader who needs professional invoicing and basic bookkeeping without paying a monthly subscription",
+    "Your side business or early-stage startup needs proper double-entry accounting and bank reconciliation at zero cost",
+    "You send a small number of invoices each month and want unlimited invoice creation with online payment acceptance built in",
+    "You're a US or Canadian small business owner who wants payroll added on top of free accounting without switching platforms"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

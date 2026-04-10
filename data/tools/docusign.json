@@ -24,6 +24,12 @@
   "pros": ["Most trusted e-signature brand", "Legally binding in 180+ countries", "Strong API", "Enterprise-grade security"],
   "cons": ["Expensive compared to alternatives", "Personal plan limited to 5 docs/mo", "Can be complex to configure"],
   "alternatives": ["pandadoc", "hellosign", "adobe-sign", "signwell", "signnow"],
+  "use_cases": [
+    "Your contracts need to be legally binding across multiple countries and you need a brand that counterparties already trust",
+    "You send high volumes of documents and need bulk sending, reusable templates, and full audit trails for compliance",
+    "Your legal or finance team needs contract lifecycle management beyond just collecting signatures",
+    "You're integrating e-signatures into your own application and need a robust API with webhook support"
+  ],
   "g2_score": 4.5,
   "capterra_score": 4.7
 }

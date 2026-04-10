@@ -24,6 +24,12 @@
   "pros": ["Most powerful CRM available", "Massive ecosystem", "Highly customisable", "Scales to enterprise"],
   "cons": ["Very expensive", "Steep learning curve", "Requires dedicated admin", "Implementation costs are high"],
   "alternatives": ["hubspot", "pipedrive", "zoho-crm", "microsoft-dynamics", "close"],
+  "use_cases": [
+    "Your enterprise sales team needs complex approval workflows, custom objects, and territory management that out-of-the-box CRMs can't handle",
+    "You need a CRM that connects to hundreds of third-party systems via AppExchange and custom API integrations",
+    "You're running multi-cloud operations where sales, service, and marketing data must feed into a single unified platform",
+    "Your business requires a dedicated Salesforce admin to build and maintain highly customised sales processes at scale"
+  ],
   "g2_score": 4.3,
   "capterra_score": 4.4
 }

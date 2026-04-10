@@ -22,6 +22,12 @@
   "pros": ["Best developer experience", "Extensive API", "Scales from startup to enterprise", "Global reach (135+ currencies)"],
   "cons": ["Higher per-transaction fees than some alternatives", "Complex disputes process", "Not ideal for high-risk merchants"],
   "alternatives": ["paddle", "lemonsqueezy", "chargebee", "braintree", "adyen"],
+  "use_cases": [
+    "Your developers need to build a custom checkout, subscription billing, or marketplace with a best-in-class API and SDKs",
+    "You sell SaaS subscriptions and need Stripe Billing to handle metered usage, trials, dunning, and revenue recognition automatically",
+    "You're building a marketplace or platform where you need to route payments to third-party sellers via Stripe Connect",
+    "Your business operates globally and needs to accept 135+ currencies with local payment methods without building the infrastructure yourself"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.7
 }

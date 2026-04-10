@@ -24,6 +24,12 @@
   "pros": ["Generous free plan", "Easy to set up", "Good automation", "Affordable entry point"],
   "cons": ["AI features limited on lower tiers", "Reporting less powerful than Zendesk", "Occasional UI bugs"],
   "alternatives": ["zendesk", "intercom", "help-scout", "hubspot", "zoho-desk"],
+  "use_cases": [
+    "You need a multi-channel helpdesk that handles email, social, and chat tickets but can't justify Zendesk's pricing",
+    "Your support team is just getting started and needs to be set up and handling tickets the same day without complex configuration",
+    "You want a genuinely capable free plan that supports unlimited agents before committing to paid tiers",
+    "Your team needs SLA policies and automation rules to route and prioritise tickets without custom development"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }

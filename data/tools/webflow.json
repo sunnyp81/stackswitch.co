@@ -24,6 +24,12 @@
   "pros": ["Best design control of any no-code tool", "Clean code output", "Built-in hosting", "Powerful CMS"],
   "cons": ["Steep learning curve", "Expensive for e-commerce", "Not beginner-friendly", "Performance can vary"],
   "alternatives": ["framer", "squarespace", "wix", "wordpress", "bubble"],
+  "use_cases": [
+    "You're a designer who wants pixel-level control over layout, animations, and interactions without handing off to a developer",
+    "Your agency builds bespoke marketing sites for clients and needs a CMS that editors can manage without touching code",
+    "You want to build complex scroll animations, micro-interactions, and transitions that page builders like Squarespace can't produce",
+    "Your team needs a site that outputs clean, production-ready HTML and CSS rather than plugin-dependent WordPress themes"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.6
 }

@@ -23,6 +23,12 @@
   "pros": ["Best semantic modelling layer", "Governed metrics", "Strong BigQuery/GCP integration", "Scales to enterprise"],
   "cons": ["LookML has significant learning curve", "Expensive", "Requires dedicated data engineering", "Overkill for small teams"],
   "alternatives": ["tableau", "power-bi", "metabase", "dbt-cloud", "thoughtspot"],
+  "use_cases": [
+    "Your data team wants a governed semantic layer so every team queries the same definitions for metrics like revenue or churn",
+    "You're on Google Cloud and want a BI tool that integrates natively with BigQuery",
+    "You need to embed analytics dashboards directly inside your own product or customer portal",
+    "Your organisation has dedicated data engineers who can own and maintain LookML models long-term"
+  ],
   "g2_score": 4.4,
   "capterra_score": 4.5
 }
