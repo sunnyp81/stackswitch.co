@@ -25,9 +25,10 @@ import Base from '../layouts/Base.astro';
         </div>
 
         <form id="contact-form" action="https://api.staticforms.xyz/submit" method="POST" class="space-y-4">
+  <input type="hidden" name="_site" value="stackswitch.co" />
           <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
           <input type="hidden" name="redirectTo" value="https://stackswitch.co/contact?sent=true" />
-          <input type="hidden" name="subject" value="Contact form — StackSwitch.co" />
+          <input type="hidden" name="subject" value="Enquiry from stackswitch.co" />
 
           <div>
             <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>

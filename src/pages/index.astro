@@ -130,9 +130,10 @@ const featured = tools
         Reports coming your way — check your inbox.
       </div>
       <form id="email-form" action="https://api.staticforms.xyz/submit" method="POST" class="flex flex-col gap-3 max-w-md mx-auto text-left">
+  <input type="hidden" name="_site" value="stackswitch.co" />
         <input type="hidden" name="accessKey" value="sf_9e906eb6c00416b9d3354749" />
         <input type="hidden" name="redirectTo" value="https://stackswitch.co/?joined=true" />
-        <input type="hidden" name="subject" value="New subscriber — StackSwitch.co" />
+        <input type="hidden" name="subject" value="Enquiry from stackswitch.co" />
         <input
           type="text"
           name="name"
