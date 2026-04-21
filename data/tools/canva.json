@@ -29,6 +29,40 @@
     "You want Magic Resize to repurpose one design across Instagram, LinkedIn, and Twitter without rebuilding each format",
     "Your team needs a workflow approval process before designs go live, with shared template libraries to keep branding consistent"
   ],
+  "plan_guidance": [
+    {
+      "tier": "Free",
+      "best_for": "Testing Canva before committing or creating occasional one-off graphics. The 5GB storage and 250,000 templates cover basic needs, but Brand Kit, Background Remover, and Magic Resize are all locked behind paid plans.",
+      "upgrade_when": "You're creating content more than a few times per month, working with a consistent brand colour palette, or need to resize one design across multiple social media formats without rebuilding it."
+    },
+    {
+      "tier": "Pro",
+      "best_for": "Solo creators, freelancers, and small business owners who create content regularly and need brand consistency across designs. The Brand Kit alone — custom fonts, logos, and colours applied across all designs — justifies the price for most freelancers.",
+      "upgrade_when": "You manage a team of three or more designers who need to share templates, require approval workflows before designs go live, or need centralised brand control across multiple users."
+    },
+    {
+      "tier": "Teams",
+      "best_for": "Marketing teams of three or more who need shared brand kits, workflow approvals, and centralised asset libraries. The Teams plan adds approval workflows that prevent off-brand designs from going live — critical for agencies and larger marketing departments.",
+      "upgrade_when": "Your design work has outgrown Canva's capabilities — for complex brand systems, developer handoff, or precise vector editing, tools like Figma or Adobe Illustrator are better suited."
+    }
+  ],
+  "hidden_costs": [
+    "Teams plan requires a minimum of 3 users — the $10/user/mo headline price means a minimum spend of $30/mo, not $10. A solo user or two-person team cannot access this tier.",
+    "Premium individual elements — certain stock photos, videos, and illustrations — cost $1–$5 each even on Pro. Not every asset in Canva's library is included in the subscription.",
+    "Canva Print is priced separately: paper stock, finish, and quantity all drive the real cost up significantly beyond the design tool subscription.",
+    "AI generation credits have monthly caps on the free plan and are limited on Pro. Heavy users of Canva AI features (Magic Media, Magic Expand) may hit limits before the billing cycle resets."
+  ],
+  "extra_faqs": [
+    {
+      "q": "What does Canva Pro include that the free plan doesn't?",
+      "a": "Canva Pro adds Brand Kit (upload your own fonts, colours, and logos so every design stays on-brand), Background Remover, Magic Resize to reformat one design across Instagram, LinkedIn, and Twitter without rebuilding each format, 100GB storage, and access to 100+ million premium templates and media assets. The free plan is limited to 250,000 templates, 5GB storage, and no brand controls — enough for casual use, but restrictive for anyone creating content regularly."
+    },
+    {
+      "q": "Is the Canva Teams plan worth upgrading from Pro?",
+      "a": "Only if you have three or more designers working together. The Teams plan adds workflow approvals, shared brand controls, and unlimited storage — but the minimum is 3 users at $10/user/mo, totalling $30/mo minimum. Three separate Pro accounts would cost $45/mo, so Teams saves money at that threshold while adding collaboration features. If you have fewer than three active designers, Pro gives you everything you need at a lower cost."
+    }
+  ],
+  "review_count": 11800,
   "g2_score": 4.7,
   "capterra_score": 4.7
 }

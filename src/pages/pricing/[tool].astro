@@ -13,6 +13,7 @@ const tool = await getToolBySlug(slug);
 if (!tool) return Astro.redirect('/404');
 
 const year = new Date().getFullYear();
+const lastUpdated = new Date().toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
 const currencySymbol = tool.pricing.currency === 'USD' ? '$' : '£';
 
 const productSchema = {
@@ -28,7 +29,7 @@ const productSchema = {
     "ratingValue": tool.g2_score,
     "bestRating": 5,
     "worstRating": 1,
-    "ratingCount": 500
+    "ratingCount": tool.review_count ?? 500
   },
   "offers": tool.pricing.tiers.map((tier) => ({
     "@type": "Offer",
@@ -49,39 +50,47 @@ const breadcrumbSchema = {
   ]
 };
 
+const genericFaqs = [
+  {
+    "@type": "Question",
+    "name": `How much does ${tool.name} cost per month?`,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": tool.pricing.has_free_plan
+        ? `${tool.name} has a free plan. Paid plans start at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo.`
+        : `${tool.name} starts at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo. There is no free plan.`
+    }
+  },
+  {
+    "@type": "Question",
+    "name": `Does ${tool.name} have a free plan?`,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": tool.pricing.has_free_plan
+        ? `Yes, ${tool.name} offers a free plan with no credit card required. Upgrading unlocks additional features.`
+        : `No, ${tool.name} does not offer a free plan. You can view all paid plans above.`
+    }
+  },
+  {
+    "@type": "Question",
+    "name": `How many pricing plans does ${tool.name} have?`,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": `${tool.name} offers ${tool.pricing.tiers.length} pricing plans: ${tool.pricing.tiers.map((t) => t.name).join(', ')}.`
+    }
+  }
+];
+
+const extraFaqSchemas = (tool.extra_faqs ?? []).map((faq) => ({
+  "@type": "Question",
+  "name": faq.q,
+  "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+}));
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": `How much does ${tool.name} cost per month?`,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": tool.pricing.has_free_plan
-          ? `${tool.name} has a free plan. Paid plans start at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo.`
-          : `${tool.name} starts at ${formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo. There is no free plan.`
-      }
-    },
-    {
-      "@type": "Question",
-      "name": `Does ${tool.name} have a free plan?`,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": tool.pricing.has_free_plan
-          ? `Yes, ${tool.name} offers a free plan with no credit card required. Upgrading unlocks additional features.`
-          : `No, ${tool.name} does not offer a free plan. You can view all paid plans above.`
-      }
-    },
-    {
-      "@type": "Question",
-      "name": `How many pricing plans does ${tool.name} have?`,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": `${tool.name} offers ${tool.pricing.tiers.length} pricing plans: ${tool.pricing.tiers.map((t) => t.name).join(', ')}.`
-      }
-    }
-  ]
+  "mainEntity": [...extraFaqSchemas, ...genericFaqs]
 };
 ---
 
@@ -104,7 +113,7 @@ const faqSchema = {
     <!-- Hero -->
     <h1 class="text-3xl font-bold mb-3">{tool.name} Pricing ({year})</h1>
     <p class="text-lg text-gray-600 mb-2">{tool.tagline}.</p>
-    <div class="flex flex-wrap gap-3 mb-8">
+    <div class="flex flex-wrap gap-3 mb-4">
       <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
         {tool.pricing.has_free_plan ? '✓ Free plan available' : '✗ No free plan'}
       </span>
@@ -114,6 +123,16 @@ const faqSchema = {
       <span class="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
         From {formatPrice(tool.pricing.starting_price, tool.pricing.currency)}/mo
       </span>
+    </div>
+
+    <!-- Author byline -->
+    <div class="flex items-center gap-2 text-xs text-gray-400 mb-8 border-b border-gray-100 pb-5">
+      <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+      </svg>
+      <span>Reviewed by the <strong class="text-gray-600">StackSwitch Editorial Team</strong></span>
+      <span>·</span>
+      <span>Last updated {lastUpdated}</span>
     </div>
 
     <!-- Pricing visual -->
@@ -149,6 +168,38 @@ const faqSchema = {
         </div>
       ))}
     </div>
+
+    <!-- Which plan is right for you? -->
+    {tool.plan_guidance && tool.plan_guidance.length > 0 && (
+      <div class="mb-10">
+        <h2 class="text-xl font-bold mb-5">Which {tool.name} plan is right for you?</h2>
+        <div class="space-y-4">
+          {tool.plan_guidance.map((guidance) => (
+            <div class="border border-gray-200 rounded-xl p-5">
+              <div class="font-semibold text-gray-800 mb-2">{guidance.tier} plan</div>
+              <p class="text-sm text-gray-700 mb-2"><strong>Best for:</strong> {guidance.best_for}</p>
+              <p class="text-xs text-gray-500"><strong>Upgrade when:</strong> {guidance.upgrade_when}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- True cost: hidden costs -->
+    {tool.hidden_costs && tool.hidden_costs.length > 0 && (
+      <div class="mb-10 bg-amber-50 border border-amber-200 rounded-xl p-6">
+        <h2 class="text-xl font-bold mb-2">The true cost: what's not in the price</h2>
+        <p class="text-sm text-gray-600 mb-4">The headline price rarely tells the full story. Here's what can add to your actual bill with {tool.name}:</p>
+        <ul class="space-y-3">
+          {tool.hidden_costs.map((cost) => (
+            <li class="text-sm text-gray-700 flex gap-3">
+              <span class="text-amber-500 flex-shrink-0 mt-0.5">▲</span>
+              <span>{cost}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    )}
 
     <!-- Is it worth it? -->
     <div class="mb-10">
@@ -198,6 +249,16 @@ const faqSchema = {
     <div class="mb-10">
       <h2 class="text-xl font-bold mb-5">{tool.name} pricing: frequently asked questions</h2>
       <div class="space-y-4">
+
+        <!-- Tool-specific FAQs first -->
+        {(tool.extra_faqs ?? []).map((faq) => (
+          <details class="border border-gray-200 rounded-xl p-4">
+            <summary class="font-medium cursor-pointer text-sm">{faq.q}</summary>
+            <p class="text-gray-600 text-sm mt-3 leading-relaxed">{faq.a}</p>
+          </details>
+        ))}
+
+        <!-- Generic FAQs -->
         <details class="border border-gray-200 rounded-xl p-4">
           <summary class="font-medium cursor-pointer text-sm">How much does {tool.name} cost per month?</summary>
           <p class="text-gray-600 text-sm mt-3">

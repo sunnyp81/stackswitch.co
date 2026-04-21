@@ -30,6 +30,45 @@
     "You want pixel-level design control with Figma-like component logic but published directly to the web",
     "You're building a portfolio or personal site where visual quality matters more than CMS depth"
   ],
+  "plan_guidance": [
+    {
+      "tier": "Free",
+      "best_for": "Designers evaluating Framer before publishing, or building and testing prototypes locally. The 100 page view per month limit makes the Free plan unusable for any live site — it's a trial tier, not a viable publishing option.",
+      "upgrade_when": "You're ready to share your site publicly. Even a portfolio linked from a social media bio can exhaust 100 views within hours of being shared."
+    },
+    {
+      "tier": "Mini",
+      "best_for": "Personal portfolios or very small sites with organic-only traffic. Suitable if you post your URL occasionally and don't run any paid traffic or social campaigns to it. Custom domain access at $5/mo makes this the entry point for real publishing.",
+      "upgrade_when": "Your site receives more than 1,000 monthly visitors, you need a second editor on the project, or you need to password-protect pages — all of which require Basic."
+    },
+    {
+      "tier": "Basic",
+      "best_for": "Freelancers, consultants, and agencies building marketing sites for clients. Password protection for client previews, 3 collaborators, and 10,000 monthly page views covers most professional use cases. This is the right tier for the majority of commercial Framer sites.",
+      "upgrade_when": "You need a blog, case study archive, or any dynamically managed content — CMS collections are only available on Pro. Basic is static-only."
+    },
+    {
+      "tier": "Pro",
+      "best_for": "Startups, product teams, and agencies that need CMS-powered content, staging environments for client review, and higher traffic capacity. The right tier for any content-driven site where the team publishes regularly.",
+      "upgrade_when": "You're consistently exceeding 200,000 monthly page views. At that scale, contact Framer directly for enterprise pricing — the Pro plan's hard cap can cause performance issues during viral traffic spikes."
+    }
+  ],
+  "hidden_costs": [
+    "CMS collections — needed for blogs, case studies, or any content managed outside the editor — are only available on Pro ($30/mo). Basic and Mini plans are static-only.",
+    "Custom code components using React require Basic or above. Free and Mini plans cannot embed React components or custom scripts.",
+    "Framer has no native form backend. You'll need a third-party tool (Tally, Typeform, or a paid plan of any form builder) to handle contact forms, survey submissions, or lead capture.",
+    "Page view hard caps can catch you off-guard: a Product Hunt launch or viral social post can exhaust a month's Pro allocation (200K views) in under 24 hours, triggering throttling before you can upgrade."
+  ],
+  "extra_faqs": [
+    {
+      "q": "Does Framer have a CMS for blog posts or dynamic content?",
+      "a": "Yes — but only on the Pro plan ($30/mo). Basic and Mini plans support static pages built in the editor only. If you need to publish blog articles, case studies, team member pages, or any content managed from a CMS interface, you must be on Pro. This is the most common reason people upgrade from Basic: they outgrow static pages and need a manageable content layer."
+    },
+    {
+      "q": "What happens when I hit Framer's page view limit?",
+      "a": "Framer doesn't immediately take your site offline, but will throttle performance and display an upgrade prompt in your dashboard. The Free plan's 100 views/mo limit is easily exceeded — a single shared link on Twitter or LinkedIn can exhaust it in minutes. The Mini plan's 1,000 views/mo is practical for a quiet portfolio but fails quickly if you run any paid traffic, social campaigns, or appear in search results consistently."
+    }
+  ],
+  "review_count": 2400,
   "g2_score": 4.5,
   "capterra_score": 4.6
 }

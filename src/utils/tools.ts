@@ -5,6 +5,17 @@ export interface PricingTier {
   features: string[];
 }
 
+export interface PlanGuidance {
+  tier: string;
+  best_for: string;
+  upgrade_when: string;
+}
+
+export interface ExtraFaq {
+  q: string;
+  a: string;
+}
+
 export interface Tool {
   slug: string;
   name: string;
@@ -27,6 +38,10 @@ export interface Tool {
   cons: string[];
   alternatives: string[];
   use_cases?: string[];
+  plan_guidance?: PlanGuidance[];
+  hidden_costs?: string[];
+  extra_faqs?: ExtraFaq[];
+  review_count?: number;
   g2_score: number;
   capterra_score: number;
 }

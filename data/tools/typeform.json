@@ -30,6 +30,45 @@
     "You want to build a conditional logic form — showing questions based on previous answers — without writing code",
     "Your brand requires polished, on-brand forms that match your website design, not generic form-builder aesthetics"
   ],
+  "plan_guidance": [
+    {
+      "tier": "Free",
+      "best_for": "Testing Typeform's interface or running a one-off research project. The Free plan is limited to 3 typeforms and 10 responses per month — enough to evaluate the product, but not viable for any ongoing use. Typeform branding appears on all forms.",
+      "upgrade_when": "You're collecting more than 10 responses monthly, need to remove Typeform branding, want a custom domain, or are using forms for professional lead generation."
+    },
+    {
+      "tier": "Basic",
+      "best_for": "Freelancers, consultants, and small businesses running contact forms, intake questionnaires, or low-volume lead gen. The 100 response per month cap suits businesses receiving a handful of enquiries per week rather than running high-traffic campaigns.",
+      "upgrade_when": "Your forms receive more than 100 responses per month — which happens quickly on any landing page with paid traffic — or you need multiple users on the account, or require advanced logic beyond Basic's capabilities."
+    },
+    {
+      "tier": "Plus",
+      "best_for": "Growing marketing teams running customer research, NPS surveys, and lead generation campaigns at scale. The 1,000 response limit suits most mid-sized campaigns, and 3 users covers a typical marketing team. Advanced logic unlocks conditional branching for complex survey flows.",
+      "upgrade_when": "Your response volume consistently exceeds 1,000/month, you need more than 3 users collaborating on forms, or you require priority support when forms are connected to live campaigns."
+    },
+    {
+      "tier": "Business",
+      "best_for": "Enterprise teams or agencies running Typeforms at high volume where response data feeds directly into CRM and sales workflows. Priority support is valuable when forms are mission-critical and a downtime or logic issue needs immediate resolution.",
+      "upgrade_when": "Contact Typeform for Enterprise if 10,000 responses per month isn't enough, or if you need SSO, advanced security controls, audit logs, or custom SLA agreements."
+    }
+  ],
+  "hidden_costs": [
+    "All Typeform plans have hard monthly response limits. Once you hit the ceiling, new submissions are rejected and respondents see an error — there is no overflow buffer or queue. Lost responses from a live campaign cannot be recovered.",
+    "Payment collection via Stripe incurs Stripe's standard transaction fee (2.9% + 30¢ per transaction) on top of Typeform's plan cost. This is not included in Typeform pricing.",
+    "Advanced integrations — including HubSpot sync, Salesforce CRM connection, and Zapier multi-step workflows — require Plus or Business. The Basic plan's integration options are limited.",
+    "File upload fields add to your response data volume. Forms that collect uploaded documents, images, or videos use significantly more storage and can incur additional fees on high-volume accounts."
+  ],
+  "extra_faqs": [
+    {
+      "q": "What happens when Typeform's monthly response limit is reached?",
+      "a": "When you hit your response cap, Typeform stops accepting new submissions entirely and shows respondents an error message. Responses are not queued or retried — they are lost permanently. If you're running a paid advertising campaign sending traffic to a Typeform, hitting the limit mid-campaign means paying for clicks that convert to nothing. Monitor your monthly usage in the dashboard and upgrade before you approach 80% of your limit to avoid data loss during active campaigns."
+    },
+    {
+      "q": "Is Typeform worth it compared to free alternatives like Google Forms or Tally?",
+      "a": "Typeform's completion rates are typically 3–5× higher than traditional form builders, which directly justifies the cost when each response has real value. For lead generation forms, customer research surveys, or NPS campaigns where completion rate drives ROI, Typeform pays for itself quickly. For internal forms, event sign-ups, or low-stakes feedback collection, free tools like Google Forms or Tally handle the job without the cost. The question is whether your conversion rate on the form justifies $25–$83/mo."
+    }
+  ],
+  "review_count": 960,
   "g2_score": 4.5,
   "capterra_score": 4.7
 }
