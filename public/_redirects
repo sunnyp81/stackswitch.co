@@ -4,3 +4,4 @@
 /tools/:slug/         /tools/:slug         301
 /blog/:slug/          /blog/:slug          301
 /categories/:slug/    /categories/:slug    301
+/sitemap.xml /sitemap-index.xml 301
