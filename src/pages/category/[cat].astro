@@ -87,6 +87,17 @@ const breadcrumbSchema = {
     </div>
     <p class="text-gray-600 mb-4 leading-relaxed max-w-2xl">{intro}</p>
 
+    <!-- Quick answer box: extractable summary for search snippets and AI answer engines -->
+    {topTool && (
+      <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-8 max-w-2xl">
+        <h2 class="font-bold text-indigo-900 mb-2">Quick answer</h2>
+        <p class="text-gray-700 leading-relaxed">
+          {topTool.name} is the highest-rated {categoryName.toLowerCase()} tool we compared, at {topTool.g2_score}/5 on G2{topTool.pricing.has_free_plan ? ' and it has a free plan' : `, starting at ${formatPrice(topTool.pricing.starting_price, topTool.pricing.currency)}/mo`}.
+          {freeTools.length > 0 && ` ${freeTools.length} of the ${tools.length} tools listed here offer a free plan.`}
+        </p>
+      </div>
+    )}
+
     <!-- Quick stats bar -->
     <div class="flex flex-wrap gap-4 mb-10 text-sm">
       <span class="bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full">{tools.length} tools compared</span>

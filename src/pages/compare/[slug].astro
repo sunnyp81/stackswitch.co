@@ -73,6 +73,22 @@ if (toolA.pricing.has_free_plan !== toolB.pricing.has_free_plan) {
 }
 verdictText += `The right pick depends on your team size and workflow.`;
 
+// Short extractable answer for the quick-answer box (AI Overviews, Perplexity, featured snippets)
+let quickAnswer = '';
+if (Math.abs(ratingDiff) >= 0.2) {
+  const better = ratingDiff > 0 ? toolA : toolB;
+  const worse = ratingDiff > 0 ? toolB : toolA;
+  quickAnswer = `${better.name} rates higher on G2 (${better.g2_score}/5 vs ${worse.g2_score}/5) and is the stronger pick for most teams. `;
+} else {
+  quickAnswer = `${toolA.name} and ${toolB.name} rate almost identically on G2 (${toolA.g2_score}/5 vs ${toolB.g2_score}/5), so the decision usually comes down to price and workflow fit. `;
+}
+if (cheaperTool) {
+  const otherTool = cheaperTool === toolA ? toolB : toolA;
+  quickAnswer += `${cheaperTool.name} is the cheaper option, starting at ${formatPrice(cheaperTool.pricing.starting_price, cheaperTool.pricing.currency)}/mo versus ${formatPrice(otherTool.pricing.starting_price, otherTool.pricing.currency)}/mo for ${otherTool.name}.`;
+} else {
+  quickAnswer += `Both start at ${formatPrice(toolA.pricing.starting_price, toolA.pricing.currency)}/mo.`;
+}
+
 // Related comparisons
 const relatedAltASlugs = toolA.alternatives.filter(s => s !== bSlug).slice(0, 3);
 const relatedAltBSlugs = toolB.alternatives.filter(s => s !== aSlug).slice(0, 3);
@@ -162,6 +178,13 @@ const breadcrumbSchema = {
     <p class="text-lg text-gray-600 mb-6">
       A side-by-side comparison of pricing, features, and use cases to help you decide between {toolA.name} and {toolB.name}.
     </p>
+
+    <!-- Quick answer box: extractable summary for search snippets and AI answer engines -->
+    <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-10">
+      <h2 class="font-bold text-indigo-900 mb-2">Quick answer</h2>
+      <p class="text-gray-700 leading-relaxed">{quickAnswer}</p>
+    </div>
+
     <div class="mb-10">
       <CompareVisual />
     </div>

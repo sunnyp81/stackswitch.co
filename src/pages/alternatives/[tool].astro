@@ -108,6 +108,17 @@ const faqSchema = {
       Here are the best alternatives — whether you need something cheaper, simpler, or with different features.
     </p>
 
+    <!-- Quick answer box: extractable summary for search snippets and AI answer engines -->
+    {topAlt && (
+      <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-6 mb-8">
+        <h2 class="font-bold text-indigo-900 mb-2">Quick answer</h2>
+        <p class="text-gray-700 leading-relaxed">
+          {topAlt.name} is the top {tool.name} alternative, starting at {formatPrice(topAlt.pricing.starting_price, topAlt.pricing.currency)}/mo{topAlt.pricing.has_free_plan ? ' with a free plan' : ''} and a {topAlt.g2_score}/5 G2 rating.
+          {cheapestAlt && cheapestAlt.slug !== topAlt.slug && ` If price is the main driver, ${cheapestAlt.name} is the cheapest option${cheapestAlt.pricing.has_free_plan ? ' (free plan available)' : ` at ${formatPrice(cheapestAlt.pricing.starting_price, cheapestAlt.pricing.currency)}/mo`}.`}
+        </p>
+      </div>
+    )}
+
     <!-- Switching visual -->
     <div class="flex justify-center mb-8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 100" class="w-full max-w-sm" aria-hidden="true">
