@@ -8,7 +8,7 @@
     {
       "source": "/:path(.*)/",
       "destination": "/:path",
-      "permanent": false
+      "permanent": true
     }
   ]
 }
