@@ -12,3 +12,11 @@ Deploy: git push to `sunnyp81/stackswitch.co` master, then `npx vercel --prod` (
 - Submitted 10 changed URLs to Bing (site verified, `stackswitch.co`).
 - Not touched: title/meta templates (already rewritten Apr 10, rule caps rewrites at 20 pages and this wasn't a CTR pass), no postcode/thin-page issue exists on this site.
 - Next check: re-pull GSC by ~2026-08-04 to see if quick-answer boxes moved position or CTR on the sistrix cluster.
+
+## 2026-07-10 — trailing-slash canonicalisation fix
+- Growth plan flagged `/alternatives/amplitude` and `/alternatives/amplitude/` both indexed as separate URLs, a signal-splitting risk.
+- Root cause: `astro.config.mjs` (`trailingSlash: 'never'`) and the self-referencing canonical in `Base.astro` were already correctly set to the no-trailing-slash form, and no page hardcodes a trailing-slash href. The actual gap was `vercel.json`'s strip-slash redirect rule was `permanent: false`, so trailing-slash requests got a 307 (temporary) instead of a proper permanent redirect, which is weak consolidation signal and lets Google keep both URLs indexed.
+- Fix: changed `permanent: false` to `permanent: true` in `vercel.json` (one line). No content, title, meta or page changes.
+- Verified live post-deploy: `stackswitch.co/alternatives/amplitude/` and `/tools/moz/` both now return `308 Permanent Redirect` to the no-slash form (were 307 before). Canonical tags and sitemap already emitted the correct no-slash URL, confirmed in local build output.
+- Deploy: this repo is GitHub-connected to Vercel and auto-deploys on `git push` to master, no `npx vercel --prod` needed (confirmed working this run, commit `4de02a2`) — the "git push then vercel --prod" line above is stale, ignore it for this repo specifically.
+- Not touched: no pages pruned, no titles/metas/content changed, no other unrelated pre-existing uncommitted WIP in the repo (mobile nav touch-target and `overflow-x` tweaks) was left as-is, not part of this commit.
